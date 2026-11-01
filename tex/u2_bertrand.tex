@@ -1,0 +1,303 @@
+%-------------------------------------------------------------------- Bertrand matemático
+\needspace{8\baselineskip}
+\tema{Bertrand con costos simétricos y asimétricos}
+\question Existen dos firmas que producen un bien homogéneo. Las firmas compiten à la Bertrand en un mercado donde la demanda viene dada por $Q = 125 - 5P$. Los costos totales de ambas firmas vienen dados por la función $C(q) = 3q$.
+\begin{parts}
+\part Obtenga el equilibrio de Nash bajo los supuestos normales de competencia Bertrand, específicamente el precio, la cantidad producida y los beneficios de cada firma. Además, deje expresadas las funciones de reacción de cada firma y grafíquelas.
+\needspace{5\baselineskip}
+\begin{solution}
+Bajo los supuestos normales de competencia Bertrand, las firmas compiten en precios y se llega a un equilibrio donde el precio es igual al costo marginal de las firmas: $P_1^* = P_2^* = 3$. A ese precio, la cantidad demandada por el mercado es $Q = 125 - 5\cdot 3 = 110$, por lo que la producción de equilibrio de cada firma es $q_1^* = q_2^* = 55$, y los beneficios de ambas firmas son $\pi_1^* = \pi_2^* = 0$.
+
+Las funciones de reacción son (con $P^M = 14$ el precio de monopolio, que resulta de $IMg = 25 - \tfrac{2}{5}Q = 3$, es decir $Q=55$ y $P=14$):
+\[
+  P_i(P_j) =
+  \begin{cases}
+    P^M = 14 & \text{si } P_j > P^M \\
+    P_j - \epsilon & \text{si } 3 < P_j \leq P^M \\
+    3 & \text{si } P_j \leq 3
+  \end{cases}
+\]
+El gráfico correspondiente es (con $\epsilon$ exagerado para que se distingan las curvas):
+\bertrandplot{3}{3}{14}{14}{3}{3}{14}{14}{0}
+
+\end{solution}
+
+\part Suponga ahora, solo para este apartado, que los costos totales de la firma 1 son $C(q) = 3q$, mientras que los costos totales de la firma 2 son $C(q) = 4q$. ¿Cómo cambian los resultados obtenidos en la parte (a)? Obtenga los nuevos parámetros de equilibrio y las nuevas funciones de reacción de ambas firmas. Grafique estas últimas.
+\needspace{5\baselineskip}
+\begin{solution}
+Puesto que ahora la firma 1 es más eficiente que la firma 2, el nuevo precio de equilibrio es igual al costo marginal de la firma ineficiente menos un épsilon: $P^* = 4 - \epsilon$. A ese precio la firma ineficiente es incapaz de ofrecer un precio menor, y la firma eficiente se lleva toda la demanda. Por lo tanto, el mercado demanda $Q = 125 - 5\cdot 4 = 105$, y la producción de equilibrio es $q_1^* = 105$ y $q_2^* = 0$. Los beneficios de la firma eficiente son $\pi_1^* \approx 105$ (pues $(4-\epsilon-3)\cdot 105$) y los de la firma ineficiente son $\pi_2^* = 0$.
+
+Las funciones de reacción de cada firma ahora son (con $P_1^M = 14$ y $P_2^M = 14{,}5$):
+\[
+  P_1(P_2) =
+  \begin{cases}
+    P_1^M = 14 & \text{si } P_2 > P_1^M \\
+    P_2 - \epsilon & \text{si } 3 < P_2 \leq P_1^M \\
+    3 & \text{si } P_2 \leq 3
+  \end{cases}
+\]
+\[
+  P_2(P_1) =
+  \begin{cases}
+    P_2^M = 14{,}5 & \text{si } P_1 > P_2^M \\
+    P_1 - \epsilon & \text{si } 4 < P_1 \leq P_2^M \\
+    4 & \text{si } P_1 \leq 4
+  \end{cases}
+\]
+Y el nuevo gráfico es:
+\bertrandplot{3}{4}{14}{14.5}{3}{4}{14}{14,5}{0.7}
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Capacidad
+\needspace{8\baselineskip}
+\tema{Bertrand con restricciones de capacidad}
+\question Suponga un mercado con dos firmas que compiten en precios, ofreciendo un producto homogéneo. Considere además que la demanda de mercado corresponde a $Q(p) = 90 - 3p$, y las funciones de costo de las firmas son idénticas e iguales a $C(q) = 5q$. Finalmente, es ampliamente conocido que las firmas poseen una capacidad máxima $k$ a producir.
+\begin{parts}
+\part ¿Qué sucede si $k \geq 75$? ¿Qué sucede en caso de que $k < 75$?
+\needspace{5\baselineskip}
+\begin{solution}
+Dado que en equilibrio de Bertrand tenemos $p = c = 5$, la demanda será
+\[
+  Q(p=5) = 90 - 3\cdot 5 = 75 .
+\]
+Por lo que si $k \geq 75$ cada firma es capaz de abastecer a todo el mercado y se genera competencia à la Bertrand. Si $k < 75$, una sola firma no es capaz de abastecer a todo el mercado y habrá espacio para actuar sobre la demanda residual.
+
+\end{solution}
+
+\part Ahora considere la situación en que $k = 15$. ¿Qué sucede con las firmas en el mercado?
+\needspace{5\baselineskip}
+\begin{solution}
+En este tipo de casos con capacidad simétrica las empresas se adelantan a lo que hará la otra firma. Desde el punto de vista de la firma 1, se asume que la firma 2 vende toda su capacidad ($k=15$) a un precio menor y, por racionamiento eficiente, los más dispuestos a pagar compran esa oferta. Queda entonces una demanda residual sobre la cual la firma 1 maximiza beneficios:
+\[
+  Q^r = 90 - k - 3p = 75 - 3p
+\]
+\[
+\begin{gathered}  \max_{p_1}\ \pi_1 = (p_1 - 5)(75 - 3p_1)
+  \quad\Longrightarrow\quad\\
+  \text{CPO: } 75 - 3p_1 - 3(p_1-5) = 90 - 6p_1 = 0
+  \quad\Longrightarrow\quad p_1 = 15 .\end{gathered}
+\]
+La demanda residual a ese precio es $Q^r = 75 - 3\cdot 15 = 30$. Sin embargo, esto no es factible: como $k = 15 < 30$, a pesar de que la demanda sea 30 no se puede satisfacer por completo. Dado que no se puede ofrecer 30, se ofrece lo máximo (15), por lo que lo racional es subir el precio hasta que solo se vendan 15 unidades. Debemos encontrar el precio donde la cantidad demandada residual es igual a 15:
+\[
+  75 - 3p = 15 \quad\Longrightarrow\quad p = 20 .
+\]
+La firma 1 ofrece entonces su capacidad máxima $k=15$ a un precio de 20. La firma 2 hace el mismo razonamiento, pensando que la firma 1 venderá toda su capacidad. Por tanto, se concluye que las dos firmas venden 15 unidades cada una a un precio de 20 (con $p>c=5$ y beneficios positivos).
+
+\end{solution}
+
+\part ¿Qué ocurriría en caso de que las empresas pudieran primero elegir sus capacidades y luego competir por precios?
+\needspace{5\baselineskip}
+\begin{solution}
+Si las empresas eligen primero sus capacidades y luego sus precios, elegirían capacidades iguales a las cantidades de Cournot y precios iguales al precio de mercado en competencia à la Cournot (resultado de Kreps y Scheinkman). Esto implica que, con restricciones de capacidad (un supuesto muy realista), los precios están por encima del costo marginal y las empresas ganan beneficios positivos. En realidad, lo que observamos en el mercado es idéntico a lo que observaríamos si compitieran en cantidades: suponer que las empresas elegían cantidades no era algo tan erróneo como parecía inicialmente.
+\begin{itemize}
+  \item Cuando hay restricciones de capacidad se suaviza la competencia: los precios de equilibrio no son tan bajos, $p > c$, y las empresas tienen beneficios positivos.
+  \item Las empresas evitan acumular demasiada capacidad para suavizar la competencia en precios; es como un compromiso de que no bajarán mucho los precios.
+  \item Ejemplos donde la elección de capacidad es importante: hoteles, líneas aéreas.
+  \item El resultado del juego en 2 etapas coincide con el de Cournot si las capacidades se interpretan como cantidades.
+\end{itemize}
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Comente: Bertrand costos asimétricos
+\needspace{8\baselineskip}
+\tema{Comente: Bertrand con costos asimétricos}
+\question \textbf{Comente.} Suponga que existen dos firmas, 1 y 2, que compiten à la Bertrand. La firma 1 tiene un $C_{mg} = A$ y la firma 2 tiene un costo marginal $C_{mg} = B$, donde se cumple que $A > B$. Por lo tanto, la competencia en precios llevará a que el precio de equilibrio sea $P = B$.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. La firma más eficiente, en este caso la firma 2, colocará un precio igual al costo marginal de la firma ineficiente menos un $\epsilon$, pues de esta forma la eliminará del mercado. Colocar un precio diferente a este no sería una estrategia racional para la firma. En este caso, el precio de equilibrio es $P = A - \epsilon$.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: Paradoja de Bertrand
+\needspace{8\baselineskip}
+\tema{Comente: Paradoja de Bertrand}
+\question \textbf{Comente.} Explique de forma detallada en qué consiste la Paradoja de Bertrand.
+\needspace{5\baselineskip}
+\begin{solution}
+La paradoja de Bertrand describe la situación en que basta que 2 firmas simétricas compitan en precios (à la Bertrand) para obtener un equilibrio competitivo, es decir, un equilibrio de Nash donde el precio de mercado es igual al costo marginal. Esto ocurre porque la competencia en precios hará que las firmas recorten sus precios hasta llegar al mínimo permitido, su costo marginal, obteniendo beneficios iguales a 0.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: disipación de rentas
+\needspace{8\baselineskip}
+\tema{Comente: disipación de rentas}
+\question \textbf{Comente.} La competencia en precios en un mercado lleva a la disipación total de las rentas.
+\needspace{5\baselineskip}
+\begin{solution}
+Incierto. La afirmación es verdadera siempre que las firmas que compiten sean simétricas en cuanto a costos.
+
+En un caso alternativo en el que dos firmas compiten pero el costo marginal de la firma 1 es menor que el de la firma 2 ($c_1<c_2$), el equilibrio de Nash se logra con la firma 1 abasteciendo a todo el mercado y cobrando un precio infinitesimalmente inferior al costo marginal de la firma 2.
+
+Dado que la firma 2 no puede fijar un precio menor que $p_2 = c_2$, la mejor estrategia de la firma 1 según su función de reacción es la situación intermedia: $p_1 = p_2 - \epsilon$ con $\epsilon\to 0$. Con demanda $P = A - Q$, la función de reacción de la firma 1 es
+\[
+  p_1^*(p_2) =
+  \begin{cases}
+    p^M = \dfrac{A + c_1}{2} & \text{si } p_2 > p^M \\[2mm]
+    p_2 - \epsilon & \text{si } c_1 < p_2 \leq p^M \\[1mm]
+    c_1 & \text{si } p_2 \leq c_1
+  \end{cases}
+\]
+En este caso las rentas de la firma 1 son
+\[
+  \pi_1 = (p - c_1)\,q_1(p) = (c_2 - \epsilon - c_1)\bigl(A - (c_2 - \epsilon)\bigr)
+  \;\longrightarrow\; (c_2 - c_1)(A - c_2) > 0 ,
+\]
+por lo que las rentas no se disipan totalmente.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Bertrand 240-3P
+\needspace{8\baselineskip}
+\tema{Bertrand con costos simétricos y asimétricos (variante numérica)}
+\question Existen dos firmas que producen un bien homogéneo. Las firmas compiten à la Bertrand en un mercado donde la demanda viene dada por $Q = 240 - 3P$. Los costos totales de ambas firmas vienen dados por la función $C(q) = 2q$.
+\begin{parts}
+\part Obtenga el equilibrio de Nash bajo los supuestos normales de competencia Bertrand, específicamente el precio, la cantidad producida y los beneficios de cada firma. Además, deje expresadas las funciones de reacción de cada firma y grafíquelas.
+\needspace{5\baselineskip}
+\begin{solution}
+El equilibrio es $P_1^* = P_2^* = 2$. A ese precio la cantidad demandada es $Q = 240 - 3\cdot 2 = 234$, por lo que $q_1^* = q_2^* = 117$ y $\pi_1^* = \pi_2^* = 0$.
+
+El precio de monopolio resulta de $IMg = 80 - \frac{2}{3}Q = 2$, es decir $Q = 117$ y $P^M = 41$. Las funciones de reacción son
+\[
+  P_i(P_j) =
+  \begin{cases}
+    P^M = 41 & \text{si } P_j > P^M \\
+    P_j - \epsilon & \text{si } 2 < P_j \leq P^M \\
+    2 & \text{si } P_j \leq 2
+  \end{cases}
+\]
+Su gráfico tiene la misma forma que en la pregunta anterior, con $c = 2$ y $P^M = 41$:
+{\def\bpsc{0.3}\def\bpe{2.2}\bertrandplot{2}{2}{41}{41}{2}{2}{41}{41}{0}}
+
+\end{solution}
+
+\part Suponga ahora, solo para este apartado, que los costos totales de la firma 1 son $C(q) = 2q$, mientras que los costos totales de la firma 2 son $C(q) = 6q$. ¿Cómo cambian los resultados obtenidos en la parte (a)? Obtenga los nuevos parámetros de equilibrio y las nuevas funciones de reacción de ambas firmas.
+\needspace{5\baselineskip}
+\begin{solution}
+Ahora la firma 1 es más eficiente que la firma 2, por lo que el precio de equilibrio es igual al costo marginal de la firma ineficiente menos un épsilon: $P^* = 6 - \epsilon$. A ese precio la firma ineficiente es incapaz de ofrecer un precio menor y la firma eficiente se lleva toda la demanda: $Q = 240 - 3\cdot 6 = 222$, $q_1^* = 222$, $q_2^* = 0$. Los beneficios son $\pi_1^* \approx (6-2)\cdot 222 = 888$ y $\pi_2^* = 0$.
+
+Las funciones de reacción son (con $P_1^M = 41$ y $P_2^M = 43$, que resultan de $IMg = c_i$):
+\[
+  P_1(P_2) =
+  \begin{cases}
+    41 & \text{si } P_2 > 41 \\
+    P_2 - \epsilon & \text{si } 2 < P_2 \leq 41 \\
+    2 & \text{si } P_2 \leq 2
+  \end{cases}
+  \qquad
+  P_2(P_1) =
+  \begin{cases}
+    43 & \text{si } P_1 > 43 \\
+    P_1 - \epsilon & \text{si } 6 < P_1 \leq 43 \\
+    6 & \text{si } P_1 \leq 6
+  \end{cases}
+\]
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Bertrand 8-P
+\needspace{8\baselineskip}
+\tema{Bertrand: cuántas firmas operan (variante numérica)}
+\question Dos firmas compiten en un mercado con un bien homogéneo bajo un modelo de competencia à la Bertrand. La función de demanda del mercado está dada por $Q(P) = 8 - P$, para $0 < P < 8$, y es cero para cualquier otro precio. Los costos de producción son idénticos para ambas firmas, con una función de costos totales $C_i(q_i) = 2q_i$, con $i = 1,2$.
+\begin{parts}
+\part Obtenga el equilibrio de Nash, específicamente el precio, la cantidad producida y los beneficios de cada firma. Además, deje expresadas las funciones de reacción de cada firma y grafíquelas.
+\needspace{5\baselineskip}
+\begin{solution}
+El precio de equilibrio es igual al costo marginal: $P_1^* = P_2^* = 2$. La cantidad demandada es $Q = 6$, por lo que $q_1^* = q_2^* = 3$ y $\pi_1^* = \pi_2^* = 0$. El precio de monopolio es $P^M = 5$ (de maximizar $(P-2)(8-P)$). Las funciones de reacción son
+\[
+  P_i(P_j) =
+  \begin{cases}
+    5 & \text{si } P_j > 5 \\
+    P_j - \epsilon & \text{si } 2 < P_j \leq 5 \\
+    2 & \text{si } P_j \leq 2
+  \end{cases}
+\]
+\bertrandplot{2}{2}{5}{5}{2}{2}{5}{5}{0}
+
+\end{solution}
+
+\part Suponga ahora que la estructura de costos de las empresas es $C_1(q_1) = q_1$ y $C_2(q_2) = 3q_2$. Escriba las funciones de beneficios para ambos competidores.
+\needspace{5\baselineskip}
+\begin{solution}
+Para los casos en que los precios son inferiores al costo marginal los beneficios son cero (nadie vende a pérdida). Luego,
+\[
+  \pi_1 =
+  \begin{cases}
+    (8 - P_1)(P_1 - 1) & \text{si } P_1 < P_2 \\
+    \frac{1}{2}(8 - P_1)(P_1 - 1) & \text{si } P_1 = P_2 (> 1) \\
+    0 & \text{si } P_1 > P_2
+  \end{cases}
+\]
+\[
+  \pi_2 =
+  \begin{cases}
+    (8 - P_2)(P_2 - 3) & \text{si } P_2 < P_1 \\
+    \frac{1}{2}(8 - P_2)(P_2 - 3) & \text{si } P_2 = P_1 (> 3) \\
+    0 & \text{si } P_2 > P_1
+  \end{cases}
+\]
+
+\end{solution}
+
+\part ¿Cuántas empresas operarán en el mercado? Obtenga los nuevos parámetros de equilibrio y las nuevas funciones de reacción de ambas firmas. Grafique estas últimas.
+\needspace{5\baselineskip}
+\begin{solution}
+En equilibrio solo la empresa 1 estará en el mercado, porque es más eficiente que la empresa 2 y puede fijar un precio levemente menor al costo marginal de la empresa 2 y aun así tener beneficios estrictamente positivos. El precio de equilibrio es $P_1 = 3 - \epsilon$, de modo que $q_1 = Q = 8 - 3 + \epsilon = 5 + \epsilon$. Los beneficios son $\pi_1 = (2 - \epsilon)(5 + \epsilon) \approx 10$ y $\pi_2 = 0$.
+
+Los precios de monopolio son $P_1^M = 4{,}5$ (con $c_1 = 1$) y $P_2^M = 5{,}5$ (con $c_2 = 3$), y las funciones de reacción son
+\[
+  P_1(P_2) =
+  \begin{cases}
+    4{,}5 & \text{si } P_2 > 4{,}5 \\
+    P_2 - \epsilon & \text{si } 1 < P_2 \leq 4{,}5 \\
+    1 & \text{si } P_2 \leq 1
+  \end{cases}
+  \qquad
+  P_2(P_1) =
+  \begin{cases}
+    5{,}5 & \text{si } P_1 > 5{,}5 \\
+    P_1 - \epsilon & \text{si } 3 < P_1 \leq 5{,}5 \\
+    3 & \text{si } P_1 \leq 3
+  \end{cases}
+\]
+\bertrandplot{1}{3}{4.5}{5.5}{1}{3}{4,5}{5,5}{0.7}
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Capacidad asimétrica
+\needspace{8\baselineskip}
+\tema{Bertrand con capacidades distintas (40 y 30)}
+\question Dos empresas, $A$ y $B$, compiten en precios en el mercado de un bien homogéneo. La demanda agregada del mercado está dada por $Q = 100 - P$, donde $P$ es el precio más bajo ofrecido en el mercado. Cada empresa produce a un costo marginal de 10, pero tienen capacidades limitadas $k_A = 40$ y $k_B = 30$.
+\begin{parts}
+\part ¿Cuál sería el equilibrio de Bertrand sin restricciones de capacidad? ¿Por qué este resultado no se mantiene bajo las restricciones $k_A$, $k_B$?
+\needspace{5\baselineskip}
+\begin{solution}
+Sin restricciones de capacidad estaríamos frente al modelo más básico de Bertrand, donde el precio es igual al costo marginal ($P = 10$) y la demanda a ese precio es $90$. Bajo restricciones de capacidad, la cantidad máxima que podrían proveer las empresas no suma más de $70$. Dado que con el precio anterior la demanda efectiva ($90$) superaría a la factible ($70$), ese resultado no se mantiene.
+
+\end{solution}
+
+\part Considerando las restricciones de capacidad, determine los precios de equilibrio y la cantidad que vende cada empresa.
+\needspace{5\baselineskip}
+\begin{solution}
+Para determinar el precio de equilibrio, el objetivo es vaciar el mercado para la capacidad factible: $k_A + k_B = 100 - P$, es decir, $70 = 100 - P$, y entonces $P = 30$. Cada empresa vende toda su capacidad: $A$ vende $40$ y $B$ vende $30$.
+
+\end{solution}
+
+\part Analice si alguna de las empresas tiene incentivos a desviarse y reducir su precio.
+\needspace{5\baselineskip}
+\begin{solution}
+Si una de las empresas intentara reducir su precio por debajo de $P = 30$, ya vende toda su capacidad, por lo que solo disminuiría su margen sin lograr más ventas. Si, por otro lado, una empresa sube el precio, los consumidores comprarían primero de la empresa con precio más bajo hasta agotar su capacidad, y la demanda residual que le quedaría a la de precio mayor ($100 - P - k_{rival}$) la llevaría a vender menos de su capacidad a un precio mayor; en este caso, no hay incentivo a subir el precio dado que el margen más alto no compensa la pérdida de ventas. Por lo tanto, $P = 30$ se mantiene como equilibrio.
+
+\end{solution}
+
+\part ¿Cómo cambiaría el resultado si ambas empresas tuvieran una capacidad de 50 unidades?
+\needspace{5\baselineskip}
+\begin{solution}
+Si ambas empresas pudieran producir hasta 50 unidades cada una, la capacidad conjunta sería $100 \geq 90$, por lo que podrían abastecer todo el mercado a $P = 10$. En este caso volvemos al resultado del modelo de Bertrand sin restricciones, con $P = 10$ (ninguna empresa tiene incentivos a subir su precio, pues la competencia las empuja a fijar un precio igual al costo marginal). Con restricciones de capacidad, en cambio, el precio es $P = 30$, significativamente mayor que el costo marginal: las restricciones de capacidad limitan la competencia y permiten a las empresas obtener un precio superior al costo marginal.
+
+\end{solution}
+\end{parts}

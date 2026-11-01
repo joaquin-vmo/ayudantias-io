@@ -1,0 +1,608 @@
+\tema{Tres firmas con bienes diferenciados y fusión}
+\question Suponga un mercado en que tres firmas 1, 2 y 3 ofrecen productos diferenciados y compiten en precios. La demanda que enfrenta el producto ofrecido por cada firma $i$ viene dada por $q_i = 100 - 3p_i + p_j + p_k$. Esta función de demanda es simétrica para los tres productos, de manera que
+\begin{align*}
+  q_1 &= 100 - 3p_1 + p_2 + p_3 \\
+  q_2 &= 100 - 3p_2 + p_1 + p_3 \\
+  q_3 &= 100 - 3p_3 + p_1 + p_2
+\end{align*}
+La función de costos de producción es idéntica para cada firma y viene dada por $C(q_i) = 20q_i$. Considerando esta información responda las siguientes preguntas:
+\begin{parts}
+\part Calcule las funciones de reacción de las firmas 1, 2 y 3. Grafique las funciones de reacción de las firmas 1 y 2 (asumiendo $\bar p_3$ como constante). Identifique el precio de equilibrio en su gráfico.
+\needspace{5\baselineskip}
+\begin{solution}
+Planteamos el problema de la firma 1:
+\[
+  \max_{p_1}\ \pi_1 = (p_1 - 20)(100 - 3p_1 + p_2 + p_3)
+\]
+CPO:
+\[
+\begin{gathered}  \frac{\partial \pi_1}{\partial p_1} = 100 - 3p_1 + p_2 + p_3 - 3(p_1 - 20) = 160 - 6p_1 + p_2 + p_3 = 0
+  \quad\Longrightarrow\quad\\
+  p_1(p_2,p_3) = \frac{160 + p_2 + p_3}{6}.\end{gathered}
+\]
+Por simetría, para cualquier empresa,
+\[
+  p_i(p_j,p_k) = \frac{160 + p_j + p_k}{6}.
+\]
+Para graficar las funciones de reacción dejamos $\bar p_3$ como constante, de modo que $p_i(p_j) = \frac{p_j}{6} + \text{cte.}$ Las funciones de reacción tienen pendiente positiva (los precios son \emph{complementos estratégicos}) y las curvas de las firmas 1 y 2 se cruzan en el equilibrio de Nash.
+
+\end{solution}
+
+\part Obtenga el vector de precios $(p_1^*, p_2^*, p_3^*)$ que corresponde al equilibrio de Nash de este juego.
+\needspace{5\baselineskip}
+\begin{solution}
+Aplicamos que $p_1^* = p_2^* = p_3^* = p^*$, y reemplazamos en alguna de las funciones de reacción:
+\[
+\begin{gathered}
+  p^* = \frac{160 + p^* + p^*}{6} \\
+  \Longrightarrow\; 4p^* = 160 \\
+  \Longrightarrow\; p^* = 40 .
+\end{gathered}
+\]
+El vector de equilibrio es $(40, 40, 40)$.
+
+\end{solution}
+
+\part Asuma que las firmas 2 y 3 deciden salirse del mercado por motivos internos. Ante esta situación la firma 1 logra adquirir la firma 2, por lo que las demandas pasan a ser las siguientes:
+\begin{align*}
+  q_1 &= 100 - 2p_1 + p_2 \\
+  q_2 &= 100 - 2p_2 + p_1
+\end{align*}
+Calcule el precio, la cantidad y los beneficios de equilibrio bajo este nuevo escenario.
+\needspace{5\baselineskip}
+\begin{solution}
+Planteamos ahora el problema de maximización de un monopolio multiproducto, $\pi = \sum_{i=1}^{2}\pi_i$:
+\[
+  \max_{p_1,p_2}\ \pi = (100 - 2p_1 + p_2)(p_1 - 20) + (100 - 2p_2 + p_1)(p_2 - 20)
+\]
+CPO:
+\[
+\begin{gathered}  \frac{\partial \pi}{\partial p_1} = 100 - 2p_1 + p_2 - 2(p_1 - 20) + (p_2 - 20) = 120 - 4p_1 + 2p_2 = 0
+  \quad\Longrightarrow\quad\\
+  p_1^*(p_2) = \frac{60 + p_2}{2}.\end{gathered}
+\]
+Por simetría, $p_2^*(p_1) = \frac{60 + p_1}{2}$, y podemos decir que $p_1 = p_2 = p$, por tanto $p = 60$ y consecuentemente $q = 100 - 120 + 60 = 40$. El beneficio es
+\[
+  \pi = 40\cdot(60-20) + 40\cdot(60-20) = 3200 .
+\]
+
+\end{solution}
+
+\part ¿Cómo cambia su respuesta del ítem anterior si ahora las demandas son
+\begin{align*}
+  q_1 &= 100 - 2p_1 - p_2 \\
+  q_2 &= 100 - 2p_2 - p_1
+\end{align*}
+¿Qué significa una demanda de este tipo?
+\needspace{5\baselineskip}
+\begin{solution}
+Una demanda de este tipo refiere a que los productos 1 y 2 son \emph{complementarios} (un mayor precio de un bien reduce la demanda del otro), por lo que los beneficios del monopolio multiproducto serán menores. Calculémoslo:
+\[
+  \max_{p_1,p_2}\ \pi = (100 - 2p_1 - p_2)(p_1 - 20) + (100 - 2p_2 - p_1)(p_2 - 20)
+\]
+CPO:
+\[
+\begin{gathered}  \frac{\partial \pi}{\partial p_1} = 100 - 2p_1 - p_2 - 2(p_1 - 20) - (p_2 - 20) = 160 - 4p_1 - 2p_2 = 0
+  \quad\Longrightarrow\quad\\
+  p_i^*(p_j) = \frac{80 - p_j}{2}.\end{gathered}
+\]
+Por simetría $p_1=p_2=p$, de modo que $3p = 80$, es decir $p = \frac{80}{3} \approx 26{,}7$ y $q = 100 - 3p = 20$. El beneficio es
+\[
+  \pi = 2\cdot 20\cdot\Bigl(\frac{80}{3} - 20\Bigr) = \frac{800}{3} \approx 267 .
+\]
+Fíjese que $\pi_{\text{Sustitutos}} = 3200 > \pi_{\text{Complementos}} \approx 267$.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Comente: diferenciación y precios
+\needspace{8\baselineskip}
+\tema{Comente: diferenciación, precios y utilidades}
+\question \textbf{Comente.} A mayor diferenciación de los productos, mayores serán los precios y utilidades de las firmas.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. Mientras más diferenciados son los productos, mayor será la demanda cautiva (aquella que le permite subir los precios) de las firmas, lo que se traduce en un equilibrio con mayores precios en el mercado. En conclusión, a mayor diferenciación de los bienes, menor es la intensidad de la competencia.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: complementarios monopolio vs Bertrand
+\needspace{8\baselineskip}
+\tema{Comente: bienes complementarios, monopolio vs Bertrand}
+\question \textbf{Comente.} Imagine un mercado donde existen dos bienes diferenciados complementarios, que enfrentan demandas lineales. En términos de los precios percibidos por los consumidores, será preferible que dicho mercado sea monopólico a tener una competencia oligopólica à la Bertrand.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. Esto es lo que motiva la existencia de fusiones verticales o la entrega de patentes. Recordemos que ante bienes complementarios la demanda del bien 1 aumenta en la medida que disminuye el precio del bien 2, mientras que en bienes sustitutos disminuye. Esto genera incentivos para que un monopolista maximice el beneficio en un equilibrio donde el precio es menor al de competencia, ya que el monopolio percibe la totalidad de la demanda. En cambio, en el escenario de competencia en precios la demanda se divide, lo que lleva a que el óptimo de cada firma se encuentre en un precio mayor (no internaliza el efecto de su precio sobre la demanda del complemento).
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: diferenciación e intensidad competitiva
+\needspace{8\baselineskip}
+\tema{Comente: diferenciación e intensidad competitiva}
+\question \textbf{Comente.} Explique el efecto de la diferenciación de producto en la intensidad competitiva.
+\needspace{5\baselineskip}
+\begin{solution}
+Desde el punto de vista de la competencia, la diferencia con el caso de producto homogéneo radica en que existen más variables de decisión para los individuos que solo el precio. Así, puede pasar que un consumidor prefiera a un productor que cobra más caro porque su producto se alinea mejor con las preferencias propias.
+
+El efecto de la diferenciación es atenuar la competencia en precios, dando pie a que sea factible cobrar sobre los costos marginales y, por ende, obtener rentas.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: horizontal vs vertical
+\needspace{8\baselineskip}
+\tema{Comente: diferenciación horizontal vs vertical}
+\question \textbf{Comente.} ¿Cuál es la diferencia entre una diferenciación horizontal y una vertical?
+\needspace{5\baselineskip}
+\begin{solution}
+Una diferenciación horizontal refiere a caracterizarse por medio de características de un mismo producto que no afectan a la calidad. Esto puede ser estética (autos), sabor (cereales), aroma (perfumes), y suele ser ejemplificado como la ubicación de venta del producto.
+
+Por otro lado, una diferenciación vertical hace referencia a un espectro de calidad de un mismo producto. Incluso no teniendo diferentes costos de producción, las firmas decidirán hacer productos de distinta calidad para disminuir la competencia.
+
+Al fin y al cabo, ambas suelen tener un mismo resultado: las empresas prefieren diferenciarse para relajar la competencia.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: horizontal producto no cambia
+\needspace{8\baselineskip}
+\tema{Comente: la diferenciación horizontal no cambia el producto}
+\question \textbf{Comente.} Al diferenciarse horizontalmente el producto nunca cambia.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Hay diferenciaciones horizontales que cambian características del producto. Si alguien está en búsqueda de un auto coupé deportivo de alta gama, puede encontrarse con un Porsche 911 Carrera o bien con un Chevrolet Corvette Stingray. Mientras un Porsche tiene un diseño más clásico, el Chevrolet tiene un diseño más audaz. Ambos tienen un precio y calidad similar, pero se diferencian en su posicionamiento frente al potencial comprador.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: Salop vs Hotelling
+\needspace{8\baselineskip}
+\tema{Comente: Salop vs Hotelling}
+\question \textbf{Comente.} El modelo de Salop es lo mismo que el modelo de Hotelling pero asumiendo una ciudad circular.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. El modelo de Salop tiene como objetivo entender la entrada de firmas. Se supone una ciudad circular para dar por sentado que no hay ubicaciones privilegiadas sobre otras: todas las empresas son equidistantes entre sí.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: más o menos diferenciación
+\needspace{8\baselineskip}
+\tema{Comente: efecto demanda y efecto estratégico en Hotelling}
+\question \textbf{Comente.} En un modelo tipo Hotelling con decisiones de localización y luego competencia en precios, ¿cuáles son las razones a favor y en contra de que las firmas produzcan bienes cada vez más diferenciados?
+\needspace{5\baselineskip}
+\begin{solution}
+El \emph{efecto de demanda} crea incentivos para que las firmas produzcan bienes con poca diferenciación: cuando las empresas se acercan hacia el centro de la ciudad capturan mayor demanda. Sin embargo, el \emph{efecto estratégico} nos dice que la competencia en precios es más fuerte cuanto menos diferenciados sean los bienes: cuando las empresas se alejan del centro de la ciudad reducen la competencia por precios.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Hotelling
+\needspace{8\baselineskip}
+\tema{Modelo de Hotelling con costos de transporte cuadráticos}
+\question Considere una ciudad lineal que va de 0 a 1. Dos empresas $L$ y $R$ deciden en qué parte ubicarse, $\theta_L, \theta_R \in [0,1]$, con $\theta_L < \theta_R$. Ambas ofrecen productos homogéneos (son sustituibles) a un precio $p_L, p_R$ según cada firma, con costo marginal $c$. Los potenciales consumidores de estas firmas se distribuyen de forma uniforme y los caracteriza la siguiente función de utilidad:
+\[
+  U_{ij} = \bar u + (y - p_j) - \tau(\theta_j - v_i)^2 .
+\]
+\begin{parts}
+\part Explique cada parte de la función de utilidad y su interpretación intuitiva.
+\needspace{5\baselineskip}
+\begin{solution}
+La función de utilidad es del individuo $i$ comprando a la firma $j$. En primer lugar, $\bar u$ es una utilidad fija que les brinda el producto, e $y - p_j$ es la utilidad neta de comprar el producto a la firma $j$ (ingreso menos precio). Por último, $\tau(\theta_j - v_i)^2$ es el costo de transporte que incurre el individuo $i$ (ubicado en $v_i$) para comprarle a la firma $j$, que crece con el cuadrado de la distancia.
+
+\end{solution}
+
+\part ¿Cuántos individuos indiferentes hay en una ciudad lineal? ¿Qué caracteriza a estos individuos? Encuentre su ubicación.
+\needspace{5\baselineskip}
+\begin{solution}
+En una ciudad lineal habrá un único individuo indiferente entre comprar a la firma $L$ o $R$. Este individuo es tal que $U_{iL} = U_{iR}$. Su ubicación $\bar v$ se encuentra planteando tal ecuación:
+\begin{gather*}
+  \bar u + (y - p_L) - \tau(\theta_L - \bar v)^2 = \bar u + (y - p_R) - \tau(\theta_R - \bar v)^2 \\
+  (p_R - p_L) + \tau(\theta_R^2 - \theta_L^2) = 2\tau\bar v(\theta_R - \theta_L) \\
+  \bar v = \frac{p_R - p_L}{2\tau(\theta_R - \theta_L)} + \frac{\theta_R + \theta_L}{2}.
+\end{gather*}
+Lo único diferente de ambos productos es el lugar de la ciudad en que se venden.
+
+\end{solution}
+
+\part Calcule las cuotas de mercado de ambas firmas.
+\needspace{5\baselineskip}
+\begin{solution}
+La cuota de mercado de la firma $L$ son todos los individuos a la izquierda de $\bar v$, y $R$ se queda con el resto del mercado, $1 - \bar v$:
+\[
+\begin{gathered}
+  D_L(p,\theta;\tau) = \bar v = \frac{p_R - p_L}{2\tau(\theta_R - \theta_L)} + \frac{\theta_R + \theta_L}{2}, \\
+  D_R(p,\theta;\tau) = 1 - \bar v = 1 - \frac{p_R - p_L}{2\tau(\theta_R - \theta_L)} - \frac{\theta_R + \theta_L}{2}.
+\end{gathered}
+\]
+En el modelo de Hotelling las firmas, en una primera etapa, eligen dónde ubicarse en la ciudad, para luego, en una segunda etapa, empezar a vender a un cierto precio.
+
+\end{solution}
+
+\part Suponga que bajo un nuevo marco legal el precio del producto está fijado. ¿Dónde les conviene ubicarse a las firmas?
+\needspace{5\baselineskip}
+\begin{solution}
+Dado que las firmas están obligadas a cobrar un precio fijo, dada la ubicación de la competencia la mejor respuesta siempre será estar un $\epsilon$ más cerca del centro ($0{,}5$). El equilibrio será $\theta_R = \theta_L = 0{,}5$. Aquí estamos frente a un caso de \emph{mínima diferenciación}: como los precios están dados, las firmas intentan maximizar su cuota de mercado mediante su ubicación. Con $p_R = p_L$ y $\theta_R = \theta_L = 0{,}5$, la demanda de cada una es $0{,}5$ y se reparten el mercado en partes iguales.
+
+\end{solution}
+
+\part Ahora volvamos al escenario sin el marco regulatorio: las firmas eligen sus precios. Encuentre las funciones de reacción de ambas firmas. Encuentre el equilibrio de Nash.
+\needspace{5\baselineskip}
+\begin{solution}
+Hacemos un cambio de variable para simplificar: $t = \tau(\theta_R - \theta_L)$ y $s = \frac{\theta_R + \theta_L}{2}$. Entonces $D_L = \frac{p_R - p_L}{2t} + s$ y $D_R = \frac{p_L - p_R}{2t} + 1 - s$.
+
+Para la empresa $L$:
+\[
+\begin{gathered}
+  \max_{p_L}\ \pi_L = (p_L - c)\Bigl(\frac{p_R - p_L}{2t} + s\Bigr) \\
+  \;\Rightarrow\; \frac{p_R - 2p_L + 2st + c}{2t} = 0 \\
+  \;\Rightarrow\; p_L(p_R) = \frac{p_R + c}{2} + st .
+\end{gathered}
+\]
+Para la empresa $R$:
+\[
+  \max_{p_R}\ \pi_R = (p_R - c)\Bigl(\frac{p_L - p_R}{2t} + 1 - s\Bigr)
+  \;\Rightarrow\; p_R(p_L) = \frac{p_L + c}{2} + t(1-s).
+\]
+Deshaciendo el cambio de variable, la función de reacción de $L$ es $p_L(p_R) = \frac{p_R + c}{2} + \frac{\tau(\theta_R^2 - \theta_L^2)}{2}$. Resolviendo el sistema se obtiene el equilibrio de Nash:
+\[
+  p_L^* = c + \frac{\tau(\theta_R - \theta_L)(2 + \theta_L + \theta_R)}{3}, \qquad
+  p_R^* = c + \frac{\tau(\theta_R - \theta_L)(4 - \theta_L - \theta_R)}{3}.
+\]
+En particular, cuando las firmas están a una misma distancia del centro ($\theta_L + \theta_R = 1$) los precios son iguales, $p_L^* = p_R^*$, y
+\[
+  p^* = c + \tau(\theta_R - \theta_L).
+\]
+
+\end{solution}
+
+\part Grafique las funciones de reacción. Muestre cómo se mueven las curvas al cambiar los costos de transporte.
+\needspace{5\baselineskip}
+\begin{solution}
+Las funciones de reacción son rectas con pendiente positiva $\frac{1}{2}$ (los precios son complementos estratégicos), con intercepto $\frac{c}{2} + st$ para $L$ y $\frac{c}{2} + t(1-s)$ para $R$. Un aumento en los costos de transporte $\tau$ aumenta $t$ y, por lo tanto, desplaza ambas curvas hacia arriba (hacia afuera): el equilibrio se mueve a precios más altos, pues la diferenciación relaja la competencia en precios. En el límite $\tau \to 0$ los productos son homogéneos y se llega al equilibrio de Bertrand $p = c$.
+
+\end{solution}
+
+\part Suponga que usted es un planificador social omnipotente que busca maximizar el bienestar de los consumidores. ¿Cómo cree que deberían ubicarse las firmas?
+\needspace{5\baselineskip}
+\begin{solution}
+La solución socialmente óptima es la que minimiza los costos de transporte, y sería $\theta_L = \frac{1}{4}$ y $\theta_R = \frac{3}{4}$. Por tanto, desde el punto de vista social hay demasiada diferenciación del producto cuando el mercado es privado (en el equilibrio privado con precios endógenos y costos cuadráticos las firmas se ubican en los extremos, más lejos que el óptimo social).
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Apple y Dell
+\needspace{8\baselineskip}
+\tema{Competencia entre Apple y Dell (fusión con bienes diferenciados)}
+\question Suponga que Apple y Dell son los únicos competidores en el mercado de los notebooks. Apple y Dell venden productos diferenciados horizontalmente (Macbook y XPS) y compiten en precios. Las funciones de demanda de Apple y Dell son
+\begin{align*}
+  q_A &= 2 - 2p_A + p_D \\
+  q_D &= 2 + p_A - 2p_D
+\end{align*}
+Los costos marginales para ambas firmas son constantes e iguales a $c_A = c_D = \frac{1}{2}$.
+\begin{parts}
+\part Encuentre los precios, cantidades y beneficios de cada firma en el equilibrio de Nash en precios. Grafique las funciones de mejor respuesta y el equilibrio.
+\needspace{5\baselineskip}
+\begin{solution}
+Apple maximiza
+\[
+  \max_{p_A}\ \pi_A = \Bigl(p_A - \frac{1}{2}\Bigr)(2 - 2p_A + p_D).
+\]
+Derivando:
+\[
+  \frac{\partial\pi_A}{\partial p_A} = (2 - 2p_A + p_D) - 2\Bigl(p_A - \frac{1}{2}\Bigr) = 3 - 4p_A + p_D = 0
+  \;\Longrightarrow\;
+  p_A(p_D) = \frac{3}{4} + \frac{1}{4}p_D .
+\]
+Por simetría, $p_D(p_A) = \frac{3}{4} + \frac{1}{4}p_A$. En el equilibrio simétrico $p_A = p_D = p$: $3 - 3p = 0$, es decir
+\[
+  p_A^* = p_D^* = 1, \qquad q_A^* = q_D^* = 1, \qquad \pi_A^* = \pi_D^* = \frac{1}{2}.
+\]
+Las funciones de mejor respuesta son rectas de pendiente $\frac14$ (precios como complementos estratégicos) que se intersectan en $(1,1)$.
+
+\end{solution}
+
+\part Suponga que Apple y Dell deciden fusionarse y formar Dellapple, que se comportará como un monopolista multiproducto (sin sinergias como consecuencia de la fusión). Encuentre los precios, cantidades y beneficios del monopolista multiproducto.
+\needspace{5\baselineskip}
+\begin{solution}
+Dellapple maximiza
+\[
+  \max_{p_A,p_D}\ \Bigl(p_A - \frac{1}{2}\Bigr)(2 - 2p_A + p_D) + \Bigl(p_D - \frac{1}{2}\Bigr)(2 - 2p_D + p_A).
+\]
+Derivando respecto a $p_A$:
+\[
+  (2 - 2p_A + p_D) - 2\Bigl(p_A - \frac{1}{2}\Bigr) + \Bigl(p_D - \frac{1}{2}\Bigr) = \frac{5}{2} - 4p_A + 2p_D = 0 .
+\]
+Usando simetría, $\frac{5}{2} - 2p = 0$, de donde
+\[
+  p_A = p_D = \frac{5}{4}, \qquad q_A = q_D = \frac{3}{4}, \qquad \pi_A = \pi_D = \frac{9}{16}, \qquad \pi_{\text{total}} = \frac{9}{8}.
+\]
+(Cada producto genera $\bigl(\frac54 - \frac12\bigr)\cdot\frac34 = \frac{9}{16}$, y el beneficio conjunto de $\frac98 > 1$ es mayor que el de la competencia.)
+
+\end{solution}
+
+\part ¿Los consumidores prefieren que las firmas compitan (como en (a)) o que exista un monopolista (como en (b))? ¿Su respuesta sería distinta si los bienes fuesen complementarios en lugar de sustitutos? Explique.
+\needspace{5\baselineskip}
+\begin{solution}
+Los consumidores prefieren que las firmas compitan porque los precios de ambos productos son menores ($1 < \frac{5}{4}$) y, por ende, el excedente del consumidor es mayor. Si los bienes fuesen complementarios, los precios fijados por el monopolista multiproducto serían menores, por lo que con bienes complementarios los consumidores prefieren un monopolio a que las firmas compitan.
+
+La intuición es la siguiente: si los productos son complementarios, cuando Apple fija un precio no tiene en cuenta que esto tiene un efecto sobre la demanda de Dell. A medida que Apple disminuye su precio, genera una externalidad positiva sobre Dell, que vende un bien complementario. Dellapple internaliza dicho efecto y fija precios menores que las firmas que operan de manera independiente.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Comente: vertical pura
+\needspace{8\baselineskip}
+\tema{Comente: diferenciación vertical pura y costos marginales}
+\question \textbf{Comente.} Según los modelos de diferenciación vertical pura, la diferencia de precios se debe a una diferencia en los costos marginales de producir bienes de mayor o menor calidad.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. En los modelos de diferenciación vertical pura, aunque no haya diferencias en los costos de producir bienes de menor o mayor calidad, habrá una diferenciación. Esto se debe a que, ante máxima diferenciación, las firmas relajan la competencia por precios (y obtienen beneficios positivos).
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: con y sin localización
+\needspace{8\baselineskip}
+\tema{Comente: modelos de diferenciación con y sin localización}
+\question \textbf{Comente.} La principal diferencia entre los modelos de diferenciación con y sin localización es que en los modelos sin localización los consumidores tienen utilidad de la variedad de productos, mientras que en los modelos con localización el consumidor compra solamente una marca (1 ordenador, 1 casa, etc.).
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. Cuando vemos Hotelling con diferenciación horizontal estamos utilizando modelos de utilidad discreta: se compra una unidad de alguno de los bienes que ofrecen las empresas. En estos modelos, si existen $J$ alternativas en el mercado, indexadas por $j = 1,\dots,J$, el problema del consumidor $i$ se reduce a elegir la que más utilidad le brinde:
+\[
+  \max_{j,q}\ U_i(x_j, q) \quad \text{sujeto a} \quad p_j + p_0 q = y_i ,
+\]
+donde $x_j$ son las características de la marca $j$ y su precio es $p_j$, mientras que $q$ es la cantidad de la opción alternativa (\emph{outside good}) y $p_0$ su precio (generalmente se normaliza a 1). La opción alternativa (que se denota como $j = 0$) es la opción de no comprar (lo que implica que se gasta el ingreso disponible en otros bienes).
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: vertical cambia producto
+\needspace{8\baselineskip}
+\tema{Comente: la diferenciación vertical cambia el producto}
+\question \textbf{Comente.} Al diferenciarse verticalmente el producto cambia, por ejemplo añadiendo funciones o mejorando la calidad de los materiales.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. La diferenciación vertical cambia características del producto que inciden directamente en su calidad. Estos modelos se diferencian muy poco en aspecto, apuntan al mismo mercado, pero difieren en calidad de materiales y funcionalidades. Una marca ofrece, por ejemplo, relojes de calidades distintas pero con aspectos similares porque en un mismo mercado habrá personas más dispuestas que otras a pagar por calidad; para obtener mayor excedente de estas personas se mejora la calidad del bien cobrando un mayor precio. (En cambio, en la diferenciación horizontal los cambios no son rankeables: una marca introduce relojes de calidades similares pero de aspectos distintos porque darle en el gusto a las personas aumenta su disposición a pagar y, en competencia, el precio que se puede cobrar sobre el costo marginal.)
+
+\end{solution}
+
+%-------------------------------------------------------------------- Diferenciación vertical
+\needspace{8\baselineskip}
+\tema{Diferenciación vertical: calidades y precios}
+\question Considere que las empresas no se distinguen en características horizontales de los productos, pero pueden decidir en el primer turno la calidad de su producto y en el segundo competir por precios. Podríamos imaginar una distribución lineal de calidad del producto, donde 1 es la máxima calidad y 0 la mínima. La empresa de menor calidad se ubica en $a$ y la de mayor calidad en $b$, con $a < b$. Considere un individuo con utilidad $U_i^\theta(p_i)$, donde $\theta \in [0,1]$ es la posición del individuo (su disposición a pagar por calidad, distribuida uniformemente) e $i = a,b$ es la empresa a la que le compra:
+\[
+  U_i^\theta(p_i) =
+  \begin{cases}
+    \theta a - p_a & \text{si } i = a \\
+    \theta b - p_b & \text{si } i = b
+  \end{cases}
+\]
+Suponga que no hay costos marginales y que el mercado está cubierto (todos compran alguno de los dos bienes).
+\begin{parts}
+\part ¿Cuál es el procedimiento para resolver este tipo de juego?
+\needspace{5\baselineskip}
+\begin{solution}
+Estos juegos por turnos se resuelven por inducción hacia atrás para encontrar un equilibrio de Nash consistente con individuos que eligen su mejor respuesta mirando hacia el futuro. Es decir, se debe pensar en el precio que se fijaría dadas las ubicaciones en calidad, para luego elegir las ubicaciones que se tomarían. De lo contrario, si se eligiera una ubicación sin pensar en la pelea por precios que habría posteriormente, puede que lleguemos a un equilibrio (dadas las funciones de reacción de precios) que no sea consistente con individuos racionales que miran hacia el futuro.
+
+\end{solution}
+
+\part Encuentre el punto $\hat\theta$ en que se encuentra el consumidor indiferente. Demuestre que comprar calidad hace más felices a los dispuestos a pagar por calidad que a los que no valoran tanto la calidad.
+\needspace{5\baselineskip}
+\begin{solution}
+El consumidor indiferente cumple $U_a^{\hat\theta}(p_a) = U_b^{\hat\theta}(p_b)$:
+\[
+  \hat\theta a - p_a = \hat\theta b - p_b
+  \;\Longrightarrow\;
+  \hat\theta(a - b) = p_a - p_b
+  \;\Longrightarrow\;
+  \hat\theta = \frac{p_b - p_a}{b - a}.
+\]
+Para ver que comprar calidad hace más felices a los que están dispuestos a pagar por calidad, evaluamos la diferencia de utilidades para un individuo $\hat\theta + \delta$ con $\delta > 0$:
+\[
+  U_b^{\hat\theta+\delta} - U_a^{\hat\theta+\delta} = \underbrace{\hat\theta(b-a) - p_b + p_a}_{=0} + \delta(b - a) = \delta(b-a) > 0,
+\]
+y para $\hat\theta - \delta$ la diferencia es $-\delta(b-a) < 0$. Es decir, los de mayor $\theta$ prefieren la alta calidad y los de menor $\theta$ prefieren la baja calidad.
+
+\end{solution}
+
+\part Encuentre las funciones de reacción de las firmas dadas las ubicaciones. Suponga que no hay costos marginales.
+\needspace{5\baselineskip}
+\begin{solution}
+La demanda por los bienes de la empresa de calidad $a$ está dada por los individuos a la izquierda de $\hat\theta$, por lo que esa empresa maximiza
+\[
+  \max_{p_a}\ \pi_a(p_b; b, a) = p_a\hat\theta = p_a\,\frac{p_b - p_a}{b - a}
+  \;\Longrightarrow\;
+  \frac{-2p_a + p_b}{b-a} = 0
+  \;\Longrightarrow\;
+  p_a(p_b) = \frac{1}{2}p_b .
+\]
+Es decir, dadas las diferencias en calidad, el productor del producto de menor calidad fijará la mitad del precio del otro. Para la firma de mayor calidad es análogo:
+\[
+\begin{gathered}
+  \max_{p_b}\ \pi_b = p_b(1 - \hat\theta) = p_b\Bigl(1 - \frac{p_b - p_a}{b-a}\Bigr) \\
+  \;\Longrightarrow\; \\
+  1 - \frac{2p_b - p_a}{b-a} = 0 \\
+  \;\Longrightarrow\; \\
+  p_b(p_a) = \frac{(b-a) + p_a}{2}.
+\end{gathered}
+\]
+
+\end{solution}
+
+\part Encuentre el equilibrio de Nash con las funciones de reacción que encontró en el ítem anterior.
+\needspace{5\baselineskip}
+\begin{solution}
+Reemplazando: $p_a = \frac{1}{2}\cdot\frac{(b-a) + p_a}{2} = \frac{(b-a) + p_a}{4}$, de donde $\frac{3}{4}p_a = \frac{b-a}{4}$ y
+\[
+  p_a^* = \frac{b - a}{3}, \qquad p_b^* = \frac{(b-a) + \frac{b-a}{3}}{2} = \frac{2(b-a)}{3}.
+\]
+La empresa con más alta calidad cobra un precio superior, pero ambas empresas colocan un precio por encima del costo marginal. Es decir, relajaron la competencia diferenciándose, por lo que obtendrán beneficios.
+
+\end{solution}
+
+\part Encuentre la demanda y los beneficios en el equilibrio.
+\needspace{5\baselineskip}
+\begin{solution}
+La demanda depende del individuo indiferente, que a su vez depende de los precios dadas las ubicaciones:
+\[
+  \hat\theta = \frac{p_b^* - p_a^*}{b-a} = \frac{\frac{2}{3}(b-a) - \frac{1}{3}(b-a)}{b-a} = \frac{1}{3}.
+\]
+Por tanto, la demanda de $a$ es $\frac{1}{3}$ y la demanda de $b$ es $\frac{2}{3}$. Los beneficios son
+\[
+  \pi_a^* = p_a^*\cdot\frac{1}{3} = \frac{b-a}{9}, \qquad \pi_b^* = p_b^*\cdot\frac{2}{3} = \frac{4(b-a)}{9}.
+\]
+
+\end{solution}
+
+\part Encuentre las ubicaciones que le conviene a las firmas para maximizar sus beneficios. ¿Le conviene centrarse o diferenciarse?
+\needspace{5\baselineskip}
+\begin{solution}
+En el primer turno, dados los beneficios en función de las ubicaciones, se obtiene la ubicación de cada empresa que maximiza los beneficios. Para la firma de menor calidad, $\max_a \pi_a = \frac{b-a}{9}$: la derivada es negativa, por lo que conviene producir con la menor calidad posible, $a = 0$. Para la firma de mayor calidad, $\max_b \pi_b = \frac{4(b-a)}{9}$ es creciente en $b$, por lo que conviene $b = 1$.
+
+Las firmas se diferenciarán lo máximo posible para maximizar sus beneficios: una firma producirá la mayor calidad posible y la otra la menor calidad posible, incluso aunque sean igual de baratas de producir ($c = 0$).
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Coca-Cola y Pepsi
+\needspace{8\baselineskip}
+\tema{Competencia entre Coca-Cola y Pepsi (fusión, variante numérica)}
+\question Suponga que Coca-Cola y Pepsi son los únicos competidores en el mercado de bebidas gaseosas. Ambas empresas venden productos diferenciados horizontalmente y compiten en precios. Las funciones de demanda de Coca-Cola y Pepsi son
+\begin{align*}
+  q_C &= 3 - 3p_C + 2p_P \\
+  q_P &= 3 + 2p_C - 3p_P
+\end{align*}
+Los costos marginales para ambas firmas son constantes e iguales a $c_C = c_P = \frac{1}{3}$.
+\begin{parts}
+\part Encuentre los precios, cantidades y beneficios de cada firma en el equilibrio de Nash en precios. Grafique las funciones de mejor respuesta y el equilibrio.
+\needspace{5\baselineskip}
+\begin{solution}
+Coca-Cola maximiza $\pi_C = \bigl(p_C - \frac{1}{3}\bigr)(3 - 3p_C + 2p_P)$, con
+\[
+  \frac{\partial\pi_C}{\partial p_C} = (3 - 3p_C + 2p_P) - 3\Bigl(p_C - \frac{1}{3}\Bigr) = 4 - 6p_C + 2p_P = 0
+  \;\Longrightarrow\;
+  p_C(p_P) = \frac{2}{3} + \frac{1}{3}p_P .
+\]
+De manera similar (y por simetría), $p_P(p_C) = \frac{2}{3} + \frac{1}{3}p_C$. En el equilibrio simétrico, $p = \frac{2}{3} + \frac{1}{3}p$, por lo que
+\[
+  p_C^* = p_P^* = 1, \qquad q_C^* = q_P^* = 2, \qquad \pi_C^* = \pi_P^* = \frac{4}{3}.
+\]
+
+\end{solution}
+
+\part Suponga que Coca-Cola y Pepsi deciden fusionarse y formar Pepsi-Cola, que se comportará como un monopolista multiproducto (no hay sinergias como consecuencia de la fusión). Encuentre los precios, cantidades y beneficios del monopolista multiproducto.
+\needspace{5\baselineskip}
+\begin{solution}
+Pepsi-Cola maximiza $\bigl(p_C - \frac{1}{3}\bigr)(3 - 3p_C + 2p_P) + \bigl(p_P - \frac{1}{3}\bigr)(3 - 3p_P + 2p_C)$. Derivando respecto de $p_C$:
+\[
+  (3 - 3p_C + 2p_P) - 3\Bigl(p_C - \frac{1}{3}\Bigr) + 2\Bigl(p_P - \frac{1}{3}\Bigr) = \frac{10}{3} - 6p_C + 4p_P = 0 .
+\]
+Usando simetría, $\frac{10}{3} - 2p = 0$, de donde
+\[
+  p_C^* = p_P^* = \frac{5}{3}, \qquad q_C^* = q_P^* = \frac{4}{3}, \qquad \pi_C^* = \pi_P^* = \frac{16}{9}, \qquad \pi_{C+P} = \frac{32}{9}.
+\]
+
+\end{solution}
+
+\part Explique por qué las firmas, al actuar en forma independiente en (a), obtienen menos beneficios que un monopolista multiproducto.
+\needspace{5\baselineskip}
+\begin{solution}
+Cuando las firmas toman decisiones en forma no cooperativa se encuentran en una situación parecida al dilema del prisionero: existen precios más altos que dejan a ambas firmas mejor, pero a esos precios una firma puede bajar precios unilateralmente y obtener mayores beneficios (desviación unilateral beneficiosa).
+
+Otra forma de verlo es comparar las condiciones de primer orden del monopolista multiproducto (que por definición maximiza los beneficios conjuntos) y del duopolio. Cuando Coca-Cola fija su precio no tiene en cuenta el efecto de su precio sobre la demanda de Pepsi; por lo tanto, no considera que si rebaja su precio está afectando los beneficios de Pepsi (externalidad negativa). Pepsi-Cola sí tiene en cuenta este efecto y, por lo tanto, fija precios mayores.
+
+\end{solution}
+
+\part ¿Los consumidores prefieren que las firmas compitan (como en (a)) o que exista un monopolista (como en (b))? ¿Su respuesta sería distinta si los bienes fuesen complementarios en lugar de sustitutos? Explique.
+\needspace{5\baselineskip}
+\begin{solution}
+Los consumidores prefieren que las firmas compitan porque los precios de ambos productos son menores ($1 < \frac{5}{3}$) y por ende el excedente del consumidor es mayor. Si los bienes fuesen complementarios, los precios fijados por el monopolista multiproducto serían menores, y con bienes complementarios los consumidores prefieren un monopolio a que las firmas compitan: cuando Coca-Cola disminuye su precio genera una externalidad positiva sobre Pepsi, que vende un bien complementario, y Pepsi-Cola internaliza dicho efecto y fija precios menores que las firmas en forma independiente.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Comente: logit vs nested logit
+\needspace{8\baselineskip}
+\tema{Comente: logit vs nested logit}
+\question \textbf{Comente.} Explique la principal diferencia de los modelos de estimación de demanda logit y nested logit.
+\needspace{5\baselineskip}
+\begin{solution}
+La principal diferencia es la elasticidad propia y cruzada que se infieren de los modelos. El modelo logit asume que los consumidores eligen productos y tipos o segmentos de productos de manera independiente, es decir, que las preferencias de los consumidores son i.i.d. Esto hace que el modelo logit entregue elasticidades y patrones de sustitución poco realistas (marcas con la misma participación de mercado tienen el mismo efecto, lo que no es cierto en la realidad, ya que no todos los productos son sustitutos para el consumidor). El modelo \emph{nested logit} mejora las elasticidades estimadas al incorporar en la función de utilidad grupos de marcas, donde las marcas son sustitutos dentro del grupo, pero no entre grupos. Por lo tanto, las elasticidades y los patrones de sustitución del modelo nested logit son más realistas.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: logit
+\needspace{8\baselineskip}
+\tema{Comente: patrones de sustitución en el modelo logit}
+\question \textbf{Comente.} En el modelo logit todos los productos son sustitutos perfectos entre sí, lo que genera patrones de sustitución poco realistas cuando hay muchos productos en el mercado.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. El modelo logit estándar asume que las preferencias de los consumidores siguen una distribución de valor extremo tipo I, lo que implica que todos los productos son igualmente sustitutos entre sí. Esto genera la propiedad de independencia de alternativas irrelevantes (IIA), donde la razón de probabilidades de elegir entre dos productos no depende de la presencia de otros productos. En mercados con muchos productos, esto produce elasticidades cruzadas poco realistas, ya que un aumento en el precio de un producto redistribuye la demanda proporcionalmente entre todos los demás productos, independientemente de qué tan similares sean.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: nested logit
+\needspace{8\baselineskip}
+\tema{Comente: ¿resuelve el nested logit los problemas del logit?}
+\question \textbf{Comente.} El modelo \emph{nested logit} resuelve completamente los problemas del modelo logit al permitir diferentes grados de sustitución entre productos.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. El \emph{nested logit} mejora las elasticidades estimadas al incorporar grupos de marcas (los bienes son más sustitutos dentro de un grupo que entre grupos), relajando la IIA a nivel de grupos. Sin embargo, no resuelve completamente los problemas: dentro de cada grupo se mantiene la IIA y la estructura de grupos debe ser impuesta por el investigador; para patrones de sustitución más flexibles se requieren modelos con coeficientes aleatorios.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Heladerías
+\needspace{8\baselineskip}
+\tema{Hotelling con costos de transporte lineales: las heladerías}
+\question Dos heladerías compiten en una playa de 10 km de longitud. La Heladería 1 se ubica en el km 1 y la Heladería 2 en el km 5. Los 500 consumidores se distribuyen uniformemente a lo largo de la playa. Cada consumidor valora el helado en $v = 50$ pesos y enfrenta un costo de transporte de $t = 3$ pesos por kilómetro recorrido. Ambas heladerías tienen un costo marginal constante $c = 3$ pesos por helado.
+\begin{parts}
+\part Encuentre la función de demanda de cada heladería en función de los precios $p_1$ y $p_2$.
+\needspace{5\baselineskip}
+\begin{solution}
+Primero encontramos al consumidor indiferente, ubicado en la posición $x$. Este consumidor obtiene la misma utilidad comprando en cualquier heladería:
+\[
+  v - p_1 - 3(x - 1) = v - p_2 - 3(5 - x)
+  \;\Longrightarrow\;
+  6x = p_2 - p_1 + 18
+  \;\Longrightarrow\;
+  x = 3 + \frac{p_2 - p_1}{6}.
+\]
+Las funciones de demanda son
+\[
+  q_1 = 500\cdot\frac{x}{10} = 50x = 150 + \frac{25}{3}(p_2 - p_1), \qquad
+  q_2 = 500\cdot\frac{10 - x}{10} = 350 - \frac{25}{3}(p_2 - p_1).
+\]
+
+\end{solution}
+
+\part Encuentre el equilibrio de Nash en precios y calcule los beneficios de cada heladería.
+\needspace{5\baselineskip}
+\begin{solution}
+Heladería 1: $\max_{p_1}\ (p_1 - 3)\bigl[150 + \frac{25}{3}(p_2 - p_1)\bigr]$, con CPO $175 + \frac{25}{3}p_2 - \frac{50}{3}p_1 = 0$, es decir, $p_1 = 10{,}5 + 0{,}5p_2$.
+
+Heladería 2: $\max_{p_2}\ (p_2 - 3)\bigl[350 - \frac{25}{3}(p_2 - p_1)\bigr]$, con CPO $375 - \frac{50}{3}p_2 + \frac{25}{3}p_1 = 0$, es decir, $p_2 = 22{,}5 + 0{,}5p_1$.
+
+Resolviendo el sistema:
+\[
+  p_1^* = 29, \qquad p_2^* = 37, \qquad q_1^* = 150 + \tfrac{25}{3}\cdot 8 \approx 216{,}7, \qquad q_2^* \approx 283{,}3,
+\]
+\[
+  \pi_1^* = (29 - 3)\cdot 216{,}7 \approx 5633, \qquad \pi_2^* = (37 - 3)\cdot 283{,}3 \approx 9633 .
+\]
+
+\end{solution}
+
+\part Si ambas heladerías estuvieran ubicadas en el mismo punto (km 5), ¿cuál sería el equilibrio en precios?
+\needspace{5\baselineskip}
+\begin{solution}
+Si ambas heladerías estuvieran en la misma ubicación, los productos serían homogéneos y la competencia en precios sería à la Bertrand: ambas cobran el precio igual al costo marginal, $p_1 = p_2 = c = 3$, y los beneficios son cero.
+
+\end{solution}
+
+\part Compare los resultados de (b) y (c). ¿Qué efecto tiene la diferenciación horizontal en los precios y beneficios?
+\needspace{5\baselineskip}
+\begin{solution}
+La diferenciación horizontal permite a las empresas relajar la competencia en precios. Cada heladería tiene cierto poder de mercado local debido a los costos de transporte, lo que les permite cobrar precios sustancialmente por encima del costo marginal y obtener beneficios positivos. Sin diferenciación, la competencia perfecta elimina todos los beneficios.
+
+\end{solution}
+
+\part ¿Cómo afectaría una reducción en el costo de transporte $t$ a los precios de equilibrio? Explique la intuición económica.
+\needspace{5\baselineskip}
+\begin{solution}
+Si el costo de transporte $t$ disminuye, los productos se vuelven más sustitutos entre sí: los consumidores estarían más dispuestos a viajar hacia la heladería que ofrece menores precios. Los precios de equilibrio serían menores, la competencia se intensificaría y los beneficios de ambas heladerías disminuirían. En el límite, cuando $t \to 0$, convergeríamos al caso sin diferenciación: $p_1 = p_2 = c = 3$. El costo de transporte actúa como una ``barrera natural'' que otorga poder de mercado local a cada heladería.
+
+\end{solution}
+\end{parts}

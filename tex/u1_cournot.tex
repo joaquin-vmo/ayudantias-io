@@ -1,0 +1,227 @@
+%-------------------------------------------------------------------- Pizza
+\needspace{8\baselineskip}
+\tema{Pizza con anchoas (N firmas simétricas)}
+\question Desde tiempos inmemorables en todo Chile se comercia la rica pizza con anchoas. Debido a su alta demanda la producción de esta mítica pizza se ha masificado, pero lamentablemente producto de la complejidad de su preparación, los comercios han optado por vender una misma pizza con anchoas sin diferenciación alguna, por lo que no les queda más opción que competir por cantidad. La demanda inversa es $P = 1000 - Q$, donde $Q$ es la cantidad total de pizzas con anchoas transadas en el mercado. Existen $N$ empresas simétricas compitiendo, donde cada una tiene un costo variable de producción igual a \$40 por unidad.
+\begin{parts}
+\part Obtenga la función de reacción de una empresa. ¿Depende la función de cómo se reparta la producción entre sus rivales o solo del total de producción del resto? Explique.
+\needspace{5\baselineskip}
+\begin{solution}
+Cada empresa $i$ maximiza sus beneficios. Separando $q_i$ de $Q$:
+\[
+  \max_{q_i}\ \pi_i = (P-c)\,q_i = \Bigl(1000 - q_i - \sum_{j\neq i} q_j - c\Bigr) q_i .
+\]
+CPO:
+\[
+\begin{gathered}
+  \frac{\partial \pi_i}{\partial q_i} = 1000 - 2q_i - \sum_{j\neq i} q_j - c = 0 \\
+  \Longrightarrow\; q_i(Q_{-i}) = \frac{1000 - c - Q_{-i}}{2},
+\end{gathered}
+\]
+donde $Q_{-i}=\sum_{j\neq i}q_j$ es la cantidad producida por las $N-1$ firmas con las que compite $i$. Reemplazando $c=40$:
+\[
+  q_i(Q_{-i}) = \frac{960 - Q_{-i}}{2}.
+\]
+La función de reacción depende solo del \emph{total} producido por el resto ($Q_{-i}$) y no de cómo se reparte entre los rivales, porque la demanda es lineal en $Q$ y a la firma $i$ solo le importa cuánto baja el precio por la cantidad total que hay en el mercado.
+
+\end{solution}
+
+\part Calcule el precio de equilibrio y los beneficios de cada empresa en función de $N$. Explique de modo intuitivo cómo varían estos parámetros a medida que aumenta $N$.
+\needspace{5\baselineskip}
+\begin{solution}
+Partimos de la función de reacción:
+\[
+  q_i = \frac{960 - \sum_{j\neq i} q_j}{2}
+  \;\Longrightarrow\;
+  2q_i = 960 - \sum_{j\neq i} q_j
+  \;\Longrightarrow\;
+  q_i + \sum_{j=1}^{N} q_j = 960 .
+\]
+Como las empresas son simétricas (mismos costos), $q_i = q$ para todo $i$, y entonces $Q = Nq$:
+\[
+  q + Nq = 960
+  \quad\Longrightarrow\quad
+  q^* = \frac{960}{1+N}, \qquad Q^* = \frac{960N}{1+N}.
+\]
+El precio y los beneficios de equilibrio son
+\[
+  P^* = 1000 - \frac{960N}{1+N} = \frac{1000 + 40N}{1+N},
+  \qquad
+  \pi^* = (P^*-c)\,q^* = \Bigl(\frac{960}{1+N}\Bigr)^2 .
+\]
+Cuando $N$ aumenta, la producción de cada empresa $q^*$ disminuye, pero la cantidad total $Q^*$ aumenta. Como hay más cantidad en el mercado, el precio de equilibrio baja. Como cada empresa vende menos y a un precio menor, los beneficios individuales también disminuyen. En el límite, cuando $N\to\infty$, el equilibrio se asimila al de competencia perfecta: $P^*\to c = 40$ y $\pi^*\to 0$.
+
+\end{solution}
+
+\part Suponga que una de las empresas realiza una innovación en la preparación de esta mítica pizza, lo que le permite reducir su costo variable a \$20. Explique mediante el uso de funciones de reacción cómo cambia el nivel de producción y de beneficios de la firma de menor costo y del resto con el nuevo equilibrio.
+\needspace{5\baselineskip}
+\begin{solution}
+Con costos distintos, la función de reacción de la empresa $i$ es
+\[
+  q_i(Q_{-i}) = \frac{1000 - c_i - Q_{-i}}{2}.
+\]
+Esta función está negativamente correlacionada con el costo $c_i$, por lo que al bajar el costo de \$40 a \$20 la función de reacción de la firma innovadora se desplaza hacia afuera y produce más. Las demás empresas producirán menos que en el caso simétrico: como la firma eficiente produce más, su rival ajusta su producción a la baja. En Cournot las cantidades son \emph{sustitutos estratégicos}: si por razones exógenas una empresa aumenta su producción, el rival reacciona disminuyendo la suya. Finalmente, la empresa más eficiente obtiene mayores beneficios que las empresas menos eficientes.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Asimetría de costos
+\needspace{8\baselineskip}
+\tema{Cournot con asimetría de costos}
+\question Las firmas $i \in \{1,2\}$ compiten à la Cournot. La firma 1 es más eficiente que su competencia, por lo que $c_1 < c_2$.
+\begin{parts}
+\part Encuentre las funciones de reacción para ambas firmas. Suponga una demanda lineal cualquiera, $P = A - Q$.
+\needspace{5\baselineskip}
+\begin{solution}
+Planteamos el problema de maximización de la firma 1:
+\[
+  \max_{q_1}\ \pi_1 = (P - c_1)q_1 = (A - q_1 - q_2 - c_1)q_1 .
+\]
+CPO:
+\[
+\begin{gathered}
+  \frac{\partial \pi_1}{\partial q_1} = A - 2q_1 - q_2 - c_1 = 0 \\
+  \Longrightarrow\; q_1^*(q_2) = \frac{A - q_2 - c_1}{2}.
+\end{gathered}
+\]
+El proceso es simétrico para la firma 2:
+\[
+  q_2^*(q_1) = \frac{A - q_1 - c_2}{2}.
+\]
+
+\end{solution}
+
+\part Dadas las funciones de reacción, encuentre la producción de cada una de ellas y dé una explicación intuitiva del resultado.
+\needspace{5\baselineskip}
+\begin{solution}
+Reemplazamos una función de reacción en la otra:
+\[
+\begin{gathered}  q_1 = \frac{A - c_1}{2} - \frac{1}{2}\cdot\frac{A - q_1 - c_2}{2}
+  \;\Longrightarrow\;\\
+  4q_1 = 2A - 2c_1 - A + q_1 + c_2
+  \;\Longrightarrow\;
+  3q_1 = A - 2c_1 + c_2 ,\end{gathered}
+\]
+de modo que
+\[
+  q_1^* = \frac{A - 2c_1 + c_2}{3}, \qquad q_2^* = \frac{A - 2c_2 + c_1}{3}.
+\]
+Como la firma 1 es más eficiente, $q_1^* > q_2^*$:
+\[
+  \frac{A - 2c_1 + c_2}{3} > \frac{A - 2c_2 + c_1}{3}
+  \iff c_2 > c_1 .
+\]
+La diferencia de producción es
+\[
+  q_1^* - q_2^* = c_2 - c_1 ,
+\]
+es decir, la firma eficiente produce más y la brecha crece una unidad por cada unidad adicional de asimetría de costos. Por ejemplo, si la firma 1 fuera el doble de eficiente ($c_2 = 2c_1$), la diferencia sería $q_1^*-q_2^* = c_1$. Un menor costo marginal desplaza hacia afuera la función de reacción de la firma 1, lo que la lleva a producir más y obliga a la rival a producir menos.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Comente: n firmas
+\needspace{8\baselineskip}
+\tema{Comente: variación del número de firmas}
+\question \textbf{Comente.} Discuta qué ocurre en competencia à la Cournot al variar el número de empresas $n$ que componen el mercado. ¿Qué sentido tiene desde la función de reacción? ¿Qué sucedería al tender a infinito?
+\needspace{5\baselineskip}
+\begin{solution}
+Planteamos el problema matemáticamente. Las firmas están indexadas como $i\in\{1,2,\dots,n\}$ y por simplicidad asumimos que son simétricas, con costo marginal común $c$. La cantidad total y la demanda son
+\[
+  Q = \sum_{i=1}^{n} q_i = n\cdot q, \qquad Q(P) = A - P .
+\]
+A mayor cantidad total, menor precio de mercado: si todas las empresas producen lo mismo, mientras más empresas haya, menor será el precio. La demanda inversa es
+\[
+  P = A - q_1 - q_2 - \dots - q_n = A - n\cdot q .
+\]
+La intuición es que las empresas se cuidan de no producir mucho para no desplomar el precio (interdependencia propia de estos modelos). Para formalizar la respuesta de la firma 1 ante las demás firmas $-1$:
+\[
+\begin{gathered}
+  \max_{q_1}\ \pi_1 = (A - q_1 - q_2 - \dots - q_n - c)\,q_1 \\
+  \Longrightarrow\; \text{CPO: } A - 2q_1 - q_2 - \dots - q_n - c = 0,
+\end{gathered}
+\]
+\[
+  q_1^*(q_{-1}) = \frac{A - c - \sum_{i=2}^{n} q_i}{2}.
+\]
+Esta es la respuesta de la firma 1 ante las decisiones de las demás. Dado que las firmas son simétricas y todas juegan al mismo tiempo, todas producirán lo mismo, por lo que $q_i=q$ y la función de reacción de una empresa cualquiera es
+\[
+  q = \frac{A - c - q(n-1)}{2}.
+\]
+Despejando,
+\[
+  q^* = \frac{A-c}{1+n}, \qquad P^* = \frac{A + nc}{1+n}.
+\]
+Al aumentar $n$ cada firma produce menos, pero la producción total $Q^* = \frac{n(A-c)}{1+n}$ aumenta y el precio baja. Cuando $n\to\infty$ nos encontramos en competencia perfecta: $P^* \to c$.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: número de firmas
+\needspace{8\baselineskip}
+\tema{Comente: número de firmas}
+\question \textbf{Comente.} Cuando se compite en precios o en cantidades, el número de firmas es irrelevante para el análisis, porque siempre existirán beneficios. \emph{(Hint: asuma firmas simétricas.)}
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. En el caso de Cournot, mientras más firmas hay en el mercado, mayor es la competencia y por lo tanto menor es el precio. En el límite, si existen infinitas firmas el precio tenderá al costo marginal y los beneficios se disiparán. Matemáticamente, asumiendo una demanda del estilo $Q = A - P$ y un costo marginal $c$ para cada firma, el resultado es
+\[
+  P^* = \frac{A + Nc}{N+1}, \qquad \pi_i^* = \frac{(A-c)^2}{(N+1)^2}.
+\]
+En cambio, en la competencia à la Bertrand basta que existan dos firmas simétricas para alcanzar el equilibrio competitivo ($P = c$, $\pi = 0$). Por lo tanto, el número de firmas \emph{sí} importa en Cournot, y en Bertrand lo relevante es pasar de una a dos firmas.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: reducción de costos de una firma
+\needspace{8\baselineskip}
+\tema{Comente: reducción de costos de una firma en Cournot}
+\question \textbf{Comente.} Si dos firmas compiten en cantidades (à la Cournot) y solo una de ellas ve reducidos sus costos, la otra firma mantiene su producción inalterada, ya que sus costos no han cambiado.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Si una firma ve reducidos sus costos, tenderá a aumentar su producción, y en reacción la otra firma producirá menos. A pesar de que la otra no cambia sus parámetros de costos, cambia su nivel de producción debido a que enfrenta a un competidor más agresivo (las cantidades son sustitutos estratégicos).
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: Cournot es Nash
+\needspace{8\baselineskip}
+\tema{Comente: el equilibrio de Cournot es un equilibrio de Nash}
+\question \textbf{Comente.} El equilibrio que se obtiene del modelo de Cournot es un equilibrio de Nash.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. Recordemos que el equilibrio en el modelo de Cournot se obtiene al intersectar las funciones de reacción de cada firma. Por definición, las funciones de reacción nos indican la mejor estrategia (cantidad) que se puede realizar dada la estrategia (cantidad) elegida por el otro jugador. Por lo tanto, cuando todas las firmas están actuando bajo sus funciones de reacción, ninguna de ellas tiene incentivos a desviarse, por lo que este equilibrio es un equilibrio de Nash.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Cournot N firmas (500-Q)
+\needspace{8\baselineskip}
+\tema{Cournot con $N$ firmas e innovación (variante numérica)}
+\question Considere un mercado con $N$ empresas simétricas donde cada una vende un producto homogéneo y compiten en cantidades. Las empresas se enfrentan a una demanda $P = 500 - Q$ con un costo marginal igual a 10.
+\begin{parts}
+\part Obtenga la función de reacción de una empresa. ¿Depende la función de cómo se reparta la producción entre sus rivales o solo del total de producción del resto? Explique.
+\needspace{5\baselineskip}
+\begin{solution}
+Cada empresa maximiza $\pi_i = \bigl(500 - q_i - \sum_{j\neq i}q_j - 10\bigr)q_i$. La CPO es $490 - 2q_i - \sum_{j\neq i}q_j = 0$, de donde
+\[
+  q_i(Q_{-i}) = \frac{490 - Q_{-i}}{2},
+\]
+con $Q_{-i}$ la cantidad producida por las $N-1$ firmas con las que compite $i$. La función de reacción depende solo del total producido por las rivales.
+
+\end{solution}
+
+\part Calcule el precio de equilibrio y los beneficios de cada empresa en función de $N$. Explique de modo intuitivo cómo varían estos parámetros a medida que aumenta $N$.
+\needspace{5\baselineskip}
+\begin{solution}
+Con simetría, $q_i(1+N) = 490$:
+\[
+\begin{gathered}
+  q^* = \frac{490}{1+N}, \quad Q^* = \frac{490N}{1+N}, \\ P^* = 500 - \frac{490N}{1+N} = \frac{500 + 10N}{1+N}, \quad \pi^* = \Bigl(\frac{490}{1+N}\Bigr)^2 .
+\end{gathered}
+\]
+La producción de cada empresa y los beneficios son decrecientes en $N$, mientras que la cantidad de mercado es creciente y el precio decreciente. En el límite $N \to \infty$ el equilibrio se asimila al de competencia perfecta: $P \to 10$ y $\pi \to 0$.
+
+\end{solution}
+
+\part Suponga que una de las empresas realiza una innovación que le permite reducir su costo marginal a 5. Explique mediante el uso de funciones de reacción cómo cambia el nivel de producción y de beneficios de la firma de menor costo y del resto con el nuevo equilibrio.
+\needspace{5\baselineskip}
+\begin{solution}
+La función de reacción de la empresa $i$ es $q_i(Q_{-i}) = \frac{500 - c_i - Q_{-i}}{2}$, decreciente en el costo $c_i$. Si el costo baja de 10 a 5, la firma innovadora produce más; las demás producen menos que en el caso simétrico (las cantidades son sustitutos estratégicos); y la firma más eficiente obtiene mayores beneficios que las menos eficientes.
+
+\end{solution}
+\end{parts}

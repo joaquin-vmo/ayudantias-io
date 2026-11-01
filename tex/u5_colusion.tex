@@ -1,0 +1,494 @@
+%-------------------------------------------------------------------- Comente: transparencia
+\needspace{8\baselineskip}
+\tema{Comente: transparencia y colusión}
+\question \textbf{Comente.} La Fiscalía Nacional Económica quiere aumentar al máximo la transparencia entre empresas dentro del mercado para así facilitar su tarea de fiscalización y evitar posibles colusiones.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Ante un mayor nivel de transparencia, la colusión se vuelve más fácil entre firmas, ya que cualquier desvío del acuerdo colusivo será detectado más fácilmente, haciendo que el castigo sea instantáneo. Así disminuyen los incentivos a desviarse (es mayor el costo esperado del desvío). Si, por el contrario, existe información que posee solo la propia firma, el desvío es mucho más difícil de detectar y por ende también lo es la aplicación del castigo por parte del resto de los participantes del acuerdo colusivo, de modo que hay mayor incentivo a dejar de cooperar. Por lo tanto, ante menor transparencia en el mercado y menos acceso a las decisiones del rival, más difícil es la colusión.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Colusión Bertrand y Cournot
+\needspace{8\baselineskip}
+\tema{Colusión en Bertrand y Cournot (estrategia gatillo)}
+\question Suponga que en China, debido al coronavirus, solo han quedado dos empresas que comercian animales exóticos para consumo. Ambas empresas tienen los mismos costos marginales, iguales a $c$, y venden un producto homogéneo. La demanda inversa de mercado que enfrentan está dada por $P = A - Q$. Las firmas están estudiando la posibilidad de coludirse en diferentes escenarios; consideremos que las firmas descuentan los beneficios futuros a un factor $\delta$ y que ante un desvío aplican la estrategia gatillo.
+\begin{parts}
+\part Derive la condición que debe cumplir $\delta$ para que la colusión sea sostenible y encuentre el valor del factor $\delta_C$ que hace posible la colusión si estas firmas compiten en cantidades, y el factor $\delta_B$ que hace posible la colusión si estas firmas compiten en precios. Considere que al coludirse se reparten los beneficios equitativamente.
+\needspace{5\baselineskip}
+\begin{solution}
+Para que una estrategia colusiva sea sostenible, el valor presente de colusionar debe ser mayor o igual al de desviarse y competir:
+\[
+  VP(\text{colusión}) \geq VP(\text{desvío})
+  \quad\Longleftrightarrow\quad
+  \sum_{t=0}^{\infty}\delta^t \pi^C \geq \pi^D + \sum_{t=1}^{\infty}\delta^t \pi^N .
+\]
+Aplicando la suma geométrica:
+\[
+  \frac{\pi^C}{1-\delta} \geq \pi^D + \frac{\delta\,\pi^N}{1-\delta}
+  \;\Longrightarrow\;
+  \pi^C \geq \pi^D(1-\delta) + \delta\pi^N
+  \;\Longrightarrow\;
+  \delta \geq \frac{\pi^D - \pi^C}{\pi^D - \pi^N}.
+\]
+Falta calcular los pagos en cada caso.
+
+\textbf{Bertrand.} Los beneficios de coludirse son los beneficios monopólicos repartidos entre ambas firmas, $\pi^C = \frac{\pi^M}{2} = \frac{(A-c)^2}{8}$. Al desviarse (bajando levemente el precio) la firma obtiene los beneficios monopólicos, $\pi^D = \pi^M = \frac{(A-c)^2}{4}$, y los beneficios de no cooperar son $\pi^N = 0$. Luego
+\[
+  \delta_B \geq \frac{\frac{(A-c)^2}{4} - \frac{(A-c)^2}{8}}{\frac{(A-c)^2}{4} - 0} = \frac{1}{2}.
+\]
+
+\textbf{Cournot.} Los beneficios colusivos son iguales al caso de precios, $\pi^C = \frac{(A-c)^2}{8}$ (cada firma produce $q^C = \frac{A-c}{4}$). En la competencia, la función de reacción es $q_i = \frac{A - q_j - c}{2}$, de modo que cada firma produce $q^N = \frac{A-c}{3}$ y
+\[
+  \pi^N = \frac{(A-c)^2}{9}.
+\]
+Para calcular el beneficio de desvío, reemplazamos la cantidad colusiva de la firma $i$ en la función de reacción de la firma $j$:
+\[
+\begin{gathered}
+  q^D = \frac{A - \frac{A-c}{4} - c}{2} = \frac{3(A-c)}{8} \\
+  \Longrightarrow\; \pi^D = \frac{9(A-c)^2}{64}.
+\end{gathered}
+\]
+Finalmente,
+\[
+  \delta_C \geq \frac{\frac{9}{64} - \frac{1}{8}}{\frac{9}{64} - \frac{1}{9}} = \frac{9}{17} \approx 0{,}53 .
+\]
+
+\end{solution}
+
+\part ¿Bajo qué tipo de competencia es más factible la colusión?
+\needspace{5\baselineskip}
+\begin{solution}
+De la parte anterior se tiene que $\delta_C > \delta_B$, por lo tanto es más fácil coludirse en Bertrand, debido a que el castigo (competir à la Bertrand, con beneficios nulos) es más severo que en Cournot.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Colusión asimétrica
+\needspace{8\baselineskip}
+\tema{Colusión con firmas asimétricas}
+\question Un mercado posee una demanda $Q(P) = 36 - P$. Existen dos empresas que compiten en él mediante precios. La primera tiene costo marginal $c_1 = 0$, mientras que la segunda tiene costo $c_2 = 4$.
+\begin{parts}
+\part Suponga que las empresas desean coludirse. ¿Cuál será el precio de colusión que escogerían y por qué?
+\needspace{5\baselineskip}
+\begin{solution}
+Sin restricciones de capacidad, todo se produce al costo de la más eficiente. Por ende, maximizamos el beneficio conjunto:
+\[
+  \max_p\ \pi = p(36 - p)
+  \;\Rightarrow\; 36 - 2p = 0
+  \;\Rightarrow\; p^C = 18, \qquad \pi = 324 .
+\]
+
+\end{solution}
+
+\part ¿Cuál es el máximo reparto del mercado $S_2$ (\%) que podría llevarse la firma 2 para que el acuerdo sea factible, si el factor de descuento intertemporal es $\delta = 0{,}75$?
+\needspace{5\baselineskip}
+\begin{solution}
+En caso de competencia, $P = 4 - \epsilon \approx 4$, $Q = 32$, $\pi_1^N = 128$ y $\pi_2^N = 0$. Si la firma 1 se desvía, gana beneficios monopólicos $\pi^M = 324$. Para que el acuerdo sea sostenible, ambas firmas deben aceptarlo; por lo tanto, realizamos el proceso para cada una.
+
+\textbf{Firma 1} (con participación $S_1$):
+\[
+\begin{gathered}
+  \delta \geq \frac{\pi^D - \pi^C}{\pi^D - \pi^N} \\
+  \;\Longrightarrow\; \\
+  0{,}75 \geq \frac{324 - 324S_1}{324 - 128} \\
+  \;\Longrightarrow\; \\
+  147 \geq 324 - 324S_1 \\
+  \;\Longrightarrow\; \\
+  S_1 \geq 0{,}546 .
+\end{gathered}
+\]
+Como $S_2 = 1 - S_1$, se obtiene $S_2 \leq 0{,}454$, es decir, la firma 2 puede llevarse como máximo $\approx 45{,}4\%$ del mercado. (La firma 2, por su parte, solo exige $S_2 \geq 0{,}194$, pues si se desvía vendiendo al precio $18-\epsilon$ obtiene $252$ y luego beneficios nulos.)
+
+\end{solution}
+
+\part Obtenga las condiciones para que el acuerdo colusivo sea sostenible si las empresas deciden turnarse la producción. Es decir, un período solo produce una de ellas y en el siguiente período produce la otra, y así sucesivamente. \emph{(Asuma que en $t=0$ la firma 1 parte produciendo, por lo que la firma 2 se puede desviar desde un inicio y vender en el próximo período.)}
+\needspace{5\baselineskip}
+\begin{solution}
+Bajo este acuerdo, cuando le toca fijar el precio a cada firma, fija su propio precio monopólico. Para la firma 1: $p^M = 18$, $Q=18$, $\pi = 324$. Para la firma 2: $p^M = 20$, $Q = 16$, $\pi = 256$. El equilibrio no cooperativo es $p = 4-\epsilon$, $Q = 32$, $\pi_1 = 128$, $\pi_2 = 0$.
+
+El desvío consiste en producir cuando no le toca. Para la firma 1, fijar $p = 18 < p_2^M = 20$ le da $\pi = 324$. Para la firma 2, fijar $p = 18 - \epsilon < p_1^M$ le da $Q = 18$ y $\pi_2 = 252$.
+
+\textbf{Firma 1:} $VP_1(\text{cooperar}) \geq VP_1(\text{desvío})$,
+\[
+\begin{gathered}
+  \sum_{t=0}^{\infty}\delta_1^{2t}\,324 \geq 324(1+\delta_1) + \sum_{t=2}^{\infty}\delta_1^{t}\,128 \\
+  \;\Longrightarrow\; \\
+  \frac{324}{1-\delta_1^2} \geq 324(1+\delta_1) + \frac{128\,\delta_1^2}{1-\delta_1} \\
+  \;\Longrightarrow\; \\
+  196\delta_1^2 + 196\delta_1 - 324 \geq 0,
+\end{gathered}
+\]
+de donde $\delta_1 \geq 0{,}8795$.
+
+\textbf{Firma 2:} $VP_2(\text{cooperar}) \geq VP_2(\text{desvío})$,
+\[
+  \sum_{t=0}^{\infty}\delta_2^{2t+1}\,256 \geq 252
+  \;\Longrightarrow\;
+  \frac{256\,\delta_2}{1-\delta_2^2} \geq 252
+  \;\Longrightarrow\;
+  252\delta_2^2 + 256\delta_2 - 252 \geq 0,
+\]
+de donde $\delta_2 \geq 0{,}6137$. (A la firma 2 le conviene desviarse solo en el período en que produce la otra firma.)
+
+Con $\delta = 0{,}75$ para ambas firmas, a la firma 2 le conviene cooperar pero a la firma 1 no, por lo que el acuerdo de turnos no es sostenible (se requiere $\delta \geq 0{,}8795$).
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Comente: frecuencia
+\needspace{8\baselineskip}
+\tema{Comente: frecuencia de interacción y colusión}
+\question \textbf{Comente.} Mantener una colusión estable será más fácil a menor frecuencia de operaciones (frecuencia con que las firmas interactúan y fijan los precios).
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Mientras menor sea la frecuencia con que las firmas se reúnen y fijan los precios, menor será la estabilidad del acuerdo colusivo. Si la frecuencia con la que las firmas se reúnen es menor, cualquier desvío del acuerdo tarda más en ser descubierto y, por tanto, los castigos demoran más en ser aplicados, lo que favorece el beneficio de desviarse.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: asimetría de costos
+\needspace{8\baselineskip}
+\tema{Comente: asimetría de costos y estabilidad de la colusión}
+\question \textbf{Comente.} Asuma que las firmas compiten en precios. Se puede afirmar que, a mayor asimetría entre firmas (en términos de costos), menor estabilidad del acuerdo colusivo.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. Si las firmas son muy distintas, es poco probable que logren mantener un acuerdo colusivo. La razón es que la firma más eficiente tiene beneficios positivos aun cuando no se coluda con sus rivales, por lo que estará dispuesta a ser parte del acuerdo solo si se le concede una participación de mercado relativamente alta (mayor a $0{,}5$). El problema es que, si se le concede una porción del mercado demasiado alta a la firma más eficiente, entonces será la firma más ineficiente la que no tenga incentivos a formar parte del acuerdo, ya que tendrá una participación de mercado tan baja que le convendrá más desviarse y asumir el posterior castigo que cooperar.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: garantía de precios bajos
+\needspace{8\baselineskip}
+\tema{Comente: garantía de precios bajos}
+\question \textbf{Comente.} Lea el siguiente texto y comente.
+
+\emph{«Garantía de precios bajos: Precios bajos todos los días. ¡Si encuentras un precio más bajo, lo igualamos y te damos un 20\% de descuento sobre el precio igualado! ¿Precio más bajo en otro lugar? ¡Imposible! *Recuerda: la cotización que entregues para la garantía de precios debe ser de un competidor de la misma localidad».}
+
+Lo anterior corresponde a una estrategia de precios de una empresa en Chile. Analice si dicha práctica podría afectar la sostenibilidad de un eventual acuerdo colusivo entre dicha firma y sus competidores. Justifique su respuesta.
+\needspace{5\baselineskip}
+\begin{solution}
+Esta práctica efectivamente afecta la sostenibilidad de un acuerdo colusivo, y lo hace robusteciéndola por dos vías:
+\begin{itemize}
+  \item Hace partícipes a los consumidores del monitoreo de los precios de la firma competidora, facilitando su revisión y aumentando con ello la transparencia del mercado.
+  \item Fortalece la estrategia de castigo y hace menos beneficiosa la estrategia de desvío, ya que ante cualquier desvío del precio acordado la otra firma reaccionaría inmediatamente y aplicaría una disminución del precio de un 20\% por debajo del precio de desvío.
+\end{itemize}
+
+\end{solution}
+
+%-------------------------------------------------------------------- Colusión en mercados en expansión y declive
+\needspace{8\baselineskip}
+\tema{Colusión en mercados en expansión y declive}
+\question Suponga un mercado donde $n$ empresas simétricas compiten en precios con productos homogéneos. Suponga que las ganancias monopólicas crecen cada período a una tasa $g$, y que la tasa de descuento de cada firma es $\rho$. Derive la condición para $\rho$ para que la colusión sea sostenible en esta industria. Comente el efecto que tiene que sea una industria en expansión ($g>0$) o en declive ($g<0$) para la sostenibilidad de la colusión.
+\needspace{5\baselineskip}
+\begin{solution}
+Bajo la estrategia de colusión, los pagos se incrementan en cada período en un factor $1+g$, por lo tanto el valor presente de seguir colusionando es
+\[
+  VP(\text{colusión}) = \frac{\pi^M}{n} + \delta\frac{(1+g)\pi^M}{n} + \delta^2\frac{(1+g)^2\pi^M}{n} + \dots = \frac{\pi^M}{n\bigl(1 - \delta(1+g)\bigr)} .
+\]
+El pago por desviarse sigue siendo el pago monopólico por una vez (no depende de $g$) y el pago en la etapa de castigo es cero. Por lo tanto, la condición de sostenibilidad es
+\[
+  \frac{\pi^M}{n\bigl(1-\delta(1+g)\bigr)} \geq \pi^M
+  \;\Longrightarrow\;
+  1 \geq n\bigl(1-\delta(1+g)\bigr)
+  \;\Longrightarrow\;
+  \delta(1+g) \geq 1 - \frac{1}{n}.
+\]
+Escribiendo $\delta = \frac{1}{1+\rho}$, con $\rho \in [0,+\infty)$ una tasa de impaciencia, la condición queda
+\[
+  \frac{1+g}{1+\rho} \geq 1 - \frac{1}{n}
+  \quad\Longleftrightarrow\quad
+  \rho \leq \frac{1+g}{1-\frac{1}{n}} - 1,
+  \qquad \text{o bien} \qquad
+  \delta \geq \frac{1-\frac{1}{n}}{1+g}.
+\]
+El $\delta$ mínimo necesario, $\frac{1-1/n}{1+g}$, es decreciente en $g$. Por lo tanto, si $g<0$ (industria en declive) se hace más difícil sostener la colusión: la tasa de impaciencia máxima con la que se sostiene es menor. Esto refleja que, si el crecimiento es negativo, los pagos futuros de seguir coludidos son menos atractivos y la tentación del desvío es mayor. Lo opuesto ocurre si $g>0$.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: horizonte finito
+\needspace{8\baselineskip}
+\tema{Comente: colusión en Cournot con horizonte finito}
+\question \textbf{Comente.} En un duopolio con competencia à la Cournot con un período finito, las empresas producen una cantidad equitativa para repartirse así las utilidades de monopolio. Dado que las utilidades de monopolio son las máximas posibles, las empresas decidirán mantener el acuerdo incluso si no se fuerza legalmente o de alguna otra manera.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Sujeto a que la otra firma produce la mitad de lo que haría un monopolio, la estrategia óptima desde el punto de vista individual de la otra será producir más que la mitad de un monopolio. De esta manera, el acuerdo no se mantiene sin un mecanismo de coacción. Esto es válido para cualquier horizonte finito (por inducción hacia atrás, en el último período se juega el equilibrio de Cournot).
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: Folk
+\needspace{8\baselineskip}
+\tema{Comente: teorema de Folk}
+\question \textbf{Comente.} ¿Hay alguna manera de que estas empresas decidan cooperar? Explique en qué consiste el teorema de Folk.
+\needspace{5\baselineskip}
+\begin{solution}
+El teorema de Folk nos indica que existe algún nivel de impaciencia (descuento) tal que un equilibrio cooperativo es factible en un juego repetido de horizonte infinito. Es decir, existe $0 < \delta < 1$ tal que la utilidad de la cooperación es mayor a la utilidad de no cooperar, donde la utilidad es
+\[
+  U_i = \sum_{t \geq 0}\delta^t u_i(x_t).
+\]
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: colusión mejor estado
+\needspace{8\baselineskip}
+\tema{Comente: la colusión como mejor estado de la industria}
+\question \textbf{Comente.} La colusión, sin lugar a dudas, es el mejor estado que puede tener una industria, dado que todos sus miembros obtienen el ingreso monopólico.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Cuando los miembros de una industria se coluden, cada uno obtiene solo una fracción del ingreso monopólico, en función de la cantidad monopólica que producen o del poder de negociación de cada una de las firmas (y con asimetrías, la repartición puede dejar a alguna firma peor que compitiendo).
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: licitaciones
+\needspace{8\baselineskip}
+\tema{Comente: colusión en licitaciones de obras públicas}
+\question \textbf{Comente.} En las licitaciones de obras públicas, es muy probable que las firmas logren sostener un acuerdo colusivo debido a que para ambas es muy conveniente dejar de competir por quién ofrece el precio más bajo.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. El hecho de que las firmas no se encuentren todos los períodos en el mercado induce a que tengan más incentivos a desviarse de la colusión, debido a que el castigo demorará más en llegar y por lo tanto podrán percibir durante todo el período que dure la licitación las ganancias del desvío. Se debe considerar además el papel de la fiscalización ante posibles colusiones, el tipo de competencia (en este caso, en precios) y el posible contacto multimercado.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: precios vs cantidades colusión
+\needspace{8\baselineskip}
+\tema{Comente: colusión en precios o cantidades con $N$ firmas}
+\question \textbf{Comente.} En un mercado con 2 firmas simétricas, ¿es más fácil mantener un acuerdo colusivo si compiten en precios o en cantidades? ¿Y en un mercado con $N$ firmas simétricas? Explique los motivos.
+\needspace{5\baselineskip}
+\begin{solution}
+En un mercado de 2 firmas es más fácil mantener un acuerdo colusorio si compiten en precios. Esto se debe a que el castigo por desviarse es mucho mayor en la competencia por precios que en la competencia por cantidades: cuando compiten à la Bertrand las firmas obtienen beneficios iguales a cero. En Bertrand los efectos pro-colusivos son superiores a los anti-colusivos.
+
+Cuando crece el número de firmas (hasta $N$), tanto en Cournot como en Bertrand se reparten los beneficios de la colusión entre más firmas, por lo que el efecto pro-colusivo se debilita, pues la diferencia entre coludirse y competir disminuye. El efecto anti-colusivo de Bertrand aumenta más que el de Cournot, pues en caso de desviarse del acuerdo una firma puede quedarse con todo el mercado y obtener $N$ veces el beneficio de coludirse. Esto hace que para $N$ firmas la colusión sea más sostenible en competencia en cantidades.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Colusión asimétrica 24-P
+\needspace{8\baselineskip}
+\tema{Colusión asimétrica en precios y turnos (variante numérica)}
+\question Un mercado posee una demanda $Q(P) = 24 - P$. Existen dos empresas que compiten en él mediante precios. La primera tiene costo marginal $c_1 = 0$, mientras que la segunda tiene costo $c_2 = 3$.
+\begin{parts}
+\part Suponga que las empresas desean coludirse. ¿Cuál será el precio de colusión que escogerían y por qué?
+\needspace{5\baselineskip}
+\begin{solution}
+Sin restricciones de capacidad, todo se produce al costo de la firma más eficiente, por ende el precio será el precio monopólico de la firma 1. Maximizando el beneficio conjunto:
+\[
+  \max_P\ \pi^C = P(24 - P) \;\Rightarrow\; 24 - 2P = 0 \;\Rightarrow\; P = 12, \qquad \pi^C = 144 .
+\]
+
+\end{solution}
+
+\part ¿Cuál es el máximo reparto del mercado $S_2$ (\%) que podría llevarse la firma 2 para que el acuerdo sea factible, si el factor de descuento es $\delta = 0{,}7$?
+\needspace{5\baselineskip}
+\begin{solution}
+Se debe cumplir $\delta \geq \frac{\pi^D - \pi^C}{\pi^D - \pi^N}$. Los pagos son:
+\begin{itemize}
+  \item \emph{Competencia:} $P = 3 - \epsilon$, $Q = 21$, $\pi_1^N = 63$, $\pi_2^N = 0$.
+  \item \emph{Desvío de la firma 1:} $P = 12 - \epsilon$, $Q = 12$, $\pi_1^D = 144$.
+  \item \emph{Colusión:} $P^M = 12$, $Q^M = 12$, $\pi^C = 144$ (la firma 1 recibe $144S_1$).
+\end{itemize}
+Para la firma 1:
+\[
+  0{,}7 \geq \frac{144 - 144S_1}{144 - 63}
+  \;\Longrightarrow\;
+  144S_1 \geq 87{,}3
+  \;\Longrightarrow\;
+  S_1 \geq 0{,}606 .
+\]
+Como $S_1 + S_2 = 1$, el máximo reparto que se puede llevar la firma 2 es $S_2 \leq 0{,}394$, es decir, $\approx 39\%$. (La firma 2, que si se desvía obtiene $108$, solo exige $S_2 \geq 0{,}225$.)
+
+\end{solution}
+
+\part Obtenga las condiciones para que el acuerdo colusivo sea sostenible si las empresas deciden turnarse la producción. Es decir, un período solo produce una de ellas y en el siguiente período produce la otra, y así sucesivamente.
+\needspace{5\baselineskip}
+\begin{solution}
+Primero, calculamos los beneficios de competir, coludirse y desviarse.
+
+\emph{Competencia:} $P = 3 - \epsilon$, $Q = 21$, $\pi_1^N = 63$, $\pi_2^N = 0$.
+
+\emph{Colusión (beneficio monopólico de cada firma en su turno):} firma 1: $P^M = 12$, $Q^M = 12$, $\pi_1^C = 144$. Firma 2: $\max (P-3)(24-P) \Rightarrow P^M = 13{,}5$, $Q^M = 10{,}5$, $\pi_2^C = 110{,}25$.
+
+\emph{Desvío:} la firma 1 (que en el turno de la 2 fija $P=12 < 13{,}5$) obtiene $\pi_1^D = 144$. La firma 2 (que en el turno de la 1 fija $P = 12 - \epsilon$) obtiene $\pi_2^D = 108$.
+
+\textbf{Si comienza la firma 1:}
+\begin{align*}
+  \text{Firma 1:}\quad & \sum_{i=0}^{\infty}144\,\delta^{2i} \geq 144 + 144\delta + \sum_{i=2}^{\infty}63\,\delta^{i}, \\
+  \text{Firma 2:}\quad & \sum_{i=0}^{\infty}110{,}25\,\delta^{2i+1} \geq 108 .
+\end{align*}
+\textbf{Si comienza la firma 2:}
+\begin{align*}
+  \text{Firma 2:}\quad & \sum_{i=0}^{\infty}110{,}25\,\delta^{2i} \geq 110{,}25 + 108\delta + 0, \\
+  \text{Firma 1:}\quad & \sum_{i=0}^{\infty}144\,\delta^{2i+1} \geq 144 + \sum_{i=1}^{\infty}63\,\delta^{i}.
+\end{align*}
+Resolviendo, en ambos casos se obtiene $81\delta^2 + 81\delta - 144 \geq 0$ para la firma 1, es decir $\delta \geq 0{,}924$, y $108\delta^2 + 110{,}25\delta - 108 \geq 0$ para la firma 2, es decir $\delta \geq 0{,}612$. Con $\delta = 0{,}7$ la firma 1 no cumple, por lo que el acuerdo de turnos no es sostenible.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Galletas
+\needspace{8\baselineskip}
+\tema{Colusión y galletas (Bertrand repetido)}
+\question Galletas y Cookies son dos empresas que venden productos homogéneos y compiten en precios. La demanda viene dada por $D(p) = 1000 - p$ y los consumidores comprarán a la firma que vende al menor precio. En el caso de que ambas empresas vendan al mismo precio, asumiremos que la mitad de los consumidores comprará a cada firma. Suponga que el costo marginal de cada firma es constante e igual a \$20.
+\begin{parts}
+\part Encuentre el equilibrio de Bertrand en precios si las firmas eligen precios en forma simultánea y juegan solo una vez.
+\needspace{5\baselineskip}
+\begin{solution}
+$p_G = p_C = 20$. Para cualquier otra combinación de precios, al menos una firma tiene una desviación unilateral beneficiosa.
+
+\end{solution}
+
+\part Suponga que el juego se repite y se juega dos veces. Sea $0 < \delta < 1$ el factor de descuento de las firmas. Encuentre el equilibrio del juego repetido.
+\needspace{5\baselineskip}
+\begin{solution}
+Resolvemos el equilibrio perfecto en subjuegos por inducción hacia atrás. En el período 2, el juego es idéntico a un juego de un período, por lo tanto el equilibrio es $p_{G,2} = p_{C,2} = 20$. En el período 1, las firmas reconocen que en el período 2 no se puede sostener ningún equilibrio que no sea precios iguales a costos marginales. Por lo tanto, no tienen incentivos para cooperar y el único equilibrio posible es el del juego estático: $p_{G,1} = p_{C,1} = 20$.
+
+\end{solution}
+
+\part Suponga que el juego se repite infinitas veces. Proponga una estrategia de gatillo para cada firma de forma de mantener el precio colusivo (el precio de un monopolista) en cada período, asumiendo que cada firma vuelve al equilibrio de Bertrand si alguna firma se desvía del precio colusivo. Calcule el valor mínimo de $\delta$ tal que el precio colusivo es el equilibrio de este juego.
+\needspace{5\baselineskip}
+\begin{solution}
+El precio de monopolio $p^M = 510$ (con la cantidad $q^M = 490$) maximiza los beneficios conjuntos de las firmas, $\pi^M = 240\,100$.
+
+\emph{Estrategia gatillo:} la firma $i$ fija $p_{i,t} = 510$ si en todos los períodos anteriores ambas fijaron $510$, y fija $p_{i,t} = 20$ en caso contrario.
+
+Beneficio de cooperar:
+\[
+  \pi_i^{COOP} = \frac{240\,100}{2} + \delta\frac{240\,100}{2} + \delta^2\frac{240\,100}{2} + \dots = \frac{240\,100}{2}\cdot\frac{1}{1-\delta}.
+\]
+Beneficio de desviarse en $t$: $\pi_i^{DESV} = 240\,100 + \delta\cdot 0 + \delta^2\cdot 0 + \dots = 240\,100$.
+
+Para una historia del juego donde no han existido desvíos: $\pi_i^{COOP} \geq \pi_i^{DESV}$ implica $\frac{120\,050}{1-\delta} \geq 240\,100$, es decir, $\delta \geq \frac{1}{2}$.
+
+Para una historia del juego donde sí han existido desvíos, el rival juega $p_2 = 20$ hasta el final; para la firma 1, jugar $p_1 = 20$ (como lo dice su estrategia de gatillo) es mejor respuesta para cualquier $\delta$.
+
+\end{solution}
+
+\part Suponga ahora que Galletas y Cookies producen galletas de navidad, un producto que se vende solo durante los últimos 3 meses del año. Si definimos un período como un trimestre, las empresas interactúan cada 4 períodos. ¿Es más difícil o más fácil coludir si las empresas interactúan solo en un trimestre del año? No necesita calcular, solo puede explicarlo.
+\needspace{5\baselineskip}
+\begin{solution}
+La colusión es más difícil cuando las ventas son menos frecuentes. Al bajar la frecuencia de las ventas, las ganancias de desviarse en $t$ no cambian, pero los beneficios futuros de cooperar disminuyen (el castigo llega más tarde, y en términos de valor presente pesa menos), por lo que es más difícil sostener un acuerdo colusivo.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Colusión con 3 firmas
+\needspace{8\baselineskip}
+\tema{Colusión con tres firmas, horizonte infinito y finito}
+\question Un mercado enfrenta una función de demanda equivalente a $Q(P) = 12 - P$. Actualmente existe un conjunto de firmas, las cuales compiten en precios.
+\begin{parts}
+\part Suponga que el mercado está constituido por 3 firmas. Determine el equilibrio del mercado si las firmas compiten en precios y presentan costos marginales $c_1 < c_2 = c_3$.
+\needspace{5\baselineskip}
+\begin{solution}
+Dado que no existen restricciones de capacidad y la competencia es en precios, el equilibrio del mercado viene dado por $(P_1, P_2, P_3) = (c_2 - \epsilon, c_2, c_2)$, con $c_2 = c_3$: la firma 1 se queda con todo el mercado.
+
+\end{solution}
+
+\part Suponga que la firma 1 presenta un costo marginal de producción equivalente a 2, mientras que las firmas 2 y 3 tienen cada una un costo marginal de 4. Para un período de tiempo en particular, ¿una estrategia colusiva en precios sería beneficiosa para la firma 1? Justifique en base a los beneficios que obtendría dicha firma.
+\needspace{5\baselineskip}
+\begin{solution}
+Si las firmas no cooperan, la firma 1 recorta el precio mínimo de las otras dos: $\pi_1^{NC} = (4 - \epsilon - 2)(12 - 4 - \epsilon) \approx 16$. Si deciden cooperar, lo razonable es que todo lo produzca la firma más eficiente, todas adoptan el precio monopólico para $c_1 = 2$ ($P = 7$, $Q = 5$, $\pi = 25$) y se reparten los beneficios de manera simétrica, es decir, $\pi_1^C = \frac{1}{3}\cdot 25 = \frac{25}{3}$. Por último, si la firma eficiente decide desviarse y recortar el precio acordado, obtendrá $\pi_1^D = (7 - \epsilon - 2)\cdot 5 = 25$.
+
+Para que la colusión sea la mejor estrategia para la firma 1 debe suceder que $\pi_1^C \geq \pi_1^D$, es decir, $\frac{25}{3} \geq 25$, lo que no se cumple. Es claro que la firma 1 preferirá desviarse antes que respetar un acuerdo colusivo, e incluso preferirá competir ($16 > \frac{25}{3}$).
+
+\end{solution}
+
+\part Gracias a una innovación tecnológica, ahora todas las firmas presentan costos marginales equivalentes a 2. Debido a la fuerte competencia, las firmas acuerdan coludirse de manera indefinida. Obtenga el equilibrio y los beneficios de las firmas bajo esta estrategia de largo plazo si las firmas acuerdan llevar a cabo una colusión en precios.
+\needspace{5\baselineskip}
+\begin{solution}
+Si las firmas compiten en precios teniendo costos marginales simétricos, el resultado es la paradoja de Bertrand, con $\pi_i^{NC} = 0$. Si deciden coludirse fijando el precio monopólico correspondiente a la demanda del mercado y a los costos marginales (y también en el caso de desvío), los resultados son idénticos a los del caso anterior: $\pi_i^C = \frac{25}{3}$ y $\pi_i^D = 25$. Usando el teorema de Folk:
+\[
+  \delta \geq \frac{\pi_i^D - \pi_i^C}{\pi_i^D - \pi_i^{NC}} = \frac{25 - \frac{25}{3}}{25 - 0} = \frac{2}{3}.
+\]
+
+\end{solution}
+
+\part Suponga que las firmas saben que solamente estarán por dos períodos en el mercado. Recalcule los beneficios de realizar una estrategia colusiva en precios.
+\needspace{5\baselineskip}
+\begin{solution}
+En este caso los pagos son los mismos, pero no es posible aplicar el teorema de Folk y se debe plantear la condición $VP(\text{colusión}) \geq VP(\text{desvío})$:
+\[
+  \pi_i^C + \delta\pi_i^C \geq \pi_i^D + \delta\pi_i^{NC}
+  \;\Longrightarrow\;
+  (1+\delta)\frac{25}{3} \geq 25
+  \;\Longrightarrow\;
+  \delta \geq 2,
+\]
+lo que evidentemente no es sostenible (pues $\delta < 1$).
+
+\end{solution}
+
+\part Compare y comente los resultados obtenidos en (c) y (d): ¿cómo afecta a la colusión el hecho de que las firmas no compitan por infinitos períodos?
+\needspace{5\baselineskip}
+\begin{solution}
+Comparando (c) y (d): es la comprobación del teorema de Folk, que dice que cualquier resultado factible en el cual todos los jugadores obtienen un beneficio mayor que el que logran en un equilibrio de Nash de la versión estática de un juego puede sostenerse como un equilibrio de la versión infinitamente repetida del mismo, siempre que los jugadores valoren lo suficiente el futuro. La colusión que no era posible en el caso de un juego estático, ahora sí lo es en un juego infinito. Con solo dos períodos, en cambio, un resultado alcanzable mediante un juego infinitamente repetido resulta imposible.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Comente: auge vs declive
+\needspace{8\baselineskip}
+\tema{Comente: colusión tácita en industrias en auge y en declive}
+\question \textbf{Comente.} Comparando una industria en auge (demanda crece todos los años) con una industria en declive (demanda cae todos los años), ¿en cuál de las dos es más probable que surja un equilibrio de colusión tácita? (Todo lo demás constante; esto es, un mismo número de firmas, costos, etc.) Fundamente intuitivamente su respuesta.
+\needspace{5\baselineskip}
+\begin{solution}
+Es más probable que surja en la industria en auge. La intuición es que un equilibrio de colusión tácita surge cuando los beneficios futuros de seguir coludido son mayores que los beneficios de desviarse hoy y ganar más participación de mercado en el presente. En una industria en declive, el futuro es poco rentable ya que la demanda va cayendo, haciendo más probable que las firmas se desvíen, intentando obtener más ganancias ahora ya que en el futuro no parece muy promisorio. En cambio, en una industria en auge el futuro es cada vez más rentable, por lo que es más probable que las firmas no quieran desviarse hoy para no perder los mayores beneficios futuros de una estrategia de precios altos cuando la demanda sea también alta.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: impaciencia siempre alcanza
+\needspace{8\baselineskip}
+\tema{Comente: ¿siempre hay un nivel de impaciencia que sostenga la cooperación?}
+\question \textbf{Comente.} Dadas las condiciones, siempre habrá un nivel de impaciencia en que el equilibrio perfecto en subjuegos cooperativo sea posible.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Es condición necesaria tener un horizonte infinito (o incierto). Bajo horizontes finitos, al resolver por inducción hacia atrás siempre llegaremos a un equilibrio de Nash no cooperativo (el de competencia).
+
+\end{solution}
+
+%-------------------------------------------------------------------- Pollos
+\needspace{8\baselineskip}
+\tema{Colusión en Cournot con 3 y 2 firmas (los pollos)}
+\question Las firmas SuperPollo, Ariztía y DonPollo son conocidas por sus carnes de pollo (un bien homogéneo). Las 3 firmas se enfrentan a una demanda de mercado $P = 12\,500 - 2Q$, donde $Q$ es la cantidad total producida en la industria. Todas las firmas tienen un costo marginal igual a 2500.
+\begin{parts}
+\part Suponga que las empresas compiten solo un período. Encuentre las cantidades y las utilidades si las empresas compiten en cantidades.
+\needspace{5\baselineskip}
+\begin{solution}
+Las empresas compiten en un oligopolio de Cournot con 3 firmas. La función de beneficio de la firma 1 es $\pi_1 = (10\,000 - 2(q_1 + q_2 + q_3))q_1$, con CPO $10\,000 - 4q_1 - 2q_2 - 2q_3 = 0$. Por simetría, $q_1 = q_2 = q_3 = q^*$ y $10\,000 = 8q^*$, de donde
+\[
+\begin{gathered}
+  q^* = 1250, \quad Q = 3750, \quad P = 12\,500 - 7500 = 5000, \\ \pi_i = (5000 - 2500)\cdot 1250 = 3\,125\,000 .
+\end{gathered}
+\]
+
+\end{solution}
+
+\part Considere ahora que las empresas compiten en un horizonte infinito. ¿Cuál es el factor de descuento que hace que las empresas cooperen, es decir, se repartan las utilidades monopólicas, en un equilibrio perfecto en subjuegos?
+\needspace{5\baselineskip}
+\begin{solution}
+El monopolista maximiza $(10\,000 - 2Q)Q$: $Q^M = 2500$, $P^M = 7500$ y $\pi^M = 12\,500\,000$. Repartido entre 3 firmas, $\pi^{COL} = \frac{12\,500\,000}{3} \approx 4\,166\,667$ (cada una produce $\frac{2500}{3} \approx 833{,}33$).
+
+Si una firma se desvía mientras las otras dos producen $\frac{5000}{3}$ en total, su mejor respuesta es $q^{DESV} = 2500 - \frac{5000/3}{2} = 1666{,}67$. Entonces $P = 12\,500 - 2(1666{,}67 + 1666{,}67) = 5833{,}33$ y
+\[
+  \pi^{DESV} = (5833{,}33 - 2500)\cdot 1666{,}67 \approx 5\,555\,556 .
+\]
+Con estrategia de gatillo (reversión al equilibrio de Cournot) la colusión es sostenible si
+\[
+  \delta \geq \frac{\pi^{DESV} - \pi^{COL}}{\pi^{DESV} - \pi^{COURNOT}} = \frac{5\,555\,556 - 4\,166\,667}{5\,555\,556 - 3\,125\,000} = \frac{1\,388\,889}{2\,430\,556} \approx 0{,}57 .
+\]
+
+\end{solution}
+
+\part Por ciertas situaciones, Ariztía deja de competir en esta industria, dejando solo dos firmas. Encuentre el nuevo factor de descuento que hace que las empresas cooperen en un horizonte infinito.
+\needspace{5\baselineskip}
+\begin{solution}
+Con dos firmas, la CPO de la firma $i$ es $10\,000 - 4q_i - 2q_j = 0$, es decir $q_i = 2500 - \frac{q_j}{2}$, por lo que $q^* = \frac{5000}{3} \approx 1666{,}67$, $Q = 3333{,}33$, $P = 5833{,}33$ y $\pi^{COURNOT} = 3333{,}33\cdot 1666{,}67 \approx 5\,555\,556$.
+
+En colusión, cada una produce $1250$ y obtiene $\pi^{COL} = 6\,250\,000$. Si una firma se desvía mientras la otra coopera, produce $q^{DESV} = 2500 - \frac{1250}{2} = 1875$, el precio es $P = 12\,500 - 2(1875 + 1250) = 6250$ y $\pi^{DESV} = (6250 - 2500)\cdot 1875 = 7\,031\,250$. Entonces
+\[
+  \delta \geq \frac{7\,031\,250 - 6\,250\,000}{7\,031\,250 - 5\,555\,556} = \frac{781\,250}{1\,475\,694} \approx 0{,}53 .
+\]
+
+\end{solution}
+
+\part Compare los factores de descuento obtenidos en los apartados anteriores. ¿Cuál de ellos es mayor y a qué se debe? ¿Cómo influye el número de firmas en este resultado?
+\needspace{5\baselineskip}
+\begin{solution}
+El factor de descuento mínimo con tres firmas es $\delta_{min} \approx 0{,}57$, mientras que con dos firmas es $\delta_{min} \approx 0{,}53$. Se requiere mayor paciencia para sostener la colusión cuando hay más competidores. Esto se debe a varios factores: primero, con más firmas cada una recibe una porción menor de las utilidades monopólicas, lo que reduce el beneficio de la cooperación; segundo, el potencial de ganancias inmediatas por desviarse aumenta (se desvía contra rivales que producen poco cada una); por último, el castigo es menos severo cuando hay más firmas, pues las utilidades de Cournot son menores con más competidores pero no disminuyen tan rápidamente como la participación en las utilidades monopólicas. Todo esto hace más difícil sostener la colusión con un mayor número de firmas.
+
+\end{solution}
+\end{parts}

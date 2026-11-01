@@ -1,0 +1,437 @@
+%-------------------------------------------------------------------- Comente: IHH
+\needspace{8\baselineskip}
+\tema{Comente: IHH y número de firmas}
+\question \textbf{Comente.} El índice de Herfindahl-Hirschman (IHH) es el indicador más empleado para medir concentración en una industria. Si en un mercado existen muchas firmas, el índice IHH toma un valor cercano a cero y por lo tanto no existiría concentración de mercado.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. El IHH no solo mide el número de firmas en la industria para determinar si existe concentración de mercado: además mide la dispersión en la producción de cada firma (qué tan asimétrica es la estructura de mercado). Matemáticamente, el índice se puede definir como
+\[
+  IHH(N) = \sum_{i=1}^{N}s_i^2 = \frac{1}{N} + N\sigma^2,
+\]
+donde $\sigma^2 = Var(s_i)$ es la varianza de las participaciones de mercado, por lo que el indicador aumenta a medida que hay mayor dispersión en la producción de cada firma. Así, aun con muchas firmas, una muy grande y muchas pequeñas puede dar un IHH alto.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: aumento del IHH
+\needspace{8\baselineskip}
+\tema{Comente: aumento del IHH y bienestar de los consumidores}
+\question \textbf{Comente.} Un aumento en el Índice de Herfindahl-Hirschman (IHH) indica que hubo una disminución de firmas y de intensidad competitiva en el mercado. Esto perjudica a los consumidores ya que implica un aumento en el precio del bien o servicio de la industria en cuestión.
+\needspace{5\baselineskip}
+\begin{solution}
+No necesariamente. En primer lugar, el índice puede aumentar debido a una mayor asimetría entre las firmas, y no solo a que hayan menos. Además, que la concentración de mercado haya aumentado no siempre implica una menor intensidad competitiva, ya que esto también dependerá de la elasticidad precio de la demanda. Un aumento en el IHH puede provocarse debido a la fusión de un número de firmas. Si tal fusión conlleva ganancias de eficiencia lo suficientemente altas, entonces el precio, aun cuando el mercado esté más concentrado, disminuirá, beneficiando a los consumidores. Otro ejemplo que contradice la afirmación es que empresas innovadoras o más eficientes aumenten su participación de mercado y, a la vez, aumenten su competencia, llevando a un menor precio para los consumidores.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: IHH y Lerner
+\needspace{8\baselineskip}
+\tema{Comente: IHH e índice de Lerner en Cournot}
+\question \textbf{Comente.} Para el modelo de Cournot, la relación entre el índice de Herfindahl-Hirschman (IHH) y el índice de Lerner establece que una firma tiene alto poder de mercado si la elasticidad precio de la demanda es alta cuando la industria está concentrada.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. En el modelo de Cournot, al juntar el IHH ($\sum s_i^2$) con el índice de Lerner individual ($L_i = \frac{s_i}{|\varepsilon|}$) se obtiene la siguiente relación:
+\[
+  \bar L = \sum_{i=1}^{N}s_i L_i = \sum_{i=1}^{N}\frac{s_i^2}{|\varepsilon|} = \frac{IHH}{|\varepsilon|},
+\]
+donde $L_i$ y $\bar L$ son el índice de Lerner individual y agregado, respectivamente. Esto muestra que, pese a que una industria esté muy concentrada (alto IHH), una firma podría tener bajo poder de mercado si la demanda es muy elástica. En otras palabras, una firma tendría bajo poder de mercado cuando: (i) está en un mercado muy atomizado y/o (ii) enfrenta una demanda muy elástica. Lo correcto es entonces que el poder de mercado es alto cuando la elasticidad es \emph{baja} y la industria está concentrada.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: prohibir fusiones
+\needspace{8\baselineskip}
+\tema{Comente: las fusiones deben prohibirse}
+\question \textbf{Comente.} Las fusiones deben ser prohibidas porque solo empeoran a los consumidores.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Si bien en algunos casos pueden generar concentraciones en mercados que pueden dañar a los consumidores, existen fusiones que pueden generar una ganancia de eficiencia tal que el precio baje, la cantidad aumente y los consumidores se vean beneficiados. Por lo tanto, las fusiones no siempre empeoran a los consumidores.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: participación de mercado y fusión
+\needspace{8\baselineskip}
+\tema{Comente: fusiones entre firmas grandes}
+\question Explique por qué razón las fusiones entre empresas con mayor participación de mercado a priori se consideran que tienen mayor posibilidad de incrementar los precios que aquellas entre firmas con menor participación de mercado. Emplee un modelo si es necesario.
+\needspace{5\baselineskip}
+\begin{solution}
+Si las firmas venden un producto homogéneo, es decir, sin diferenciación, aquellas de menor costo tendrán mayor participación de mercado. Por lo tanto, una fusión entre firmas de mayor participación de mercado implica que las de menores costos se fusionan y, por lo tanto, la principal firma competidora de otra deja de competir, razón por la cual los precios tienden a subir más. Se puede emplear un modelo de Cournot o Bertrand para demostrar el resultado.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Fusión Cournot
+\needspace{8\baselineskip}
+\tema{Fusión en competencia tipo Cournot (zapatos de fútbol)}
+\question Recientemente, con el objetivo de ganar la Champions League, Arturo Vidal fichó por el FC Barcelona. Y para estar lo más preparado posible y enfocarse solo en entrenar, le delega a usted la administración de su firma de zapatos de fútbol. En este mercado solo existen 3 firmas que compiten en cantidad (incluida la de King Arturo) y que tienen la misma función de costos totales: $C(q) = 20q$. Además se sabe que la demanda está dada por $Q(p) = 200 - p$.
+\begin{parts}
+\part Una de las firmas competidoras le ofrece realizar una fusión. Demuestre que lo más conveniente es rechazar la oferta.
+\needspace{5\baselineskip}
+\begin{solution}
+Para evaluar si conviene o no la oferta, se debe comparar la situación de la firma pre y post fusión.
+
+\textbf{Pre-fusión.} Cada firma maximiza sus beneficios, $\max_{q_i}\ \pi_i = (200 - q_i - q_j - q_k - 20)q_i$, de donde se obtiene la función de reacción
+\[
+  q_i = \frac{180 - q_j - q_k}{2}.
+\]
+En equilibrio simétrico: $q_i = q_j = q_k = \frac{180}{4} = 45$, $Q = 135$, $P = 65$. Los beneficios de cada firma son $\pi_i = (65-20)\cdot 45 = 2025$.
+
+\textbf{Post-fusión.} La firma fusionada ($q_f = q_i + q_k$) y la otra firma resuelven $\max_{q_f}\ (200 - q_f - q_j - 20)q_f$, con funciones de reacción $q_f = \frac{180 - q_j}{2}$ y $q_j = \frac{180 - q_f}{2}$. En equilibrio,
+\[
+\begin{gathered}
+  q_f = q_j = \frac{180}{3} = 60, \quad Q = 120, \quad P = 80, \\ \pi_f = \pi_j = (80-20)\cdot 60 = 3600 .
+\end{gathered}
+\]
+Comparando el beneficio de la empresa fusionada con la suma de sus beneficios antes de la fusión:
+\[
+  \pi_f = 3600 < \pi_i + \pi_k = 2025 + 2025 = 4050 .
+\]
+Dada esta estructura de costos y la competencia en cantidades, no es conveniente la fusión. Por lo que lo mejor es rechazar la oferta.
+
+\end{solution}
+
+\part Ahora suponga que la función de costos de las firmas cambia a $C(q) = 20q + q^2$. Analice si en este caso es conveniente o no la fusión.
+\needspace{5\baselineskip}
+\begin{solution}
+Igual que antes, comparamos la situación de la firma pre y post fusión.
+
+\textbf{Pre-fusión.} Cada firma maximiza $\pi_i = (200 - q_i - q_j - q_k)q_i - 20q_i - q_i^2$, con función de reacción $q_i = \frac{180 - q_j - q_k}{4}$. En equilibrio:
+\[
+  q_i = q_j = q_k = \frac{180}{6} = 30, \qquad Q = 90, \qquad P = 110,
+\]
+\[
+  \pi_i = 110\cdot 30 - 20\cdot 30 - 30^2 = 3300 - 600 - 900 = 1800 .
+\]
+
+\textbf{Post-fusión.} La firma fusionada distribuye su producción entre sus dos plantas según $CMg_i(q_i) = CMg_k(q_k)$, es decir $20 + 2q_i = 20 + 2q_k$, por lo que $q_i = q_k = \frac{q_{ik}}{2}$. La función de costos de la firma fusionada es entonces
+\[
+  C_{ik}(q_{ik}) = 2\Bigl[20\frac{q_{ik}}{2} + \Bigl(\frac{q_{ik}}{2}\Bigr)^2\Bigr] = 20q_{ik} + \frac{q_{ik}^2}{2}.
+\]
+Notar que la firma fusionada presenta una ventaja en su estructura de costos con respecto a la otra firma: $C_{ik}(q) < C(q)$. Ahora los problemas de maximización son distintos:
+\[
+  \max_{q_{ik}}\ (200 - q_{ik} - q_j)q_{ik} - 20q_{ik} - \frac{q_{ik}^2}{2}, \qquad
+  \max_{q_j}\ (200 - q_{ik} - q_j)q_j - 20q_j - q_j^2 .
+\]
+Las funciones de reacción son
+\[
+  q_{ik} = \frac{180 - q_j}{3}, \qquad q_j = \frac{180 - q_{ik}}{4}.
+\]
+Reemplazando una en la otra, se obtiene el equilibrio
+\[
+  q_{ik} = \frac{540}{11} \approx 49{,}1, \qquad q_j = \frac{360}{11} \approx 32{,}7, \qquad Q \approx 81{,}8, \qquad P \approx 118{,}2 .
+\]
+Los beneficios son $\pi_{ik} = (P-20)q_{ik} - \frac{q_{ik}^2}{2} \approx 3615$ y $\pi_j = (P-20)q_j - q_j^2 \approx 2142$. Comparando:
+\[
+  \pi_{ik} \approx 3615 > \pi_i + \pi_k = 1800 + 1800 = 3600 .
+\]
+Ahora sí conviene aceptar la oferta de fusión. Pero notar que los consumidores están peor que antes de la fusión, pues el precio aumentó ($110 \to 118{,}2$) y la cantidad del bien disminuyó ($90 \to 81{,}8$).
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Fusión Bertrand
+\needspace{8\baselineskip}
+\tema{Fusión en competencia tipo Bertrand (almacenes)}
+\question En el mercado de los almacenes existen 3 firmas: Siette, Buen Market y Próximo, las cuales tienen los siguientes costos marginales: $c_S = c_B = 1$ y $c_P = 2$, respectivamente. Las firmas compiten en precios y ofrecen un producto homogéneo. Además, usted sabe que la demanda está dada por la función $Q(P) = 10 - P$.
+\begin{parts}
+\part Siette está evaluando realizar una fusión con Buen Market para así obtener más beneficios. Evalúe si le conviene o no la fusión.
+\needspace{5\baselineskip}
+\begin{solution}
+Para saber si a Siette le conviene o no la fusión, se deben comparar los beneficios de dicha empresa antes y después de la fusión.
+
+\textbf{Antes de la fusión.} Dado que las empresas compiten en precios, el precio de equilibrio será el costo marginal de la segunda empresa más eficiente, es decir, $P = c_S = c_B = 1$. La firma Próximo queda fuera del mercado al ser su costo marginal mayor al precio de equilibrio ($c_P = 2 > P = 1$). Por lo tanto, en equilibrio:
+\[
+  Q = 10 - 1 = 9, \qquad q_S = q_B = \frac{9}{2} = 4{,}5, \qquad \pi_S = \pi_B = 0 .
+\]
+
+\textbf{Después de la fusión.} Dado que se fusionan las firmas más eficientes y compiten contra la menos eficiente, el precio de equilibrio estará dado por $P = c_P - \epsilon \approx 2$, dejando fuera a Próximo. Por lo tanto, en equilibrio:
+\[
+  Q = q_{SB} = 10 - 2 = 8, \qquad \pi_{SB} = (2-1)\cdot 8 = 8 .
+\]
+Al comparar los beneficios antes y después de la fusión, vemos que son mayores con la fusión. Por ende, a Siette le conviene fusionarse con Buen Market.
+
+\end{solution}
+
+\part ¿Cómo cambia el bienestar del consumidor con esta fusión entre Siette y Buen Market?
+\needspace{5\baselineskip}
+\begin{solution}
+Hay que calcular el excedente del consumidor antes y después de la fusión.
+
+\textbf{Antes:} $P = 1$ y $Q = 9$, por lo que $EC_{\text{antes}} = \frac{(10-1)\cdot 9}{2} = \frac{81}{2} = 40{,}5$.
+
+\textbf{Después:} $P = 2$ y $Q = 8$, por lo que $EC_{\text{después}} = \frac{(10-2)\cdot 8}{2} = \frac{64}{2} = 32$.
+
+El excedente después de la fusión es menor que antes de esta, por lo que el bienestar del consumidor disminuye.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- HHI cerveza
+\needspace{8\baselineskip}
+\tema{Cálculo del HHI: industria de la cerveza}
+\question Suponga que usted es nombrado miembro del Tribunal de Defensa de la Libre Competencia. El primer caso que enfrenta es la fusión de las dos empresas más grandes de la industria de la cerveza: CCU tiene el 50\% del mercado, Cervecerías Chile un 30\%, y el 20\% restante está repartido en partes iguales en las 4 empresas restantes. Calcule el HHI.
+\needspace{5\baselineskip}
+\begin{solution}
+El índice de Herfindahl-Hirschman se calcula como
+\[
+  HHI = 10\,000\sum_{i=1}^{n}s_i^2 = 10\,000\bigl[(0{,}5)^2 + (0{,}3)^2 + 4\cdot(0{,}05)^2\bigr] = 10\,000\cdot 0{,}35 = 3500 .
+\]
+(Si CCU y Cervecerías Chile se fusionaran, el HHI pasaría a $10\,000[(0{,}8)^2 + 4(0{,}05)^2] = 6500$, un aumento de $3000$ puntos.)
+
+\end{solution}
+
+%-------------------------------------------------------------------- Aprobar fusión
+\needspace{8\baselineskip}
+\tema{Comente: ¿debe aprobarse la fusión CCU--Cervecerías Chile?}
+\question \textbf{Comente.} Suponga que CCU se quiere fusionar con Cervecerías Chile. ¿Cree usted que debería aprobarse la fusión? Argumente su respuesta.
+\needspace{5\baselineskip}
+\begin{solution}
+En general, se argumenta que una fusión traería economías de escala y sinergias entre las empresas, y además ahorro de costos y publicidad. Para que la fusión sea conveniente debe aumentar el bienestar social agregado de los consumidores y de los productores. Si ambas empresas están dispuestas a fusionarse, sus utilidades deberían aumentar (sea por el motivo que sea). En el caso de los consumidores, estos se verán beneficiados si bajan los precios y tienen acceso a mejor y más barata cerveza. Para aprobar la fusión se debe considerar si en el mercado existen o no barreras a la entrada. Si hay barreras de entrada, puede no aprobarse la fusión, ya que la nueva empresa puede comportarse como un monopolio.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Smartphones
+\needspace{8\baselineskip}
+\tema{Comente: fusión Samsung--Apple y precios de los rivales}
+\question \textbf{Comente.} Las cuotas de mercado para \emph{smartphones} en el mercado mundial son: Samsung tiene un 20,9\%, Apple un 11,7\%, Huawei un 12,7\%, Lenovo un 4,2\%, LG un 4,8\%, y otros un 45,7\%. Suponga que Samsung y Apple deciden fusionarse. ¿Qué espera que suceda con los precios del resto de los vendedores de \emph{smartphones} (Huawei, Lenovo y LG)? ¿Su respuesta sería distinta si la fusión permitiese importantes ahorros en los costos de producción? Fundamente su respuesta.
+\needspace{5\baselineskip}
+\begin{solution}
+Sin ahorro de costos, se espera que los rivales que no se fusionan suban sus precios. La razón es que las firmas fusionadas aumentan sus precios (al internalizar las elasticidades precio cruzadas) y, dado que los precios de bienes sustitutos son complementos estratégicos, los rivales tenderán a subir los suyos. Con ahorro de costos, el resultado no es obvio: si los ahorros de costos son importantes, la empresa fusionada baja los precios y sus rivales tienden a bajar los suyos (complementos estratégicos).
+
+\end{solution}
+
+%-------------------------------------------------------------------- Fusión transporte aéreo
+\needspace{8\baselineskip}
+\tema{Fusiones en el transporte aéreo}
+\question Las empresas de transporte aéreo $X$, $Y$ y $Z$ son las únicas que operan en la ruta Santiago--Lima. La demanda semanal por transporte es igual a $Q = 130 - P$, donde $Q$ representa el número total de viajes semanales. La función de costo total de cada empresa es $C_i = 50q_i + 300$, con $i = X, Y, Z$, donde $q_i$ es el número de viajes semanales hechos por la empresa.
+\begin{parts}
+\part Debido a la alta contaminación emitida por las aerolíneas, el Ministerio de Transporte estableció, por empresa, realizar solamente 32 viajes semanales como máximo. Asumiendo que la competencia es por viaje realizado, determine el número de viajes que realiza cada empresa, el precio de equilibrio, los beneficios de cada una, y si la restricción propuesta por el Ministerio afecta a las empresas.
+\needspace{5\baselineskip}
+\begin{solution}
+Resolviendo el problema para la firma $X$ sin imponer ninguna restricción:
+\[
+\begin{gathered}
+  \max_{q_X}\ \pi_X = (130 - q_X - q_Y - q_Z - 50)q_X - 300 \\
+  \;\Rightarrow\; 80 - 2q_X - q_Y - q_Z = 0 \\
+  \;\Rightarrow\; q_X(q_Y,q_Z) = \frac{80 - q_Y - q_Z}{2}.
+\end{gathered}
+\]
+Por simetría, $q_Y$ y $q_Z$ tienen funciones de reacción análogas. Sumando las tres: $2Q = 240 - 2Q$, es decir, $Q = 60$, el precio es $P = 130 - 60 = 70$ y cada firma produce $q_X = q_Y = q_Z = 20$. La restricción impuesta por el Ministerio de Transporte no está activa ($20 < 32$). Los beneficios son
+\[
+  \pi_X = \pi_Y = \pi_Z = (70 - 50)\cdot 20 - 300 = 100 .
+\]
+
+\end{solution}
+
+\part Considere ahora que las empresas $X$ e $Y$ han decidido fusionarse, formando el grupo $XY$. La idea de las aerolíneas es poder ahorrar costos, ya que evitarían duplicar los costos fijos y también tendrían ganancias de eficiencia que les permitirían disminuir en 4\% sus costos variables. Esta disminución de costos está asociada a menores emisiones de agentes contaminantes, por lo que ya no se restringe el número de viajes. Determine las cantidades que produciría cada firma en el equilibrio, el precio de mercado y los beneficios de cada firma. Por último, determine si es rentable para las empresas llevar a cabo la fusión.
+\needspace{5\baselineskip}
+\begin{solution}
+La firma fusionada tiene costos totales $C_{XY} = 50\cdot 0{,}96\,q_{XY} + 300 = 48q_{XY} + 300$. Las funciones de reacción son
+\[
+  q_Z(q_{XY}) = \frac{80 - q_{XY}}{2}, \qquad q_{XY}(q_Z) = \frac{82 - q_Z}{2}.
+\]
+Reemplazando $q_{XY}$ en $q_Z$: $4q_Z = 160 - 82 + q_Z$, es decir $q_Z = 26$ y $q_{XY} = 28$. La cantidad de mercado es $Q = 54$ y el precio $P = 130 - 54 = 76$. Los beneficios son
+\[
+  \pi_{XY} = (76 - 48)\cdot 28 - 300 = 484, \qquad \pi_Z = (76 - 50)\cdot 26 - 300 = 376 .
+\]
+La firma fusionada gana $484 > 100 + 100 = 200$, por lo que la fusión es rentable; y la firma $Z$, que no se fusiona, también gana más que antes ($376 > 100$).
+
+\end{solution}
+
+\part Si usted trabaja en la División de Fusiones de la FNE, y su labor es maximizar el bienestar social, ¿estaría de acuerdo con aprobar la fusión en los términos señalados? Justifique.
+\needspace{5\baselineskip}
+\begin{solution}
+De los resultados anteriores es claro que al fusionarse dos firmas el precio se ve incrementado ($70 \to 76$) y la cantidad total ofrecida al mercado disminuye ($60 \to 54$), por lo que los consumidores están peor (se reduce el excedente del consumidor). Aunque hay ahorros de costos, el aumento de beneficios de las firmas no compensa la pérdida de los consumidores en términos de bienestar de los consumidores, por lo que en el estándar de excedente del consumidor no se aprobaría la fusión.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Análisis de fusión 3 firmas costos cuadráticos
+\needspace{8\baselineskip}
+\tema{Análisis de fusión con costos cuadráticos (tres firmas)}
+\question Existe un mercado compuesto por tres firmas inicialmente idénticas que ofrecen productos homogéneos, las que poseen una función de costo total $C(q) = 0{,}5q^2$. La demanda del mercado está dada por $Q(P) = 120 - P$. La competencia es en cantidades.
+\begin{parts}
+\part Establezca las condiciones de primer orden de cada firma y la función de reacción de cada una de ellas (por ejemplo, $q_1(q_2,q_3)$).
+\needspace{5\baselineskip}
+\begin{solution}
+La función a maximizar para cada firma es $\pi_i = (120 - q_1 - q_2 - q_3)q_i - 0{,}5q_i^2$. La condición de primer orden es $120 - 2q_i - q_j - q_k - q_i = 0$, por ende la función de reacción es
+\[
+  q_i^* = \frac{120 - q_j - q_k}{3}.
+\]
+
+\end{solution}
+
+\part Obtenga el equilibrio de Nash (emplee la condición de simetría entre las firmas).
+\needspace{5\baselineskip}
+\begin{solution}
+Con simetría, $3q = 120 - 2q$, de modo que $q_1^* = q_2^* = q_3^* = 24$. El precio es $P^* = 120 - 72 = 48$ y los beneficios son $\pi_i = 48\cdot 24 - 0{,}5\cdot 24^2 = 864$.
+
+\end{solution}
+
+\part Suponga que las firmas 2 y 3 se fusionan, pasando ambas a ser propiedad de un único dueño. ¿Sigue el dueño de la empresa fusionada operando ambas plantas anteriores?
+\needspace{5\baselineskip}
+\begin{solution}
+Primero, debemos calcular la nueva estructura de costos que enfrenta la firma fusionada. Para esto igualamos los costos marginales de las plantas como condición de optimalidad: $q_2 = q_3$, de modo que $q_{23} = q_2 + q_3 = 2q_2$ y cada planta produce $\frac{q_{23}}{2}$. En el caso de que decida operar con las dos plantas, los costos totales son
+\[
+  C(q_{23}) = 2\cdot 0{,}5\Bigl(\frac{q_{23}}{2}\Bigr)^2 = \frac{q_{23}^2}{4},
+\]
+mientras que operar con una sola planta costaría $0{,}5q_{23}^2$. Por lo tanto, la fusión permite una reducción en los costos de producción, y dado que no existen restricciones de capacidad, al dueño le conviene seguir operando ambas plantas (repartiendo la producción en partes iguales).
+
+\end{solution}
+
+\part Obtenga las condiciones de primer orden de la nueva firma fusionada y compare la función de reacción de ésta con la de las dos firmas anteriores (2 y 3). ¿Cuándo producen más las firmas 2 y 3, antes o después de la fusión?
+\needspace{5\baselineskip}
+\begin{solution}
+La firma fusionada maximiza $\pi_{23} = (120 - q_1 - q_{23})q_{23} - \frac{q_{23}^2}{4}$. La condición de primer orden es
+\[
+\begin{gathered}
+  120 - q_1 - 2q_{23} - \frac{q_{23}}{2} = 0 \\
+  \Longrightarrow\; q_{23}(q_1) = \frac{2}{5}(120 - q_1).
+\end{gathered}
+\]
+Antes de la fusión, y por simetría entre 2 y 3, la producción conjunta de ambas firmas dada $q_1$ era $q_2 + q_3 = \frac{120 - q_1}{2}$ (pues $q_2 = q_3 = \frac{120 - q_1}{4}$). Como $\frac{2}{5} < \frac{1}{2}$, después de la fusión las firmas 2 y 3 producen menos en conjunto que cuando actuaban por separado.
+
+\end{solution}
+
+\part Analíticamente, concluya si la fusión aumenta o disminuye la cantidad producida y los beneficios de la firma que no se fusiona (firma 1).
+\needspace{5\baselineskip}
+\begin{solution}
+Para la firma no fusionada, la CPO viene de $\pi_1 = (120 - q_1 - q_{23})q_1 - 0{,}5q_1^2$, es decir $q_1 = \frac{120 - q_{23}}{3}$. Como la cantidad producida por la firma fusionada es menor que la suma de las cantidades producidas por 2 y 3 por separado, la cantidad producida por la firma 1 (no fusionada) es mayor que en el caso donde compiten las 3 firmas.
+
+Resolviendo el sistema: $q_1 = \frac{120 - q_{23}}{3}$ y $q_{23} = \frac{2}{5}(120 - q_1)$,
+\[
+  q_1^* = \frac{360}{13} \approx 27{,}7, \qquad q_{23}^* = \frac{480}{13} \approx 36{,}9, \qquad Q^* = \frac{840}{13}, \qquad P^* = \frac{720}{13} \approx 55{,}4 .
+\]
+Los beneficios son
+\[
+  \pi_1 = \frac{194\,400}{169} \approx 1150 > 864, \qquad
+  \pi_{23} = P^*q_{23}^* - \frac{(q_{23}^*)^2}{4} = \frac{288\,000}{169} \approx 1704 .
+\]
+Es decir, los beneficios de la firma no fusionada aumentan ($864 \to 1150$). Notar además que la firma fusionada gana $1704 < 2\cdot 864 = 1728$: la fusión \emph{no} es rentable para las firmas fusionadas, y sí para la rival externa (paradoja de las fusiones).
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Comente: efectos de fusiones
+\needspace{8\baselineskip}
+\tema{Comente: efectos unilaterales y coordinados de una fusión}
+\question \textbf{Comente.} Una fusión puede generar efectos negativos sobre la competencia incluso si no se llega a un acuerdo explícito entre empresas.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. Las fusiones horizontales pueden disminuir la competencia por dos medios principales:
+\begin{itemize}
+  \item \emph{Efectos unilaterales:} aumento de precios o reducción de la calidad del producto dado el mayor poder de mercado producto de la concentración.
+  \item \emph{Efectos coordinados:} la fusión puede facilitar una acomodación tácita entre las empresas que permanecen en el mercado, volviendo más atractiva la estrategia de no competir agresivamente. Esto ocurre, por ejemplo, cuando la concentración reduce el número de actores, incrementa la simetría entre ellos y mejora la transparencia del mercado, condiciones que facilitan la coordinación implícita.
+\end{itemize}
+También las fusiones que aumentan el poder de mercado de las firmas podrían llevar a otras consecuencias negativas, como disminución de la calidad del producto o menor innovación o inversión.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: HHI disminuye
+\needspace{8\baselineskip}
+\tema{Comente: el HHI disminuye con una fusión}
+\question \textbf{Comente.} El índice de Herfindahl-Hirschman (HHI) disminuye si dos firmas se fusionan. Verdadero o falso.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Una fusión aumenta la concentración y, por tanto, aumenta el HHI, ya que este es la suma de los cuadrados de las participaciones de mercado: $(s_i + s_j)^2 = s_i^2 + s_j^2 + 2s_is_j > s_i^2 + s_j^2$ (el aumento es $2s_is_j$).
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: presión al alza de precios
+\needspace{8\baselineskip}
+\tema{Comente: presión al alza de precios y sustitutos}
+\question \textbf{Comente.} La presión al alza de precios será mayor si los productos fusionados son altamente sustitutos.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. Mientras más sustitutos sean dos bienes de distintas empresas, hay una mayor competencia entre ellos; al fusionarse estas dos firmas, esta competencia se disipa completamente (se internaliza la externalidad), empujando los precios al alza.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: abuso de posición dominante
+\needspace{8\baselineskip}
+\tema{Comente: abuso de posición dominante sin precios monopólicos}
+\question \textbf{Comente.} Una empresa puede abusar de su posición dominante sin necesidad de fijar precios monopólicos.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. El abuso de posición dominante puede manifestarse de múltiples formas, como imponer condiciones contractuales restrictivas, excluir competidores mediante pagos o acuerdos de exclusividad, o manipular el acceso a canales de distribución. En el caso de Google, se observó una estrategia sistemática para mantener su dominio a través de prácticas que limitaban la competencia, sin necesidad de fijar precios altos directamente. Por ejemplo, pagar altas sumas de dinero para dejar a Chrome como el navegador por defecto en celulares nuevos.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: innovación y acceso
+\needspace{8\baselineskip}
+\tema{Comente: las autoridades evalúan más que precios}
+\question \textbf{Comente.} Las autoridades de competencia evalúan no solo el impacto en precios, sino también en la innovación y en el acceso al mercado.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. La defensa de la libre competencia busca preservar el dinamismo del mercado, no solo evitar alzas de precios. El caso europeo contra Google se basó, entre otros puntos, en que su conducta restringía la capacidad de otras empresas para innovar y competir en igualdad de condiciones, afectando a largo plazo la variedad y calidad de los servicios digitales ofrecidos.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: maverick
+\needspace{8\baselineskip}
+\tema{Comente: eliminación de una empresa maverick}
+\question \textbf{Comente.} La eliminación de una empresa \emph{maverick} puede incrementar el riesgo de coordinación entre los actores restantes del mercado.
+\needspace{5\baselineskip}
+\begin{solution}
+Verdadero. Una empresa \emph{maverick} es aquella que compite agresivamente y rompe posibles equilibrios de precios altos. Su eliminación por vía de una fusión puede hacer más estable un acuerdo tácito de precios altos entre las firmas que permanecen, al remover el incentivo o la capacidad para competir agresivamente.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Fusión sin eficiencias
+\needspace{8\baselineskip}
+\tema{Fusión sin eficiencias en Cournot (tres firmas)}
+\question Existen tres firmas idénticas que producen a un costo marginal constante igual a $c$. Suponemos una demanda lineal $P(Q) = a - Q$, donde $Q = q_1 + q_2 + q_3$. Antes de la fusión las tres firmas deciden sus cantidades en forma independiente. Después de la fusión, las firmas 2 y 3 pasan a ser propiedad de una misma empresa.
+\begin{parts}
+\part Determine las funciones de reacción de las tres firmas antes de la fusión y obtenga el precio de equilibrio.
+\needspace{5\baselineskip}
+\begin{solution}
+La firma 1 maximiza $\pi_1 = (a - q_1 - q_2 - q_3 - c)q_1$, con CPO $a - 2q_1 - q_2 - q_3 - c = 0$:
+\[
+  q_1(q_2,q_3) = \frac{(a-c) - (q_2 + q_3)}{2},
+\]
+y análogamente para las demás. Por simetría, $q_i = q$ y $4q = a - c$:
+\[
+  q^* = \frac{a - c}{4}, \qquad P = a - \frac{3(a-c)}{4} = \frac{a + 3c}{4}.
+\]
+
+\end{solution}
+
+\part Las firmas 2 y 3 se fusionan y deciden la producción que maximice beneficios de forma conjunta. Encuentre las funciones de reacción y el precio en equilibrio.
+\needspace{5\baselineskip}
+\begin{solution}
+La firma fusionada maximiza $\pi_{2\&3} = (a - q_1 - q_2 - q_3 - c)(q_2 + q_3)$. Las CPO respecto de $q_2$ y $q_3$ son $a - c - q_1 - 2q_2 - 2q_3 = 0$, de modo que solo importa $q_{23} = q_2 + q_3$: $q_{23} = \frac{(a - c) - q_1}{2}$, mientras que $q_1 = \frac{(a-c) - q_{23}}{2}$. Resolviendo,
+\[
+  q_1^* = \frac{a - c}{3}, \qquad q_2^* + q_3^* = \frac{a - c}{3} \;\;\Longrightarrow\;\; q_2^* = q_3^* = \frac{a - c}{6}.
+\]
+(Es distinto al caso anterior: la fusión equivale a que una empresa desaparece del mercado.) El precio es $P = a - \frac{2(a-c)}{3} = \frac{a + 2c}{3}$.
+
+\end{solution}
+
+\part Con los siguientes valores compare la cantidad producida por cada firma y el precio de equilibrio antes y después de la fusión: $a = 100$, $c = 20$.
+\needspace{5\baselineskip}
+\begin{solution}
+\emph{Antes de la fusión:} $q_1 = q_2 = q_3 = \frac{100 - 20}{4} = 20$ y $P = 100 - 60 = 40$.
+
+\emph{Después de la fusión:} $q_1 = \frac{80}{3} \approx 26{,}7$, $q_2 = q_3 = \frac{80}{6} \approx 13{,}3$, $Q \approx 53{,}3$ y $P = \frac{100 + 40}{3} \approx 46{,}7$.
+
+El precio sube ($40 \to 46{,}7$) y la cantidad total cae ($60 \to 53{,}3$). Además, la entidad fusionada obtiene $\pi_{2\&3} = (46{,}7 - 20)\cdot 26{,}7 \approx 711 < 800 = 2\cdot 400$ (cada firma ganaba $20\cdot 20 = 400$ antes), de modo que la fusión \emph{no} es rentable para las firmas fusionadas, mientras que beneficia a la firma 1 (de $400$ a $\approx 711$).
+
+\end{solution}
+
+\part Dé una intuición económica de los cambios que encontró en el ítem (c).
+\needspace{5\baselineskip}
+\begin{solution}
+Al fusionarse, las firmas 2 y 3 internalizan el efecto de la producción de la otra sobre el precio y deciden producir menos que en el caso donde cada una maximiza por separado: actúan de manera más cooperativa. La firma 1 responde de manera óptima a una menor producción del competidor produciendo más que en el caso sin fusión. Este resultado ilustra la crítica de Salant, Switzer y Reynolds (1983): en el modelo estándar de Cournot, una fusión entre firmas simétricas no es rentable a menos que involucre $80\%$ o más de las empresas de la industria; por ello, estos modelos simples no logran reflejar la naturaleza básica de las fusiones (se requieren modelos de diferenciación de producto o de capacidad).
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Caso Meta
+\needspace{8\baselineskip}
+\tema{Caso Meta: adquisiciones de Instagram y WhatsApp}
+\question La Federal Trade Commission (FTC) demandó a Meta (ex-Facebook) denunciando que la compañía mantuvo una posición monopólica ilegal en el mercado de \emph{personal social networking services} a través de las adquisiciones de Instagram y WhatsApp. En 2008, Zuckerberg escribió: ``\emph{It is better to buy than compete}''. Meta es una de las empresas con mayor participación de mercado en redes sociales (78\% de los usuarios mensualmente activos, 77\% de los usuarios diariamente activos y 85\% del tiempo en pantalla). Discuta (i) los antecedentes de las adquisiciones, (ii) el daño a la competencia y (iii) la definición del mercado relevante.
+\needspace{5\baselineskip}
+\begin{solution}
+\textbf{(i) Antecedentes.} En 2012, Facebook pudo haber visto a Instagram como una amenaza futura, por lo que comprar y escalar a los competidores era ideal en ese momento. Por otro lado, la compra de Instagram puede verse como una barrera de entrada a potenciales entrantes, dañando la competencia. Factores similares se encuentran en el caso de WhatsApp.
+
+\textbf{(ii) Daño a la competencia.} El daño a la competencia no solo se da en aumento de precios, sino también en reducción de la calidad del producto o servicio, menos inversión en innovación y otras malas prácticas. Meta podría estar extrayendo rentas monopólicas: su WACC es alrededor del 10\% y su retorno anual es del 36--41\%.
+
+\textbf{(iii) Mercado relevante.} A grandes rasgos, la FTC argumenta que el mercado relevante incluye las aplicaciones dedicadas a conectarse con amigos y familia (WhatsApp, Instagram, Facebook). Zuckerberg se defiende con una definición de mercado más amplia, y propone que Facebook compite con YouTube o TikTok. De la definición de mercado depende la participación de mercado y, con ella, el HHI y el poder de mercado imputado.
+
+\end{solution}

@@ -1,0 +1,183 @@
+%-------------------------------------------------------------------- Comente: doble marginalización
+\needspace{8\baselineskip}
+\tema{Comente: doble marginalización y cómo eliminarla}
+\question \textbf{Comente.} Explique qué es el problema de doble marginalización y por qué ocurre. Además, describa las herramientas o estrategias que pueden utilizarse para eliminar dicho problema.
+\needspace{5\baselineskip}
+\begin{solution}
+La doble marginalización se produce cuando tanto el productor como el distribuidor realizan su maximización de beneficios de manera independiente, y cada uno aplica un margen sobre su costo marginal. La consecuencia es una subproducción en relación a la situación de integración vertical (monopolio): el consumidor termina pagando un precio mayor, se transa una cantidad menor y los beneficios totales (la suma de los beneficios del productor y del distribuidor) son menores que en la situación integrada.
+
+Dentro de las soluciones al problema se encuentran la fijación de un precio recomendado de venta, la tarifa en dos partes y la competencia en la distribución. Estas soluciones se diseñan con el fin de que el productor obtenga las rentas monopólicas:
+\begin{itemize}
+  \item \emph{Precio de reventa recomendado:} se fija igual al precio monopólico, para extraer toda la renta; prohíbe al distribuidor cobrar un margen y, por tanto, elimina el problema.
+  \item \emph{Tarifa en dos partes (cargo fijo y variable):} el productor fija $w = c_{mg}$, sin obtener ningún margen. Luego el distribuidor maximiza y obtiene el $p$ y $q$ monopólicos. Finalmente, el productor le quita todo el excedente a través de la tarifa fija.
+  \item \emph{Competencia en la distribución:} da como solución $P = w$, con lo cual el margen en la distribución se hace cero y el problema desaparece.
+\end{itemize}
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: competencia aguas abajo
+\needspace{8\baselineskip}
+\tema{Comente: competencia entre distribuidores y doble marginalización}
+\question \textbf{Comente.} En el contexto de una relación vertical donde el productor tiene todo el poder de negociación, la competencia aguas abajo entre distribuidores idénticos (igual función de costos) siempre disipará las rentas de los distribuidores, lo que eliminará completamente el problema de doble marginalización.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso, ya que no siempre disipará las rentas de los distribuidores. Si los distribuidores aguas abajo compiten en precios, se llegará a que el precio minorista es $P = W + C$, por lo que el productor se llevará todo el beneficio y no habrá doble marginalización. En cambio, si hay poder de mercado aguas abajo (por ejemplo, competencia en cantidades o diferenciación), los distribuidores podrán fijar un precio mayor que su costo unitario, pudiendo así conseguir beneficios, y el problema subsiste.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: precio recomendado
+\needspace{8\baselineskip}
+\tema{Comente: precios de reventa recomendados}
+\question \textbf{Comente.} Los precios recomendados de reventa (o venta minorista) establecidos por parte de un productor son siempre perjudiciales para los consumidores.
+\needspace{5\baselineskip}
+\begin{solution}
+No siempre. Por ejemplo, si la fijación de precio por parte del productor tiene como propósito eliminar la doble marginalización, entonces el consumidor es favorecido con dicha recomendación de precio (pues el precio baja y la cantidad aumenta respecto del caso con doble marginalización).
+
+\end{solution}
+
+%-------------------------------------------------------------------- Comente: poder de compra
+\needspace{8\baselineskip}
+\tema{Comente: poder de compra en el productor o en el distribuidor}
+\question \textbf{Comente.} El consumidor prefiere que el poder de compra esté concentrado en el productor en vez del distribuidor.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Cuando el poder de compra está concentrado en el productor, se obtiene el resultado de doble marginalización. Cuando el poder de compra se concentra en el distribuidor, se obtiene un resultado normal de monopolio. Dado que la doble marginalización es un peor resultado que el monopolio para el consumidor, se debería preferir que el poder de compra se concentre en el distribuidor.
+
+\end{solution}
+
+%-------------------------------------------------------------------- Productor y distribuidor (Q=a-bP)
+\needspace{8\baselineskip}
+\tema{Relación vertical con demanda lineal general}
+\question Un fabricante $M$ vende su producto a través de un distribuidor independiente. El costo de fabricación del bien es $c$, y la demanda por el producto final es $Q(P) = a - bP$. El costo variable de distribución es $d$.
+\begin{parts}
+\part Suponga que la transacción entre $M$ y $D$ ocurre a través de un precio mayorista $W$ únicamente, mientras que el precio minorista $P$ lo fija el distribuidor. Obtenga el precio mayorista y minorista resultante si todo el poder negociador lo tiene $M$.
+\needspace{5\baselineskip}
+\begin{solution}
+El juego se resuelve mediante inducción hacia atrás. La firma productora prevé los beneficios que obtendrá la distribuidora a cualquier $W$ dado, y luego incorpora la cantidad entregada al mercado en su propia maximización.
+
+\emph{Distribuidora:} $\max_P\ \pi_D = (P - W - d)(a - bP)$, con CPO $a - 2bP + bW + bd = 0$:
+\[
+  P^* = \frac{a + bW + bd}{2b}, \qquad Q(P^*) = \frac{a - bW - bd}{2}.
+\]
+\emph{Productora:} $\max_W\ \pi_P = (W - c)\,\frac{a - bW - bd}{2}$, con CPO $a - bd - 2bW + bc = 0$:
+\[
+  W^* = \frac{a - bd + bc}{2b}, \qquad P(W^*) = \frac{3a + bd + bc}{4b}.
+\]
+Este es el precio que pondría la firma distribuidora.
+
+\end{solution}
+
+\part Resuelva la pregunta (i) pero asumiendo ahora que todo el poder negociador lo tiene $D$.
+\needspace{5\baselineskip}
+\begin{solution}
+Como la firma distribuidora tiene todo el poder negociador, escogerá un $W$ tal que maximice sus beneficios (es decir, el mínimo posible). Además, como la firma productora debe participar en el mercado, el $W$ escogido debe asegurar $\pi_P^* \geq 0$. Esto implica $W = c$. De esta forma, el precio final que pondrá la firma distribuidora será
+\[
+  P^* = \frac{a + bc + bd}{2b}.
+\]
+
+\end{solution}
+
+\part Suponga que todo el poder negociador reside en $M$, pero esta empresa no puede forzar a $D$ a aceptar un contrato donde también se fije el precio minorista $P$. Obtenga el acuerdo óptimo entre $M$ y $D$ en base a los precios $W$ y $P$, que induce a $D$ a aceptarlo (en caso de no acuerdo, se aplica el contrato de (i)).
+\needspace{5\baselineskip}
+\begin{solution}
+Ambas partes ganarían más si $P = P_M$, donde
+\[
+  P_M = \arg\max_P\ (P - c - d)(a - bP) = \frac{a + bc + bd}{2b}.
+\]
+La negociación ocurre entonces sobre $W$, el precio mayorista. Para que $D$ acepte el trato, $W$ debe dejarle al menos el mismo beneficio que la opción en (i), al que llamamos $\pi_D^0$. Así, se debe cumplir
+\[
+  (P_M - W - d)\,Q(P_M) \geq \pi_D^0 .
+\]
+$M$ elige el $W$ más alto que cumple esta restricción con igualdad, y se queda con el resto de la renta monopólica.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Productor y distribuidor numérico
+\needspace{8\baselineskip}
+\tema{Doble marginalización: contratos y esfuerzo de venta}
+\question Una empresa monopolista $M$ vende su producto a través de un distribuidor $D$. La demanda por el bien final es $Q(P) = 120 - P$, donde $P$ es el precio minorista del bien. El costo variable de producir el bien es $C_M = 20$ y el costo de distribución es $C_D = 10$. Inicialmente, todo el poder negociador está en $M$.
+\begin{parts}
+\part Si el trato entre ambas partes se realiza mediante un precio mayorista unitario $W$, ¿cuál sería el precio que $M$ fijaría a $D$? Identifique el fenómeno de la doble marginalización en este caso.
+\needspace{5\baselineskip}
+\begin{solution}
+El distribuidor, dado $W$, maximiza $\pi_D = (P - W - 10)(120 - P)$. Derivando respecto a $P$ e igualando a cero: $130 + W - 2P = 0$, de donde
+\[
+  P = \frac{130 + W}{2}, \qquad Q = \frac{110 - W}{2}.
+\]
+Así, el monopolista maximiza $\pi_M = (W - 20)\,\frac{110 - W}{2}$. Derivando: $\frac{110 - W}{2} - \frac{W - 20}{2} = 0$, lo que da
+\[
+  W = 65, \qquad P = 97{,}5, \qquad Q = 22{,}5 .
+\]
+El fenómeno de doble marginalización se observa en que ambas firmas fijan un precio por encima de sus costos unitarios: $C_M = 20$ para el monopolista y $W + C_D = 75$ para el distribuidor, obteniendo beneficios positivos: $\pi_M = 45\cdot 22{,}5 = 1012{,}5$ y $\pi_D = 22{,}5^2 = 506{,}25$ (total $1518{,}75$, menos que los $2025$ de la integración vertical).
+
+\end{solution}
+
+\part Proponga y desarrolle dos soluciones contractuales que permitan eliminar el problema de la doble marginalización.
+\needspace{5\baselineskip}
+\begin{solution}
+Dado que el poder negociador está en el monopolista, este podría ofrecer un contrato $(P, W)$, fijando el precio minorista y mayorista, de modo que la firma actúe como si estuviera verticalmente integrada y fijara $W = P - C_D$. Entonces el monopolista maximiza $\max_P\ (P - 20 - 10)(120 - P)$, con CPO $150 - 2P = 0$:
+\[
+  P = 75, \qquad W = 75 - 10 = 65 .
+\]
+Así, el monopolista se lleva todo el beneficio, $\pi_M = (65 - 20)\cdot 45 = 2025$, y el distribuidor nada: $\pi_D = (75 - 65 - 10)\cdot 45 = 0$.
+
+Otra solución es una \emph{tarifa en dos partes} $(T, W)$, donde $T$ es la tarifa fija que le cobra al distribuidor y $W$ el precio por unidad. Así, $W = C_M = 20$ y $T$ es el beneficio que obtendría el distribuidor: $T = (75 - 30)\cdot 45 = 2025$. Nuevamente $\pi_M = 2025$ y $\pi_D = 0$.
+
+\end{solution}
+
+\part Suponga ahora que el distribuidor puede ejercer un esfuerzo de venta $e$, de modo tal que la demanda por el bien se incrementa: $Q(P,e) = 120 - P + e$, donde el costo por ejercer el esfuerzo es $c(e) = \frac{e^2}{2}$. Por simplicidad, ahora asuma que $C_D = 0$. Plantee un contrato de precio recomendado minorista $(W, P)$. ¿El productor logra maximizar el beneficio de la industria? Además, ¿el productor logra quedarse con dicho beneficio?
+\needspace{5\baselineskip}
+\begin{solution}
+Por inducción hacia atrás, el distribuidor elegirá cuánto esforzarse dados $(W,P)$ fijados por el productor:
+\[
+  \max_e\ \pi_D = (P - W)(120 + e - P) - \frac{e^2}{2}
+  \;\Rightarrow\; P - W - e = 0
+  \;\Rightarrow\; e = P - W .
+\]
+Así, el distribuidor se esforzará más mientras mayor sea la distancia entre $P$ y $W$. Pero de la parte (b) sabemos que el monopolista tiene incentivos a fijar en este caso $P = W$ (para no dejarle margen al distribuidor), y entonces el esfuerzo será $0$. Si permitiera que el precio minorista se distanciara del mayorista, se podría capturar un mayor nivel de beneficios de forma conjunta. Por lo tanto, el productor \emph{no} logra maximizar el beneficio de la industria, y solo se queda con el beneficio ya encontrado antes (con $C_D = 0$: $\pi_M = 2500$, con $P = W = 70$). El beneficio conjunto máximo, en cambio, resultaría de elegir $P$ y $e$ para maximizar $(P - 20)(120 - P + e) - \frac{e^2}{2}$, lo que da $e = P - 20$, $P = 120$, $e = 100$ y un beneficio de $5000$.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Delegación a distribuidores
+\needspace{8\baselineskip}
+\tema{Cournot con distribuidores (precios de transferencia)}
+\question Suponga que dos firmas enfrentan una demanda $Q = 1 - P$, compiten en cantidades y no enfrentan costos de producción ni de distribución.
+\begin{parts}
+\part ¿Cuál es el equilibrio en este mercado?
+\needspace{5\baselineskip}
+\begin{solution}
+Cada firma maximiza $\pi_i = (1 - q_i - q_j)q_i$. Derivando: $1 - 2q_i - q_j = 0$, por lo tanto $q_i = \frac{1 - q_j}{2}$. Por simetría, reemplazando una función de reacción en la otra se tiene $q_i = q_j = \frac{1}{3}$. Por lo tanto,
+\[
+  Q = \frac{2}{3}, \qquad P = 1 - \frac{2}{3} = \frac{1}{3}, \qquad \pi_i = \pi_j = \frac{1}{9}.
+\]
+
+\end{solution}
+
+\part Suponga ahora que cada firma decide vender su producto a través de un distribuidor. En términos prácticos, cada firma le vende a su distribuidor todas las unidades que desee a un precio $w_i$ ($i = 1,2$), y luego las firmas distribuidoras compiten en cantidades. ¿Cuál es el nuevo equilibrio de mercado (precio, precio de transferencia $w$, cantidad, beneficios, cantidad agregada y beneficios agregados)?
+\needspace{5\baselineskip}
+\begin{solution}
+El \emph{timing} es el siguiente: en $T=1$, el productor le vende toda la cantidad del producto al distribuidor a un precio $w_i$; en $T=2$, los distribuidores compiten en cantidades. En $T=2$ cada distribuidor maximiza $\pi_{di} = (1 - q_i - q_j - w_i)q_i$, con CPO $1 - 2q_i - q_j - w_i = 0$, es decir, $q_i = \frac{1 - q_j - w_i}{2}$ (y análogamente para $j$). Sumando ambas expresiones:
+\[
+  Q = \frac{2 - w_i - w_j}{3}, \qquad P = 1 - Q = \frac{1 + w_i + w_j}{3}, \qquad q_i = \frac{1 - 2w_i + w_j}{3}.
+\]
+Ahora, en $T=1$, cada productor maximiza $\pi_{pi} = w_i q_i = w_i\,\frac{1 - 2w_i + w_j}{3}$. Derivando: $\frac{1 + w_j - 4w_i}{3} = 0$. Intersectando las funciones de reacción se tiene $w_i = w_j = \frac{1}{3}$. Así,
+\[
+  q_i = q_j = \frac{2}{9}, \qquad Q = \frac{4}{9}, \qquad P = 1 - \frac{4}{9} = \frac{5}{9},
+\]
+\[
+  \pi_{di} = \pi_{dj} = \Bigl(\frac{5}{9} - \frac{1}{3}\Bigr)\frac{2}{9} = \frac{4}{81}, \qquad
+  \pi_{pi} = \pi_{pj} = \frac{1}{3}\cdot\frac{2}{9} = \frac{2}{27}.
+\]
+Los beneficios agregados (productores y distribuidores) son $2\bigl(\frac{4}{81} + \frac{6}{81}\bigr) = \frac{20}{81}$.
+
+\end{solution}
+
+\part ¿Ocurre un fenómeno de doble marginalización en este caso?
+\needspace{5\baselineskip}
+\begin{solution}
+La doble marginalización surge del hecho de que, al maximizar sus beneficios, tanto el productor como el distribuidor aplican un margen sobre su respectivo costo marginal. Como se puede ver en el desarrollo del ejercicio, la doble marginalización sí ocurre: el precio de transferencia es $w = \frac{1}{3} > 0$ y el precio minorista ($\frac{5}{9}$) es mayor que el de Cournot sin distribuidores ($\frac{1}{3}$).
+
+\end{solution}
+\end{parts}

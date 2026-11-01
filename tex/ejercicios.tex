@@ -1,0 +1,156 @@
+\documentclass[12pt,answers,letterpaper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{mlmodern}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{needspace}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\onehalfspacing
+\hfuzz=0pt
+\AtBeginDocument{\shorthandoff{<>}}
+
+\newlength{\anchools}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Respuesta:}\par\noindent}
+\qformat{\textbf{\large Pregunta \thequestion}\hfill}
+
+\pagestyle{foot}
+\footer{}{\thepage}{}
+
+\newcommand{\figura}[1]{\begin{center}[Figura: #1]\end{center}}
+
+% Numeración continua de preguntas entre unidades
+\newcommand{\tema}[1]{\addcontentsline{toc}{subsection}{Pregunta \the\numexpr\value{question}+1\relax. #1}}
+\newcounter{unitnum}
+\newcommand{\unidadtitulo}[1]{\stepcounter{unitnum}\section*{Unidad \Roman{unitnum}: #1}\addcontentsline{toc}{section}{Unidad \Roman{unitnum}: #1}}
+\newcounter{globalq}
+\newenvironment{unidad}
+  {\begin{questions}\setcounter{question}{\value{globalq}}}
+  {\setcounter{globalq}{\value{question}}\end{questions}}
+
+
+\def\bpsc{1}\def\bpe{0.7}
+% Gráfico de funciones de reacción en Bertrand (c1,c2: costos; m1,m2: precios de monopolio)
+\newcommand{\bertrandplot}[9]{%
+\begin{center}
+\begin{tikzpicture}[scale=\bpsc,x=0.4cm,y=0.4cm,>=stealth,font=\small,line cap=round]
+  \def\e{\bpe}
+  \pgfmathsetmacro{\xmax}{#4+3}
+  \draw[->] (0,0) -- (\xmax,0) node[right] {$P_1$};
+  \draw[->] (0,0) -- (0,\xmax) node[above] {$P_2$};
+  \draw[densely dotted,gray] (0,0) -- (\xmax-0.5,\xmax-0.5);
+  \draw[densely dashed,gray!70] (#3,0) -- (#3,#3) -- (0,#3);
+  \draw[densely dashed,gray!70] (#4,0) -- (#4,#4) -- (0,#4);
+  \draw (#1,0.15) -- (#1,-0.15) node[below] {#5};
+  \draw (#3,0.15) -- (#3,-0.15) node[below] {#7};
+  \draw (0.15,#2) -- (-0.15,#2) node[left] {#6};
+  \draw (0.15,#4) -- (-0.15,#4) node[left] {#8};
+  % Firma 1: P1(P2)
+  \draw[thick,violet] (#1,0) -- (#1,#1+\e) -- (#3-\e,#3) -- (#3,#3) -- (#3,\xmax-0.5);
+  % Firma 2: P2(P1)
+  \draw[thick,blue!70] (0,#2) -- (#2+\e,#2) -- (#4,#4-\e) -- (#4,#4) -- (\xmax-0.5,#4);
+  \fill[red] (#2-#9,#2) circle (2.5pt) node[below right,red] {$N$};
+  \node[violet] at (#3-4,#3+1.6) {$P_1(P_2)$};
+  \node[blue!70] at (#4+1.8,#4-5) {$P_2(P_1)$};
+\end{tikzpicture}
+\end{center}}
+
+
+% Cuadrados de valoraciones (V_x,V_y) para venta separada, atada y empaquetamiento
+\newcommand{\cuadrado}[1]{%
+\begin{tikzpicture}[x=3.4cm,y=3.4cm,font=\scriptsize]
+  \draw[->] (0,0) -- (1.12,0) node[right] {$V_x$};
+  \draw[->] (0,0) -- (0,1.12) node[above] {$V_y$};
+  \draw (0,0) rectangle (1,1);
+  #1
+\end{tikzpicture}}
+
+\begin{document}
+
+\vspace*{-1.5cm}
+\begin{center}
+  \includegraphics[height=2cm]{escudo.jpg}\\[4pt]
+  {\Large\bfseries MIC355. Ejercicios\\
+  2024-2025}
+\end{center}
+
+\tableofcontents
+\newpage
+
+Compilado de ejercicios de Microeconomía II, curso de Organización Industrial. Hecho como insumo para ayudantías del mismo curso o cursos relacionados.\\
+Contacto: joamartine@fen.uchile.cl
+
+\newpage
+
+\unidadtitulo{Competencia à la Cournot}
+\begin{unidad}
+\input{u1_cournot}
+\end{unidad}
+
+\unidadtitulo{Competencia à la Bertrand}
+\begin{unidad}
+\input{u2_bertrand}
+\end{unidad}
+
+\unidadtitulo{Cournot versus Bertrand}
+\begin{unidad}
+\input{u3_cournot_vs_bertrand}
+\end{unidad}
+
+\unidadtitulo{Stackelberg y juegos secuenciales}
+\begin{unidad}
+\input{u4_stackelberg}
+\end{unidad}
+
+\unidadtitulo{Colusión y juegos repetidos}
+\begin{unidad}
+\input{u5_colusion}
+\end{unidad}
+
+\unidadtitulo{Diferenciación de productos}
+\begin{unidad}
+\input{u6_diferenciacion}
+\end{unidad}
+
+\unidadtitulo{Monopolio multiproducto}
+\begin{unidad}
+\input{u7_multiproducto}
+\end{unidad}
+
+\unidadtitulo{Concentración, poder de mercado y fusiones}
+\begin{unidad}
+\input{u8_fusiones}
+\end{unidad}
+
+\unidadtitulo{Discriminación de precios}
+\begin{unidad}
+\input{u9_discriminacion}
+\end{unidad}
+
+\unidadtitulo{Venta atada, empaquetamiento y disuasión de entrada}
+\begin{unidad}
+\input{u10_venta_atada}
+\end{unidad}
+
+\unidadtitulo{Entrada y amenazas creíbles}
+\begin{unidad}
+\input{u11_entrada}
+\end{unidad}
+
+\unidadtitulo{Restricciones verticales y doble marginalización}
+\begin{unidad}
+\input{u12_vertical}
+\end{unidad}
+
+\unidadtitulo{Subastas}
+\begin{unidad}
+\input{u13_subastas}
+\end{unidad}
+
+\end{document}

@@ -1,0 +1,171 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{Unidad I: Competencia à la Cournot}{8}{section*.2}%
+\contentsline {subsection}{Pregunta 1. Pizza con anchoas (N firmas simétricas)}{8}{section*.3}%
+\contentsline {subsection}{Pregunta 2. Cournot con asimetría de costos}{10}{Item.4}%
+\contentsline {subsection}{Pregunta 3. Comente: variación del número de firmas}{11}{Item.7}%
+\contentsline {subsection}{Pregunta 4. Comente: número de firmas}{12}{Item.8}%
+\contentsline {subsection}{Pregunta 5. Comente: reducción de costos de una firma en Cournot}{13}{Item.9}%
+\contentsline {subsection}{Pregunta 6. Comente: el equilibrio de Cournot es un equilibrio de Nash}{13}{Item.10}%
+\contentsline {subsection}{Pregunta 7. Cournot con $N$ firmas e innovación (variante numérica)}{14}{Item.11}%
+\contentsline {section}{Unidad II: Competencia à la Bertrand}{15}{section*.4}%
+\contentsline {subsection}{Pregunta 8. Bertrand con costos simétricos y asimétricos}{15}{section*.5}%
+\contentsline {subsection}{Pregunta 9. Bertrand con restricciones de capacidad}{17}{Item.18}%
+\contentsline {subsection}{Pregunta 10. Comente: Bertrand con costos asimétricos}{19}{Item.22}%
+\contentsline {subsection}{Pregunta 11. Comente: Paradoja de Bertrand}{20}{Item.23}%
+\contentsline {subsection}{Pregunta 12. Comente: disipación de rentas}{20}{Item.24}%
+\contentsline {subsection}{Pregunta 13. Bertrand con costos simétricos y asimétricos (variante numérica)}{21}{Item.25}%
+\contentsline {subsection}{Pregunta 14. Bertrand: cuántas firmas operan (variante numérica)}{22}{Item.28}%
+\contentsline {subsection}{Pregunta 15. Bertrand con capacidades distintas (40 y 30)}{24}{Item.32}%
+\contentsline {section}{Unidad III: Cournot versus Bertrand}{26}{section*.6}%
+\contentsline {subsection}{Pregunta 16. Comente: primer movimiento}{26}{section*.7}%
+\contentsline {subsection}{Pregunta 17. Comente: firmas asimétricas}{26}{Item.38}%
+\contentsline {subsection}{Pregunta 18. Comente: Cournot vs Bertrand}{27}{Item.39}%
+\contentsline {section}{Unidad IV: Stackelberg y juegos secuenciales}{27}{section*.8}%
+\contentsline {subsection}{Pregunta 19. Comente: Stackelberg vs Cournot}{27}{section*.9}%
+\contentsline {subsection}{Pregunta 20. Cournot y Stackelberg con costos asimétricos}{28}{Item.41}%
+\contentsline {subsection}{Pregunta 21. Comente: timing de las decisiones en cantidades}{29}{Item.44}%
+\contentsline {subsection}{Pregunta 22. Comente: credibilidad en Stackelberg}{29}{Item.45}%
+\contentsline {subsection}{Pregunta 23. Comente: cantidad del líder en Stackelberg}{30}{Item.46}%
+\contentsline {subsection}{Pregunta 24. Comente: producción y beneficios del líder y seguidor}{30}{Item.47}%
+\contentsline {subsection}{Pregunta 25. Comente: ventaja de mover primero}{31}{Item.48}%
+\contentsline {subsection}{Pregunta 26. Stackelberg con funciones de precio distintas}{31}{Item.49}%
+\contentsline {subsection}{Pregunta 27. Comente: eficiencia de Stackelberg vs Cournot}{32}{Item.52}%
+\contentsline {subsection}{Pregunta 28. Comente: equilibrio de Nash y equilibrio perfecto en subjuegos}{33}{Item.53}%
+\contentsline {subsection}{Pregunta 29. Juego en forma extensiva: Nash y perfección en subjuegos}{33}{Item.54}%
+\contentsline {subsection}{Pregunta 30. Curvas de isobeneficio y Stackelberg}{35}{Item.58}%
+\contentsline {subsection}{Pregunta 31. Stackelberg con inversión para convertirse en líder}{36}{Item.61}%
+\contentsline {subsection}{Pregunta 32. Juego secuencial: inversión del monopolista y entrada}{38}{Item.65}%
+\contentsline {subsection}{Pregunta 33. Cournot y Stackelberg con costos asimétricos y costo fijo (líder 1 o 2)}{40}{Item.69}%
+\contentsline {section}{Unidad V: Colusión y juegos repetidos}{41}{section*.10}%
+\contentsline {subsection}{Pregunta 34. Comente: transparencia y colusión}{41}{section*.11}%
+\contentsline {subsection}{Pregunta 35. Colusión en Bertrand y Cournot (estrategia gatillo)}{42}{Item.75}%
+\contentsline {subsection}{Pregunta 36. Colusión con firmas asimétricas}{44}{Item.78}%
+\contentsline {subsection}{Pregunta 37. Comente: frecuencia de interacción y colusión}{46}{Item.82}%
+\contentsline {subsection}{Pregunta 38. Comente: asimetría de costos y estabilidad de la colusión}{46}{Item.83}%
+\contentsline {subsection}{Pregunta 39. Comente: garantía de precios bajos}{47}{Item.84}%
+\contentsline {subsection}{Pregunta 40. Colusión en mercados en expansión y declive}{47}{Item.85}%
+\contentsline {subsection}{Pregunta 41. Comente: colusión en Cournot con horizonte finito}{48}{Item.86}%
+\contentsline {subsection}{Pregunta 42. Comente: teorema de Folk}{49}{Item.87}%
+\contentsline {subsection}{Pregunta 43. Comente: la colusión como mejor estado de la industria}{49}{Item.88}%
+\contentsline {subsection}{Pregunta 44. Comente: colusión en licitaciones de obras públicas}{49}{Item.89}%
+\contentsline {subsection}{Pregunta 45. Comente: colusión en precios o cantidades con $N$ firmas}{50}{Item.90}%
+\contentsline {subsection}{Pregunta 46. Colusión asimétrica en precios y turnos (variante numérica)}{50}{Item.91}%
+\contentsline {subsection}{Pregunta 47. Colusión y galletas (Bertrand repetido)}{52}{Item.95}%
+\contentsline {subsection}{Pregunta 48. Colusión con tres firmas, horizonte infinito y finito}{54}{Item.100}%
+\contentsline {subsection}{Pregunta 49. Comente: colusión tácita en industrias en auge y en declive}{56}{Item.106}%
+\contentsline {subsection}{Pregunta 50. Comente: ¿siempre hay un nivel de impaciencia que sostenga la cooperación?}{57}{Item.107}%
+\contentsline {subsection}{Pregunta 51. Colusión en Cournot con 3 y 2 firmas (los pollos)}{57}{Item.108}%
+\contentsline {section}{Unidad VI: Diferenciación de productos}{59}{section*.12}%
+\contentsline {subsection}{Pregunta 52. Tres firmas con bienes diferenciados y fusión}{59}{section*.13}%
+\contentsline {subsection}{Pregunta 53. Comente: diferenciación, precios y utilidades}{63}{Item.118}%
+\contentsline {subsection}{Pregunta 54. Comente: bienes complementarios, monopolio vs Bertrand}{63}{Item.119}%
+\contentsline {subsection}{Pregunta 55. Comente: diferenciación e intensidad competitiva}{64}{Item.120}%
+\contentsline {subsection}{Pregunta 56. Comente: diferenciación horizontal vs vertical}{64}{Item.121}%
+\contentsline {subsection}{Pregunta 57. Comente: la diferenciación horizontal no cambia el producto}{64}{Item.122}%
+\contentsline {subsection}{Pregunta 58. Comente: Salop vs Hotelling}{65}{Item.123}%
+\contentsline {subsection}{Pregunta 59. Comente: efecto demanda y efecto estratégico en Hotelling}{65}{Item.124}%
+\contentsline {subsection}{Pregunta 60. Modelo de Hotelling con costos de transporte cuadráticos}{66}{Item.125}%
+\contentsline {subsection}{Pregunta 61. Competencia entre Apple y Dell (fusión con bienes diferenciados)}{69}{Item.133}%
+\contentsline {subsection}{Pregunta 62. Comente: diferenciación vertical pura y costos marginales}{72}{Item.137}%
+\contentsline {subsection}{Pregunta 63. Comente: modelos de diferenciación con y sin localización}{72}{Item.138}%
+\contentsline {subsection}{Pregunta 64. Comente: la diferenciación vertical cambia el producto}{73}{Item.139}%
+\contentsline {subsection}{Pregunta 65. Diferenciación vertical: calidades y precios}{73}{Item.140}%
+\contentsline {subsection}{Pregunta 66. Competencia entre Coca-Cola y Pepsi (fusión, variante numérica)}{77}{Item.147}%
+\contentsline {subsection}{Pregunta 67. Comente: logit vs nested logit}{79}{Item.152}%
+\contentsline {subsection}{Pregunta 68. Comente: patrones de sustitución en el modelo logit}{79}{Item.153}%
+\contentsline {subsection}{Pregunta 69. Comente: ¿resuelve el nested logit los problemas del logit?}{80}{Item.154}%
+\contentsline {subsection}{Pregunta 70. Hotelling con costos de transporte lineales: las heladerías}{80}{Item.155}%
+\contentsline {section}{Unidad VII: Monopolio multiproducto}{82}{section*.14}%
+\contentsline {subsection}{Pregunta 71. Comente: índice de Lerner multiproducto}{82}{section*.15}%
+\contentsline {subsection}{Pregunta 72. Monopolio multiproducto: sillas y mesas}{83}{Item.162}%
+\contentsline {subsection}{Pregunta 73. Comente: ¿conviene a un monopolista introducir nuevos productos?}{84}{Item.166}%
+\contentsline {section}{Unidad VIII: Concentración, poder de mercado y fusiones}{85}{section*.16}%
+\contentsline {subsection}{Pregunta 74. Comente: IHH y número de firmas}{85}{section*.17}%
+\contentsline {subsection}{Pregunta 75. Comente: aumento del IHH y bienestar de los consumidores}{86}{Item.168}%
+\contentsline {subsection}{Pregunta 76. Comente: IHH e índice de Lerner en Cournot}{86}{Item.169}%
+\contentsline {subsection}{Pregunta 77. Comente: las fusiones deben prohibirse}{87}{Item.170}%
+\contentsline {subsection}{Pregunta 78. Comente: fusiones entre firmas grandes}{87}{Item.171}%
+\contentsline {subsection}{Pregunta 79. Fusión en competencia tipo Cournot (zapatos de fútbol)}{88}{Item.172}%
+\contentsline {subsection}{Pregunta 80. Fusión en competencia tipo Bertrand (almacenes)}{90}{Item.175}%
+\contentsline {subsection}{Pregunta 81. Cálculo del HHI: industria de la cerveza}{91}{Item.178}%
+\contentsline {subsection}{Pregunta 82. Comente: ¿debe aprobarse la fusión CCU--Cervecerías Chile?}{92}{Item.179}%
+\contentsline {subsection}{Pregunta 83. Comente: fusión Samsung--Apple y precios de los rivales}{92}{Item.180}%
+\contentsline {subsection}{Pregunta 84. Fusiones en el transporte aéreo}{93}{Item.181}%
+\contentsline {subsection}{Pregunta 85. Análisis de fusión con costos cuadráticos (tres firmas)}{94}{Item.185}%
+\contentsline {subsection}{Pregunta 86. Comente: efectos unilaterales y coordinados de una fusión}{97}{Item.191}%
+\contentsline {subsection}{Pregunta 87. Comente: el HHI disminuye con una fusión}{97}{Item.192}%
+\contentsline {subsection}{Pregunta 88. Comente: presión al alza de precios y sustitutos}{98}{Item.193}%
+\contentsline {subsection}{Pregunta 89. Comente: abuso de posición dominante sin precios monopólicos}{98}{Item.194}%
+\contentsline {subsection}{Pregunta 90. Comente: las autoridades evalúan más que precios}{98}{Item.195}%
+\contentsline {subsection}{Pregunta 91. Comente: eliminación de una empresa maverick}{99}{Item.196}%
+\contentsline {subsection}{Pregunta 92. Fusión sin eficiencias en Cournot (tres firmas)}{99}{Item.197}%
+\contentsline {subsection}{Pregunta 93. Caso Meta: adquisiciones de Instagram y WhatsApp}{101}{Item.202}%
+\contentsline {section}{Unidad IX: Discriminación de precios}{101}{section*.18}%
+\contentsline {subsection}{Pregunta 94. Comente: discriminación de primer vs tercer grado}{102}{section*.19}%
+\contentsline {subsection}{Pregunta 95. Comente: mercados con discriminación de primer y tercer grado}{102}{Item.204}%
+\contentsline {subsection}{Pregunta 96. Comente: captar todo el excedente del consumidor}{103}{Item.205}%
+\contentsline {subsection}{Pregunta 97. Comente: ¿discriminar o no discriminar?}{103}{Item.206}%
+\contentsline {subsection}{Pregunta 98. Discriminación de tercer grado: el museo}{104}{Item.207}%
+\contentsline {subsection}{Pregunta 99. Comente: condiciones para discriminar precios}{106}{Item.213}%
+\contentsline {subsection}{Pregunta 100. Tarifas en dos partes (dos tipos de clientes)}{107}{Item.214}%
+\contentsline {subsection}{Pregunta 101. Comente: discriminación de segundo grado}{110}{Item.219}%
+\contentsline {subsection}{Pregunta 102. Comente: tipos de discriminación (cine, buffet, transporte)}{110}{Item.220}%
+\contentsline {subsection}{Pregunta 103. Comente: planes de telefonía móvil}{111}{Item.224}%
+\contentsline {subsection}{Pregunta 104. Comente: discriminación de tercer grado y bienestar}{111}{Item.225}%
+\contentsline {subsection}{Pregunta 105. Comente: discriminación de precios en aerolíneas}{112}{Item.226}%
+\contentsline {subsection}{Pregunta 106. Discriminación de precios en aerolíneas: AeroStrong y AeroWeak}{112}{Item.227}%
+\contentsline {subsection}{Pregunta 107. Tarifas en dos partes: Clavistel (variante numérica)}{114}{Item.231}%
+\contentsline {subsection}{Pregunta 108. Los tres tipos de discriminación de precios}{116}{Item.236}%
+\contentsline {subsection}{Pregunta 109. Principios para evaluar el bienestar con discriminación}{117}{Item.237}%
+\contentsline {subsection}{Pregunta 110. Cotas al cambio en bienestar por discriminación de tercer grado}{117}{Item.238}%
+\contentsline {subsection}{Pregunta 111. Discriminación intertemporal: tapa dura y tapa blanda}{119}{Item.239}%
+\contentsline {subsection}{Pregunta 112. Comente: discriminar bajo competencia}{121}{Item.246}%
+\contentsline {subsection}{Pregunta 113. Tarifa en dos partes y tarjeta prepago: parque de diversiones}{122}{Item.247}%
+\contentsline {subsection}{Pregunta 114. Discriminación perfecta vs precio uniforme (tres tipos de consumidores)}{123}{Item.251}%
+\contentsline {subsection}{Pregunta 115. Comente: discriminar en tercer grado vs precio lineal}{125}{Item.256}%
+\contentsline {subsection}{Pregunta 116. Discriminación de tercer grado y precio uniforme impuesto por el gobierno}{126}{Item.257}%
+\contentsline {subsection}{Pregunta 117. Discriminación de segundo grado: planes de internet (Movistel)}{127}{Item.261}%
+\contentsline {section}{Unidad X: Venta atada, empaquetamiento y disuasión de entrada}{128}{section*.20}%
+\contentsline {subsection}{Pregunta 118. Comente: venta atada vs empaquetamiento}{128}{section*.21}%
+\contentsline {subsection}{Pregunta 119. Comente: ¿benefician al consumidor la venta atada y el empaquetamiento?}{129}{Item.270}%
+\contentsline {subsection}{Pregunta 120. Comente: ofertas en formato «pack»}{129}{Item.271}%
+\contentsline {subsection}{Pregunta 121. Comente: la venta atada como práctica anticompetitiva \emph {per se}}{129}{Item.272}%
+\contentsline {subsection}{Pregunta 122. Comente: crítica de Chicago (bienes complementarios)}{130}{Item.273}%
+\contentsline {subsection}{Pregunta 123. Comente: fallo sobre ventas atadas y empaquetamiento en créditos}{131}{Item.274}%
+\contentsline {subsection}{Pregunta 124. Comente: venta atada como disuasión de entrada}{131}{Item.275}%
+\contentsline {subsection}{Pregunta 125. Venta separada, venta atada y empaquetamiento (valoraciones uniformes)}{131}{Item.276}%
+\contentsline {subsection}{Pregunta 126. Bundling puro y mixto con tres tipos de consumidores}{134}{Item.280}%
+\contentsline {subsection}{Pregunta 127. Entrada y venta atada: Agro S.A. y Siembra S.A.}{136}{Item.283}%
+\contentsline {subsection}{Pregunta 128. Bundling en un hotel (habitación y desayuno)}{138}{Item.285}%
+\contentsline {subsection}{Pregunta 129. Comente: bundling puro vs bundling mixto}{139}{Item.289}%
+\contentsline {subsection}{Pregunta 130. Comente: ¿por qué las empresas usan ventas atadas?}{139}{Item.290}%
+\contentsline {subsection}{Pregunta 131. Venta atada, precios individuales y Doble Play (Internet y TV)}{140}{Item.291}%
+\contentsline {subsection}{Pregunta 132. Comente: menú y platos a la carta}{142}{Item.295}%
+\contentsline {subsection}{Pregunta 133. Triple pack vs servicios por separado (Internet, TV y telefonía)}{143}{Item.296}%
+\contentsline {subsection}{Pregunta 134. Bundling puro y mixto: impresoras y cartuchos de tóner (HP)}{144}{Item.299}%
+\contentsline {section}{Unidad XI: Entrada y amenazas creíbles}{145}{section*.22}%
+\contentsline {subsection}{Pregunta 135. Comente: ¿siempre conviene bloquear la entrada?}{146}{section*.23}%
+\contentsline {subsection}{Pregunta 136. Comente: mercados desafiables}{146}{Item.304}%
+\contentsline {subsection}{Pregunta 137. Entrada con restricciones de capacidad}{146}{Item.305}%
+\contentsline {subsection}{Pregunta 138. Amenazas creíbles a la entrada (capacidad)}{148}{Item.306}%
+\contentsline {subsection}{Pregunta 139. ¿Demasiadas empresas en la industria? (costos fijos y Cournot)}{150}{Item.310}%
+\contentsline {subsection}{Pregunta 140. Número de firmas en Cournot con costo fijo y bienestar}{151}{Item.311}%
+\contentsline {subsection}{Pregunta 141. Comente: número de empresas exógeno en modelos de entrada}{152}{Item.317}%
+\contentsline {subsection}{Pregunta 142. Comente: condición de equilibrio del número de firmas}{153}{Item.318}%
+\contentsline {subsection}{Pregunta 143. Comente: Bertrand con costos fijos positivos}{153}{Item.319}%
+\contentsline {subsection}{Pregunta 144. Comente: bienes muy diferenciados y entrada}{153}{Item.320}%
+\contentsline {subsection}{Pregunta 145. Comente: costos endógenos de entrada (Sutton)}{154}{Item.321}%
+\contentsline {subsection}{Pregunta 146. Comente: mercados desafiables y economías de escala}{154}{Item.322}%
+\contentsline {subsection}{Pregunta 147. Comente: entrada de una firma muy eficiente y concentración}{154}{Item.323}%
+\contentsline {subsection}{Pregunta 148. Costos de entrada exógenos, tamaño de mercado y concentración}{155}{Item.324}%
+\contentsline {subsection}{Pregunta 149. Derivación del número de firmas en Cournot con demanda lineal}{155}{Item.325}%
+\contentsline {section}{Unidad XII: Restricciones verticales y doble marginalización}{157}{section*.24}%
+\contentsline {subsection}{Pregunta 150. Comente: doble marginalización y cómo eliminarla}{157}{section*.25}%
+\contentsline {subsection}{Pregunta 151. Comente: competencia entre distribuidores y doble marginalización}{158}{Item.331}%
+\contentsline {subsection}{Pregunta 152. Comente: precios de reventa recomendados}{158}{Item.332}%
+\contentsline {subsection}{Pregunta 153. Comente: poder de compra en el productor o en el distribuidor}{159}{Item.333}%
+\contentsline {subsection}{Pregunta 154. Relación vertical con demanda lineal general}{159}{Item.334}%
+\contentsline {subsection}{Pregunta 155. Doble marginalización: contratos y esfuerzo de venta}{161}{Item.338}%
+\contentsline {subsection}{Pregunta 156. Cournot con distribuidores (precios de transferencia)}{163}{Item.342}%
+\contentsline {section}{Unidad XIII: Subastas}{164}{section*.26}%
+\contentsline {subsection}{Pregunta 157. Comente: maldición del ganador en subastas}{164}{section*.27}%

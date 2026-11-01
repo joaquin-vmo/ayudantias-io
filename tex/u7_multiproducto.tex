@@ -1,0 +1,83 @@
+%-------------------------------------------------------------------- Lerner
+\needspace{8\baselineskip}
+\tema{Comente: índice de Lerner multiproducto}
+\question \textbf{Comente.} El índice de Lerner corresponde a una medida de poder de mercado, que indica cuánto puede cobrar una empresa por sobre su costo marginal. Este siempre se puede expresar como el inverso de la elasticidad precio-demanda por el bien.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. Si bien la definición del índice es correcta, pues muestra cuánto se puede desviar una firma del equilibrio de competencia perfecta ($P=c$), no siempre se cumple que sea el inverso de la elasticidad. Generalmente es correcto decir que $L = \frac{1}{|\varepsilon|}$, pero existen casos en que esto no se cumple, como por ejemplo un monopolio multiproducto. En este caso, como la demanda de cada bien depende del precio del otro, el índice es distinto, pues el monopolista internaliza las decisiones que toma en ambos bienes para no generar pérdidas en sus beneficios. De la CPO respecto de $p_1$, $D_1 + (p_1-c_1)\frac{\partial D_1}{\partial p_1} + (p_2-c_2)\frac{\partial D_2}{\partial p_1} = 0$, se obtiene
+\[
+  L_1 = \frac{p_1 - c_1}{p_1} = \frac{1}{|\varepsilon_{11}|} - \frac{p_2 - c_2}{p_1}\cdot\frac{\partial D_2/\partial p_1}{\partial D_1/\partial p_1}.
+\]
+Cuando las demandas de los bienes del monopolio multiproducto están relacionadas, la regla de la elasticidad inversa no se cumple. En detalle:
+\begin{itemize}
+  \item Si los bienes son \emph{sustitutos} ($\partial D_2/\partial p_1 > 0$), entonces $L^{\text{Multiproducto}}_1 > \frac{1}{|\varepsilon|} = L^{\text{Uniproducto}}_1$.
+  \item Si los bienes son \emph{complementarios} ($\partial D_2/\partial p_1 < 0$), entonces $L^{\text{Multiproducto}}_1 < \frac{1}{|\varepsilon|} = L^{\text{Uniproducto}}_1$.
+\end{itemize}
+
+\end{solution}
+
+%-------------------------------------------------------------------- Bienes diferenciados
+\needspace{8\baselineskip}
+
+%-------------------------------------------------------------------- Sillas y mesas
+\needspace{8\baselineskip}
+\tema{Monopolio multiproducto: sillas y mesas}
+\question En el país «Muy muy lejano» existe un solo productor de sillas ($q_1$) y mesas ($q_2$) que abastece a todo el mercado. Las funciones de demanda de ambos bienes son
+\begin{align*}
+  q_1 &= 200 - 4p_1 - p_2 \\
+  q_2 &= 180 - 3p_2 - p_1
+\end{align*}
+Adicionalmente se sabe que los costos de producción son separables, con funciones $CT_1 = 4q_1 + 200$ y $CT_2 = 2q_2 + 500$.
+\begin{parts}
+\part ¿Qué tipo de bienes son las sillas y las mesas?
+\needspace{5\baselineskip}
+\begin{solution}
+Debemos derivar cruzado:
+\[
+  \frac{\partial q_1}{\partial p_2} = -1 < 0, \qquad \frac{\partial q_2}{\partial p_1} = -1 < 0 .
+\]
+Dado que las derivadas cruzadas son negativas, son bienes \emph{complementarios}: un aumento en el precio de las sillas induce una caída en la demanda de mesas (y viceversa).
+
+\end{solution}
+
+\part Encuentre el equilibrio del monopolio para ambos mercados.
+\needspace{5\baselineskip}
+\begin{solution}
+Resolvemos el problema de maximización:
+\[
+  \max_{p_1,p_2}\ \pi = p_1(200 - 4p_1 - p_2) + p_2(180 - 3p_2 - p_1) - (4q_1 + 200) - (2q_2 + 500).
+\]
+CPO:
+\begin{gather*}
+  \frac{\partial \pi}{\partial p_1} = 218 - 8p_1 - 2p_2 = 0, \\
+  \frac{\partial \pi}{\partial p_2} = 190 - 2p_1 - 6p_2 = 0.
+\end{gather*}
+Despejando $p_2$ de la primera, $p_2 = \frac{218 - 8p_1}{2}$, y reemplazando en la segunda se obtiene
+\[
+  p_1^* \approx 21{,}09, \qquad p_2^* \approx 24{,}64, \qquad q_1^* = 91, \qquad q_2^* = 85 .
+\]
+
+\end{solution}
+
+\part Obtenga el beneficio de este monopolio multiproducto. Además, mencione cómo cambiarían los beneficios si el monopolista actuara de forma independiente en cada mercado.
+\needspace{5\baselineskip}
+\begin{solution}
+\[
+  \pi^M = 21{,}09\cdot 91 + 24{,}64\cdot 85 - (4\cdot 91 + 200) - (2\cdot 85 + 500) \approx 2779 .
+\]
+Si el monopolio decide independientemente el precio de cada bien (ignorando el efecto sobre el otro mercado), las CPO pasan a ser $216 - 8p_1 - p_2 = 0$ y $186 - p_1 - 6p_2 = 0$, con $p_1 \approx 23{,}62$, $p_2 \approx 27{,}06$ y un beneficio total de $\approx 2724 < 2779$.
+
+El beneficio disminuye porque los bienes son complementarios. Cuando un monopolio posee los mercados de 2 bienes complementarios, el producir de manera conjunta le permite disminuir el precio de un bien más allá de lo que haría de forma independiente, con el objetivo de incentivar la demanda del otro bien, maximizando así su beneficio total.
+
+\end{solution}
+\end{parts}
+
+%-------------------------------------------------------------------- Comente: monopolista nuevos productos
+\needspace{8\baselineskip}
+\tema{Comente: ¿conviene a un monopolista introducir nuevos productos?}
+\question \textbf{Comente.} A un monopolista no le conviene introducir nuevos productos al mercado, pues se crea competencia con el mismo.
+\needspace{5\baselineskip}
+\begin{solution}
+Falso. El monopolista introduce nuevos productos ya sea porque las demandas están relacionadas o porque tiene reducción de costos. Si las demandas están relacionadas, le conviene introducir marcas nuevas, es decir, bienes sustitutos, y así aprovechar la demanda de ambos bienes ante cambios de precios (internalizando que sus bienes compiten entre sí). El monopolio intertemporal es un caso de monopolio multiproducto, donde el monopolio debe considerar que es competencia consigo mismo en el tiempo y por tanto elige los precios de ambos períodos para maximizar la utilidad conjunta.
+
+\end{solution}
